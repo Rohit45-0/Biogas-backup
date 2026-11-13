@@ -1,0 +1,252 @@
+/* Visual presentation only. Model results, copy and component behavior stay in their existing components. */
+.simple-shell {
+  --ui-navy: #09263f;
+  --ui-ink: #183c54;
+  --ui-muted: #607b8c;
+  --ui-line: #dce6ee;
+  --ui-blue: #078bd3;
+  background: #f1f5f9;
+  color: var(--ui-ink);
+  font-size: 16px;
+}
+.simple-shell .simple-workspace { padding: 0 22px 22px; }
+.simple-shell .simple-sidebar {
+  width: 228px;
+  padding: 23px 12px 14px;
+  background: linear-gradient(180deg, #061b32 0%, #082c47 100%);
+  border-right: 1px solid #173950;
+  box-shadow: 3px 0 16px #102f4810;
+  scrollbar-width: thin;
+  scrollbar-color: #496779 transparent;
+}
+.simple-shell .simple-brand { padding: 0 8px 20px; gap: 9px; }
+.simple-shell .simple-brand b { font-size: 22px; letter-spacing: .5px; }
+.simple-shell .simple-brand small { font-size: 9px; letter-spacing: 1.6px; color: #95b7ce; }
+.simple-shell .simple-brand > span { width: 36px; height: 36px; font-size: 25px; }
+.simple-shell .research-mode-switch { margin: 0 4px 17px; }
+.simple-shell .research-mode-switch small { font-size: 10px; letter-spacing: .5px; color: #89b2c9; }
+.simple-shell .research-mode-switch button { font-size: 14px; padding: 9px 11px; border-radius: 6px; background: #0d5368; border-color: #237087; }
+.simple-shell .simple-sidebar nav { gap: 3px; }
+.simple-shell .simple-sidebar nav button {
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #c4d8e8;
+  transition: background-color .15s ease;
+}
+.simple-shell .simple-sidebar nav button > span:first-child { flex-basis: 23px; width: 23px; font-size: 21px; }
+.simple-shell .simple-sidebar nav button:hover { background: #ffffff0d; color: #fff; }
+.simple-shell .simple-sidebar nav button.active { background: #078ac9; color: #fff; box-shadow: 0 3px 9px #0002; font-weight: 650; }
+.simple-shell .simple-sidebar .pd-nav-label { margin: 16px 12px 5px; color: #7fabc6; font-size: 10px; letter-spacing: 1.4px; }
+.simple-shell .side-note { margin: 23px 5px 12px; padding: 15px 10px; background: #0b3553; border: 1px solid #20516c; border-radius: 8px; }
+.simple-shell .side-note small { font-size: 10px; letter-spacing: 1.3px; }
+.simple-shell .side-note b { font-size: 13px; }
+.simple-shell .side-note p { font-size: 12px; line-height: 1.6; }
+.simple-shell .side-logout { border-top: 1px solid #ffffff13; padding-top: 15px; font-size: 16px; }
+
+/* A slim application bar and a clear page title, as in the reference. */
+.simple-shell .hr-workspace { font-size: 16px; }
+.simple-shell .pd-topbar { min-height: 66px; margin: 0 -22px 19px; padding: 12px 22px; background: #fff; border-bottom: 1px solid var(--ui-line); gap: 14px; }
+.simple-shell .pd-breadcrumb { font-size: 14px; color: #6d8595; }
+.simple-shell .pd-breadcrumb b { color: #234c65; }
+.simple-shell .pd-account-tools { gap: 12px; }
+.simple-shell .hr-model-status, .simple-shell .hr-hardware { font-size: 12px; padding: 6px 8px; border-radius: 5px; }
+.simple-shell .pd-admin { font-size: 14px; }
+.simple-shell .pd-admin > b { width: 34px; height: 34px; background: #0b3150; border-radius: 7px; font-size: 12px; }
+.simple-shell .pd-admin small { font-size: 11px; }
+.simple-shell .pd-page-title.hr-header { gap: 16px; align-items: center; margin-bottom: 17px; }
+.simple-shell .pd-page-title.hr-header h1 { font-size: clamp(24px, 1.9vw, 32px); font-weight: 650; letter-spacing: -.65px; line-height: 1.2; }
+.simple-shell .hr-header > div > span { margin-top: 6px; font-size: 16px; line-height: 1.45; color: var(--ui-muted); }
+.simple-shell .hr-header-actions { gap: 8px; }
+.simple-shell .hr-primary, .simple-shell .hr-secondary, .simple-shell .rr-primary, .simple-shell .rpm-run {
+  min-height: 42px; padding: 10px 13px; font-size: 16px; border-radius: 6px; line-height: 1.25;
+}
+.simple-shell .hr-primary, .simple-shell .rr-primary, .simple-shell .rpm-run { background: #078bd3; border-color: #078bd3; box-shadow: 0 2px 5px #0078b71a; }
+.simple-shell .hr-secondary { background: #fff; border-color: #d0e1ec; color: #27769a; }
+.simple-shell .hr-disclosure { margin-bottom: 12px; padding: 10px 14px; font-size: 14px; line-height: 1.5; background: #eaf5f8; border: 1px solid #d6e9ee; border-radius: 7px; }
+.simple-shell .hr-disclosure button { font-size: 14px; }
+.simple-shell .pd-run-summary { padding: 10px 14px; margin-bottom: 14px; border-radius: 7px; background: #eaf2f8; border-color: #dbe7ef; font-size: 14px; gap: 10px 20px; }
+.simple-shell .pd-capacity-note { padding: 12px 14px; margin: 0 0 14px; font-size: 14px; line-height: 1.6; background: #f8fbfd; border-color: var(--ui-line); border-radius: 7px; color: #57768b; }
+.simple-shell .pd-capacity-note strong { color: #335c72; }
+.simple-shell .hr-footer { margin-top: 18px; padding: 13px 2px; font-size: 13px; background: transparent; border-top: 1px solid var(--ui-line); color: #7a92a2; }
+
+/* Compact cards and balanced chart / operating-condition panels. */
+.simple-shell .pd-kpis.hr-kpis { gap: 14px; margin-bottom: 16px; }
+.simple-shell .pd-kpi { padding: 17px 15px; gap: 12px; min-height: 125px; border: 1px solid var(--ui-line); border-radius: 8px; background: #fff; box-shadow: 0 3px 10px #153b5504; }
+.simple-shell .pd-kpi > span { width: 42px; height: 42px; flex: 0 0 42px; border-radius: 9px; }
+.simple-shell .pd-kpi h2 { font-size: 16px; line-height: 1.35; color: #526f82; font-weight: 650; }
+.simple-shell .pd-kpi strong { font-size: clamp(28px, 2.1vw, 34px); line-height: 1.2; letter-spacing: -.7px; color: #183f57; }
+.simple-shell .pd-kpi em { font-size: 15px; }
+.simple-shell .pd-kpi p { font-size: 14px; line-height: 1.45; margin-top: 7px; color: #6a8a96; }
+.simple-shell .pd-main-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(235px, .85fr) minmax(210px, .7fr); gap: 14px; align-items: start; }
+.simple-shell .pd-main-grid > * { grid-column: auto; min-width: 0; }
+.simple-shell .pd-panel, .simple-shell .hr-panel, .simple-shell .hr-controls,
+.simple-shell .rr-evidence, .simple-shell .rr-history, .simple-shell .rr-improvement,
+.simple-shell .rpm-panel, .simple-shell .rpm-identifiers {
+  border: 1px solid var(--ui-line); border-radius: 9px; background: #fff; box-shadow: 0 3px 12px #13334c04;
+}
+.simple-shell .pd-panel > header, .simple-shell .hr-panel > header,
+.simple-shell .rr-evidence > header, .simple-shell .rr-history > header,
+.simple-shell .rpm-panel > header { padding: 16px; gap: 10px; border-bottom: 1px solid #e6edf3; }
+.simple-shell .pd-panel > header h2, .simple-shell .hr-panel h2,
+.simple-shell .rpm-panel h2 { font-size: 18px; font-weight: 650; color: #21475f; line-height: 1.3; }
+.simple-shell .pd-panel > header p, .simple-shell .hr-panel > header p { font-size: 14px; line-height: 1.5; color: #78909f; margin-top: 5px; }
+.simple-shell .pd-chart > header { align-items: flex-start; flex-wrap: wrap; }
+.simple-shell .pd-chart nav { padding: 4px; gap: 2px; border-radius: 6px; background: #eff4f8; }
+.simple-shell .pd-chart nav button { padding: 7px 10px; font-size: 16px; border-radius: 4px; }
+.simple-shell .pd-condition { padding: 14px 16px; border-bottom: 1px solid #e8eff4; }
+.simple-shell .pd-condition > div { gap: 8px; flex-wrap: wrap; }
+.simple-shell .pd-condition b, .simple-shell .pd-condition span { font-size: 16px; line-height: 1.4; }
+.simple-shell .pd-condition strong { color: #087e98; }
+.simple-shell .pd-note { padding: 12px 16px; font-size: 14px; line-height: 1.6; color: #728b9a; }
+.simple-shell .pd-ring { width: 150px; height: 150px; margin: 23px auto 16px; padding: 11px; }
+.simple-shell .pd-ring b { font-size: 34px; }
+.simple-shell .pd-ring span { font-size: 13px; line-height: 1.4; }
+.simple-shell .pd-index-note { padding: 0 16px; font-size: 14px; line-height: 1.5; }
+.simple-shell .pd-status dl { margin: 12px 16px; }
+.simple-shell .pd-status dl > div { gap: 8px; padding: 10px 0; font-size: 14px; line-height: 1.5; }
+.simple-shell .pd-status dd { overflow-wrap: anywhere; }
+.simple-shell .pd-text-button { font-size: 14px; line-height: 1.4; padding: 12px 16px; color: #087fb5; }
+.simple-shell .pd-lower-grid { gap: 14px; margin-top: 16px; grid-template-columns: 1fr 1.35fr .9fr; align-items: start; }
+.simple-shell .pd-feed-counts { gap: 10px; padding: 16px; }
+.simple-shell .pd-feed-counts b { font-size: 23px; }
+.simple-shell .pd-feed-counts span { font-size: 13px; }
+.simple-shell .pd-workbook table { font-size: 14px; }
+.simple-shell .pd-workbook th, .simple-shell .pd-workbook td { font-size: 14px; padding: 10px; }
+.simple-shell .pd-data-status article { padding: 13px 16px; gap: 11px; }
+.simple-shell .pd-data-status article b { font-size: 15px; }
+.simple-shell .pd-data-status article p { font-size: 14px; line-height: 1.5; }
+
+/* Keep proportional bar geometry and existing container-query behavior. */
+.simple-shell .eb-comparison { padding: 18px; }
+.simple-shell .eb-heading { gap: 12px; }
+.simple-shell .eb-heading > div > span { font-size: 12px; letter-spacing: 1.2px; }
+.simple-shell .eb-heading h3 { margin-top: 5px; font-size: clamp(22px, 2.5cqi, 29px); line-height: 1.25; color: #21475e; }
+.simple-shell .eb-heading p { font-size: 16px; line-height: 1.5; }
+.simple-shell .eb-heading > strong { padding: 10px 12px; border-radius: 7px; font-size: 16px; }
+.simple-shell .eb-heading > strong small { font-size: 14px; }
+.simple-shell .eb-values { gap: 10px; margin: 19px 0 16px; }
+.simple-shell .eb-values > div { padding: 13px 14px; border-radius: 8px; background: #f7fafc; }
+.simple-shell .eb-values > div:nth-child(2) { background: #eff8f3; border-color: #d8e9df; }
+.simple-shell .eb-values small { font-size: 16px; line-height: 1.4; }
+.simple-shell .eb-values b { margin-top: 8px; font-size: clamp(27px, 3.6cqi, 36px); line-height: 1.25; letter-spacing: -.6px; }
+.simple-shell .eb-values em { font-size: 16px; }
+.simple-shell .eb-fluid-chart { margin-top: 24px; }
+.simple-shell .eb-fluid-label, .simple-shell .eb-fluid-bar-value, .simple-shell .eb-fluid-axis { font-size: 16px; }
+.simple-shell .eb-note { font-size: 16px; line-height: 1.5; margin-top: 13px; color: #718a99; }
+
+/* Shared forms, before/after tables and report presentation. */
+.simple-shell .hr-controls { padding: 18px; gap: 15px; }
+.simple-shell .hr-controls > label { font-size: 16px; }
+.simple-shell .hr-controls input:not([type=range]), .simple-shell .hr-controls select { font-size: 16px; min-height: 42px; border-radius: 6px; border-color: #cfdfe9; background: #fbfdff; }
+.simple-shell .hr-control-title b { font-size: 18px; }
+.simple-shell .hr-control-title small, .simple-shell .hr-controls small { font-size: 14px; line-height: 1.5; }
+.simple-shell .hr-panel { margin-bottom: 16px; }
+.simple-shell .hr-table-scroll, .simple-shell .rr-table-scroll { scrollbar-width: thin; scrollbar-color: #a9becb #f1f5f8; }
+.simple-shell .hr-workspace table thead, .simple-shell .rr-workspace table thead { background: #123e5b; }
+.simple-shell .hr-workspace table thead th { color: #f4f9fc; }
+.simple-shell .hr-workspace table thead small { color: #c4dce9; }
+.simple-shell .hr-workspace table th, .simple-shell .hr-workspace table td { padding: 11px 13px; font-size: 16px; line-height: 1.45; }
+.simple-shell .paired-scenario-table thead small { font-size: 13px; }
+.simple-shell .rr-workspace { font-size: 16px; }
+.simple-shell .rr-heading { margin-bottom: 16px; gap: 14px; }
+.simple-shell .rr-eyebrow { font-size: 12px; letter-spacing: 1.4px; }
+.simple-shell .rr-workspace h2 { font-size: 25px; }
+.simple-shell .rr-workspace h3 { font-size: 18px; }
+.simple-shell .rr-heading > div > p:last-child, .simple-shell .rr-history > header p { font-size: 16px; }
+.simple-shell .rr-totals { gap: 14px; }
+.simple-shell .rr-totals article { padding: 17px; border-color: var(--ui-line); border-radius: 8px; }
+.simple-shell .rr-totals article > span { font-size: 14px; line-height: 1.45; letter-spacing: .45px; min-height: 0; }
+.simple-shell .rr-totals article > strong { font-size: 32px; margin-top: 5px; }
+.simple-shell .rr-totals article > small { font-size: 15px; }
+.simple-shell .rr-improvement { padding: 16px 18px; }
+.simple-shell .rr-improvement dt { font-size: 16px; }
+.simple-shell .rr-improvement dd { font-size: 28px; }
+.simple-shell .rr-recommendation { padding: 16px 18px; gap: 16px; }
+.simple-shell .rr-recommendation > div > p { font-size: 16px; }
+.simple-shell .rr-table-panel > header { padding: 16px 18px; }
+.simple-shell .rr-workspace thead th, .simple-shell .rr-workspace tbody td, .simple-shell .rr-workspace tbody th { padding: 12px 14px; font-size: 16px; }
+.simple-shell .rr-export-actions > a, .simple-shell .rr-export-actions > button,
+.simple-shell .rr-evidence-actions > a, .simple-shell .rr-evidence-actions > button,
+.simple-shell .rr-history > ul > li > a, .simple-shell .rr-history > ul > li > button:last-child { font-size: 16px; min-height: 42px; border-radius: 6px; }
+
+/* The eight-step workflow retains its current text and execution states. */
+.simple-shell .rpm-workspace { gap: 16px; font-size: 16px; }
+.simple-shell .rpm-execution-hero { padding: 22px; border-radius: 10px; background: linear-gradient(115deg, #082740, #105570); }
+.simple-shell .rpm-hero-stats { gap: 12px; margin-top: 18px; }
+.simple-shell .rpm-hero-stats > div { padding: 12px; }
+.simple-shell .rpm-trace { background: #08283f; border-color: #204963; box-shadow: 0 5px 18px #0b2d4912; }
+.simple-shell .rpm-trace > header { background: linear-gradient(115deg, #0a2e4b, #10455f); border-color: #31536b; padding: 19px 20px; }
+.simple-shell .rpm-trace h2 { color: #fff; font-size: 27px; }
+.simple-shell .rpm-trace .rpm-eyebrow { color: #50cfcf; font-size: 12px; }
+.simple-shell .rpm-trace > header p, .simple-shell .rpm-trace-status { font-size: 16px; color: #bdd5e2; }
+.simple-shell .rpm-online { margin: 13px 14px 0; padding: 10px 12px; border: 1px solid #31576b; border-radius: 6px; font-size: 16px; background: #062237; }
+.simple-shell .rpm-online small { font-size: 13px; }
+.simple-shell .rpm-stage-grid { background: transparent; padding: 14px; gap: 8px; }
+.simple-shell .rpm-stage { min-height: 183px; border-radius: 7px; background: linear-gradient(160deg, #063c42, #07313e); border-color: #218d70; }
+.simple-shell .rpm-stage.selected { background: linear-gradient(155deg, #075b54, #084554); border-color: #5be0aa; }
+.simple-shell .rpm-stage strong { font-weight: 650; font-size: 16px; line-height: 1.35; }
+.simple-shell .rpm-stage-number { font-size: 20px; font-weight: 700; }
+.simple-shell .rpm-stage > svg { color: #abdeda; }
+.simple-shell .rpm-stage:not(.rpm-workflow-stage) .rpm-stage-link,
+.simple-shell .rpm-workflow-stage[data-state="shown"] .rpm-stage-link { background: linear-gradient(120deg, #258b46, #3ca743); font-size: 16px; font-weight: 600; }
+.simple-shell .rpm-stage-detail { margin: 0 14px; padding: 16px; background: #0d354e; border: 1px solid #31556b; border-radius: 7px; color: #eaf6fb; }
+.simple-shell .rpm-stage-detail > div > span { color: #52cbd2; font-size: 12px; letter-spacing: 1px; }
+.simple-shell .rpm-stage-detail h3 { color: #fff; font-size: 19px; }
+.simple-shell .rpm-stage-detail p { font-size: 16px; color: #bed4e0; }
+.simple-shell .rpm-stage-detail-icon { background: #067fc3; color: #fff; }
+.simple-shell .rpm-trace-footer { padding: 16px; gap: 15px; }
+.simple-shell .rpm-trace-footer p { color: #d1e7ed; font-size: 16px; }
+.simple-shell .rpm-trace-footer p > span { color: #9bbbcf; }
+.simple-shell .rpm-trace-footer button { background: #079b68; border-color: #20b27e; color: #fff; font-size: 16px; border-radius: 6px; }
+.simple-shell .rpm-trace .rpm-pending { background: #0d354e; color: #bed4e0; }
+.simple-shell .rpm-trace .rpm-pending h3 { color: #fff; }
+.simple-shell .rpm-equipment-flow { gap: 14px; padding: 16px 16px 10px; }
+.simple-shell .rpm-equipment { padding: 14px; }
+.simple-shell .rpm-analysis-grid { gap: 16px; }
+
+@media (max-width: 1500px) {
+  .simple-shell .pd-main-grid { grid-template-columns: minmax(0, 1.7fr) minmax(230px, .85fr); }
+  .simple-shell .pd-main-grid > .pd-chart { grid-row: span 2; }
+  .simple-shell .pd-main-grid > .pd-status { grid-column: 2; }
+  .simple-shell .pd-status .pd-ring { width: 126px; height: 126px; margin: 16px auto 12px; }
+  .simple-shell .pd-lower-grid { grid-template-columns: 1fr 1.3fr; }
+  .simple-shell .pd-lower-grid > .pd-data-status { grid-column: 1 / -1; }
+  .simple-shell .pd-data-status article { display: inline-flex; vertical-align: top; width: 33.333%; }
+}
+@media (max-width: 1150px) {
+  .simple-shell .pd-main-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .simple-shell .pd-main-grid > .pd-chart { grid-column: 1 / -1; grid-row: auto; }
+  .simple-shell .pd-main-grid > .pd-status { grid-column: auto; }
+  .simple-shell .pd-kpis.hr-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .simple-shell .pd-lower-grid { grid-template-columns: 1fr; }
+  .simple-shell .pd-data-status article { display: flex; width: auto; }
+}
+@media (max-width: 900px) {
+  .simple-shell .simple-workspace { margin-left: 0; padding: 14px; }
+  .simple-shell .simple-sidebar { width: 250px; padding: 23px 14px 14px; }
+  .simple-shell .pd-topbar { margin: 0 0 16px; padding: 12px; border: 1px solid var(--ui-line); border-radius: 7px; }
+  .simple-shell .pd-page-title.hr-header h1 { font-size: 27px; }
+  .simple-shell .pd-kpi { min-height: 116px; }
+}
+@media (max-width: 650px) {
+  .simple-shell .simple-workspace { padding: 12px; }
+  .simple-shell .pd-page-title.hr-header h1 { font-size: 25px; }
+  .simple-shell .pd-kpis.hr-kpis, .simple-shell .pd-main-grid, .simple-shell .rr-totals { grid-template-columns: 1fr; }
+  .simple-shell .pd-main-grid > .pd-chart, .simple-shell .pd-main-grid > .pd-status { grid-column: auto; grid-row: auto; }
+  .simple-shell .pd-kpi { min-height: 0; padding: 16px; }
+  .simple-shell .pd-main-grid > * { width: 100%; }
+  .simple-shell .pd-account-tools { flex-wrap: wrap; }
+  .simple-shell .eb-comparison { padding: 14px; }
+  .simple-shell .eb-values > div { padding: 12px; }
+  .simple-shell .rpm-trace > header { padding: 16px; }
+  .simple-shell .rpm-trace h2 { font-size: 24px; }
+  .simple-shell .rpm-online small { font-size: 13px; }
+  .simple-shell .rpm-stage-detail { margin: 0 10px; padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .simple-shell .simple-sidebar nav button { transition: none; }
+}

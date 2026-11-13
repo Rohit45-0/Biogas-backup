@@ -1,0 +1,11 @@
+{
+  "sourceHash": "sha256:08f9326a39971dc44e50bed3efbf3dcf6c95b704d8e8a435bf311ca278587256",
+  "files": {
+    "app/lib/hrt-optimization.ts": "d8d190697d7e796124b576a5f5840b1f8dc93e585422ff7bacfb3816ead76ad5",
+    "app/lib/hrt-optimization-execution.ts": "349dc064164add6e9ddd76fc97da04aeae3aa75cae5c7e9370d0039a4fb2c933",
+    "app/api/research/hrt-optimization/route.ts": "6723af78e94ddf9f76b1511663a54585394e821f53c34431d2ae59f0fc1ab3a5",
+    "ai-workflow/research/hrt-optimization-2026-11-08/source-manifest.json": "5403bd15f7608a93170b67f0534c1ee319881067ed9b93e2527f8daf9b8a4add",
+    "ai-workflow/research/hrt-optimization-2026-11-08/scenarios.json": "23a93016971101ce0ae3d79f1ebefbd02bb56134ea131a288742e2a85334a5ed",
+    "ai-workflow/research/hrt-optimization-2026-11-08/model-assessment.json": "b3697650fac365239e6f372d9a2d0347bbf2e3104a3d3da48a9e55911c7711f0"
+  }
+}

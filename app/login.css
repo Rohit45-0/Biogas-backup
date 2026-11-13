@@ -1,0 +1,8 @@
+.login-form-wrap .login-password-group{margin:10px 0}
+.login-form-wrap .login-password-group label{margin:0}
+.login-form-wrap .login-password-field{display:flex;align-items:center;min-width:0;margin-top:5px;border:1px solid #d8e2ec;border-radius:8px;background:#fff}
+.login-form-wrap .login-password-field:focus-within{border-color:#147ff1;box-shadow:0 0 0 2px #147ff120}
+.login-form-wrap .login-password-field input{min-width:0;flex:1;margin:0;border:0;background:transparent}
+.login-form-wrap .login-password-toggle{display:flex;align-items:center;justify-content:center;gap:6px;flex-shrink:0;min-height:42px;padding:0 10px;border:0;border-radius:6px;background:transparent;color:#17689f;font-size:16px;font-weight:600;cursor:pointer}
+.login-form-wrap .login-password-toggle:hover{background:#eaf4ff}
+.login-form-wrap .login-password-toggle:focus-visible{outline:2px solid #147ff1;outline-offset:1px}

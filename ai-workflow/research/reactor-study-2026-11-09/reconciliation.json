@@ -1,0 +1,19 @@
+{
+  "sourceRows": 400,
+  "uniqueRecordIds": 400,
+  "originalIdsReusedAcrossFiles": 200,
+  "exactDuplicateRows": 0,
+  "unresolvedOlrRows": 66,
+  "pathwayCounts": {
+    "H1": 57,
+    "H2": 57,
+    "H3": 55,
+    "H4": 55,
+    "H5": 55,
+    "H6": 55,
+    "C1": 22,
+    "C2": 22,
+    "C3": 22
+  },
+  "allBeforeRowsUseConventionalCstr": true
+}

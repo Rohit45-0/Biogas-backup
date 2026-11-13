@@ -1,0 +1,19 @@
+"use client";
+import {useEffect,useState} from "react";
+import type {researchMetadata} from "../lib/hrt-research";
+type Metadata=ReturnType<typeof researchMetadata>["sameTank"];
+const n=(v:number)=>v.toLocaleString(undefined,{maximumFractionDigits:2});
+export function SameTankConditions({metadata,stageId}:{metadata:Metadata|undefined;stageId:string}){
+  const stage=metadata?.stageInfo.find(s=>s.id===stageId);
+  if(!stage)return null;
+  return <section className="pd-capacity-note" data-same-tank-stage={stage.id}><strong>Same-tank production study · {stage.label}.</strong> {stage.id==="R5"?"Requires feed solubilization and retained biomass inside the same tank. ":stage.added+". "}Feed requirement: {stage.feedRequirements.join(", ")}. Supported AFTER HRT: {n(stage.min[0])}–{n(stage.max[0])} h; SRT: {n(stage.min[3])}–{n(stage.max[3])} days. {stage.id==="R6"&&<strong>This plain-tank stage does not support operation in a few hours. </strong>}These are planning conditions from the supplied file.</section>;
+}
+export function SameTankSourceStudy({metadata,showRows}:{metadata:Metadata|undefined;showRows:boolean}){
+  const [rows,setRows]=useState<Record<string,string|number>[]>([]),[error,setError]=useState("");
+  useEffect(()=>{if(!showRows)return;let active=true;fetch("/api/research/hrt?view=same-tank-data",{cache:"no-store"}).then(async r=>{if(!r.ok)throw new Error("Source records could not be loaded");return r.json();}).then(data=>{if(active)setRows(data.rows);}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[showRows]);
+  if(!metadata)return <p>Loading source study…</p>;
+  const columns=["Scenario","Stage","BEFORE HRT (h)","AFTER HRT (h)","BEFORE Biogas (m3/d)","AFTER Biogas (m3/d)","BEFORE Methane (m3/d)","AFTER Methane (m3/d)","BEFORE Electricity (kWh/d)","AFTER Electricity (kWh/d)"];
+  return <><section className="hr-panel"><header><div><small>ACTIVE PRODUCTION TRAINING SOURCE</small><h2>{metadata.source.file}</h2><p>{metadata.source.sheet} · 500 training records · 2,000 generated model evaluations per run</p></div><a className="hr-secondary" href="/api/research/hrt?view=same-tank-data&format=csv" download>Download 500 source records</a></header><p className="hr-footnote">The model uses stage, AFTER HRT, temperature, pH and SRT. Scenario IDs and target outputs are excluded from its features. Candidate inputs interpolate within the same stage; the trained model predicts production. BEFORE HRT and production are read from the original source columns and retain their supplied rounding.</p><p className="hr-footnote">The BEFORE values are constant in this file. Main production pages use this 500-row study; HRT Optimization model - Reactor Technologies retains its separate 400-row source and model.</p></section>
+  <section className="hr-panel"><header><h2>Held-out validation and model logic</h2></header><p className="hr-footnote">{metadata.learner}. {metadata.validationMethod}</p><div className="hr-table-scroll"><table><thead><tr><th>Output</th><th>MAE</th><th>R²</th></tr></thead><tbody>{Object.entries(metadata.holdout).map(([key,value])=><tr key={key}><td>{key}</td><td>{n(value.mae)}</td><td>{n(value.r2)}</td></tr>)}</tbody></table></div><p className="hr-footnote">Biogas has not beaten the held-out mean benchmark. These scores describe the planning dataset; plant validation and calibrated uncertainty remain unavailable.</p><ul className="hr-footnote">{metadata.limitations.map(text=><li key={text}>{text}</li>)}</ul></section>
+  {showRows&&<section className="hr-panel"><header><h2>Original 500 before-and-after records</h2></header>{error?<p role="alert">{error}</p>:<div className="hr-table-scroll"><table><thead><tr>{columns.map(c=><th key={c}>{c}</th>)}</tr></thead><tbody>{rows.map(row=><tr key={row.Scenario}>{columns.map(c=><td key={c}>{row[c]}</td>)}</tr>)}</tbody></table></div>}</section>}</>;
+}

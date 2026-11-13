@@ -1,0 +1,1834 @@
+{
+  "baselineStored": {
+    "BEFORE HRT (h)": 360,
+    "BEFORE Biogas (m3/d)": 66.15,
+    "BEFORE CH4 (%)": 63.63,
+    "BEFORE Methane (m3/d)": 42.09,
+    "BEFORE Electricity (kWh/d)": 151.07,
+    "BEFORE Annual elec (kWh/yr)": 55139
+  },
+  "baselineCanonical": {
+    "hrtHours": 360,
+    "biogasM3Day": 66.15,
+    "methanePct": 63.63,
+    "methaneM3Day": 42.09124500000001,
+    "electricityKwhDay": 151.07389655400002,
+    "annualElectricityKwh": 55141.97224221,
+    "technology": "Conventional mesophilic CSTR",
+    "origin": "workbook_reference"
+  },
+  "sourceRows": 200,
+  "missingCells": 0,
+  "duplicateScenarioIds": 0,
+  "unresolvedOlrRows": 66,
+  "maxAbsoluteDifferences": {
+    "methaneM3Day": 0.051560000000009154,
+    "electricityKwhDay": 0.1832721120000258,
+    "annualElectricityKwh": 66.69124810000358,
+    "storedAnnualMinusStoredDailyTimes365": 2.1999999999970896,
+    "hrtReductionPct": 0.06111111111111711,
+    "gainSequenceDeviation": 0.004974874371860949
+  },
+  "rows": [
+    {
+      "id": "HRT-0001",
+      "methaneM3Day": -0.010420000000003427,
+      "electricityKwhDay": -0.015639464000031467,
+      "annualElectricityKwh": -7.008404360007262,
+      "storedAnnualMinusStoredDailyTimes365": 1.3000000000029104,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": 0.0
+    },
+    {
+      "id": "HRT-0002",
+      "methaneM3Day": -0.04359999999999076,
+      "electricityKwhDay": -0.1702851199999884,
+      "annualElectricityKwh": -61.00406880000082,
+      "storedAnnualMinusStoredDailyTimes365": -1.1499999999941792,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -0.0002512562814089847
+    },
+    {
+      "id": "HRT-0003",
+      "methaneM3Day": -0.004040000000003374,
+      "electricityKwhDay": -0.020296368000003895,
+      "annualElectricityKwh": -6.308174320001854,
+      "storedAnnualMinusStoredDailyTimes365": -1.0999999999912689,
+      "hrtReductionPct": -0.055555555555557135,
+      "gainSequenceDeviation": -0.000502512562810864
+    },
+    {
+      "id": "HRT-0004",
+      "methaneM3Day": 0.038599999999995305,
+      "electricityKwhDay": 0.13812311999998883,
+      "annualElectricityKwh": 49.61493879999034,
+      "storedAnnualMinusStoredDailyTimes365": 0.8000000000029104,
+      "hrtReductionPct": 0.04444444444445139,
+      "gainSequenceDeviation": -0.0007537688442198487
+    },
+    {
+      "id": "HRT-0005",
+      "methaneM3Day": -0.016680000000000916,
+      "electricityKwhDay": -0.06103185600002803,
+      "annualElectricityKwh": -22.22662744000263,
+      "storedAnnualMinusStoredDailyTimes365": -0.05000000000291038,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": -0.0010050251256288334
+    },
+    {
+      "id": "HRT-0006",
+      "methaneM3Day": 0.00418000000000518,
+      "electricityKwhDay": 0.006770856000002823,
+      "annualElectricityKwh": 2.2713624400057597,
+      "storedAnnualMinusStoredDailyTimes365": 0.19999999999708962,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": -0.001256281407037818
+    },
+    {
+      "id": "HRT-0007",
+      "methaneM3Day": -0.015070000000001471,
+      "electricityKwhDay": -0.06678524400001606,
+      "annualElectricityKwh": -23.0266140599997,
+      "storedAnnualMinusStoredDailyTimes365": -1.3500000000058208,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.0015075376884468028
+    },
+    {
+      "id": "HRT-0008",
+      "methaneM3Day": -0.045479999999997744,
+      "electricityKwhDay": -0.1664728159999811,
+      "annualElectricityKwh": -60.362577840001904,
+      "storedAnnualMinusStoredDailyTimes365": -0.39999999999417923,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": -0.001758793969848682
+    },
+    {
+      "id": "HRT-0009",
+      "methaneM3Day": -0.046239999999997394,
+      "electricityKwhDay": -0.14433260800001335,
+      "annualElectricityKwh": -54.73140191999846,
+      "storedAnnualMinusStoredDailyTimes365": 2.0499999999883585,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": -0.002010050251257667
+    },
+    {
+      "id": "HRT-0010",
+      "methaneM3Day": 0.00022999999998774,
+      "electricityKwhDay": 0.017589515999958394,
+      "annualElectricityKwh": 5.520173339988105,
+      "storedAnnualMinusStoredDailyTimes365": 0.8999999999941792,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": -0.002261306532659546
+    },
+    {
+      "id": "HRT-0011",
+      "methaneM3Day": 0.014519999999990318,
+      "electricityKwhDay": 0.06580318399994667,
+      "annualElectricityKwh": 22.968162159988424,
+      "storedAnnualMinusStoredDailyTimes365": 1.0500000000029104,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": -0.0025125628140685308
+    },
+    {
+      "id": "HRT-0012",
+      "methaneM3Day": -0.0146000000000015,
+      "electricityKwhDay": -0.041614320000007865,
+      "annualElectricityKwh": -15.289226799999597,
+      "storedAnnualMinusStoredDailyTimes365": 0.10000000000582077,
+      "hrtReductionPct": -0.01666666666665151,
+      "gainSequenceDeviation": -0.0027638190954775155
+    },
+    {
+      "id": "HRT-0013",
+      "methaneM3Day": -0.020789999999998088,
+      "electricityKwhDay": -0.09064346799999612,
+      "annualElectricityKwh": -33.0848658199975,
+      "storedAnnualMinusStoredDailyTimes365": 0.0,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.0030150753768865
+    },
+    {
+      "id": "HRT-0014",
+      "methaneM3Day": -0.046559999999992385,
+      "electricityKwhDay": -0.164689151999994,
+      "annualElectricityKwh": -59.36154047999298,
+      "storedAnnualMinusStoredDailyTimes365": -0.75,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.003266331658295485
+    },
+    {
+      "id": "HRT-0015",
+      "methaneM3Day": 0.04579999999999984,
+      "electricityKwhDay": 0.15253735999999662,
+      "annualElectricityKwh": 56.02613640000345,
+      "storedAnnualMinusStoredDailyTimes365": -0.35000000000582077,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": -0.003517587939697364
+    },
+    {
+      "id": "HRT-0016",
+      "methaneM3Day": 0.04040000000000532,
+      "electricityKwhDay": 0.1618636800000104,
+      "annualElectricityKwh": 58.88024320000841,
+      "storedAnnualMinusStoredDailyTimes365": 0.19999999999708962,
+      "hrtReductionPct": -0.038888888888905626,
+      "gainSequenceDeviation": -0.003768844221106349
+    },
+    {
+      "id": "HRT-0017",
+      "methaneM3Day": -0.051560000000009154,
+      "electricityKwhDay": -0.17343515200002457,
+      "annualElectricityKwh": -61.85383048001677,
+      "storedAnnualMinusStoredDailyTimes365": -1.4499999999970896,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.004020100502515334
+    },
+    {
+      "id": "HRT-0018",
+      "methaneM3Day": 0.012019999999999698,
+      "electricityKwhDay": 0.028218183999996427,
+      "annualElectricityKwh": 11.49963715999911,
+      "storedAnnualMinusStoredDailyTimes365": -1.1999999999970896,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": -0.004271356783917213
+    },
+    {
+      "id": "HRT-0019",
+      "methaneM3Day": 0.022419999999996776,
+      "electricityKwhDay": 0.08869786399998247,
+      "annualElectricityKwh": 33.52472036000108,
+      "storedAnnualMinusStoredDailyTimes365": -1.1499999999941792,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.0045226130653261976
+    },
+    {
+      "id": "HRT-0020",
+      "methaneM3Day": -0.01808000000000476,
+      "electricityKwhDay": -0.055688736000007566,
+      "annualElectricityKwh": -21.42638864000037,
+      "storedAnnualMinusStoredDailyTimes365": 1.1000000000058208,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": -0.004773869346728077
+    },
+    {
+      "id": "HRT-0021",
+      "methaneM3Day": 0.008240000000000691,
+      "electricityKwhDay": 0.018851008000012826,
+      "annualElectricityKwh": 6.330617920000805,
+      "storedAnnualMinusStoredDailyTimes365": 0.5500000000029104,
+      "hrtReductionPct": 0.04444444444445139,
+      "gainSequenceDeviation": 0.004974874371860949
+    },
+    {
+      "id": "HRT-0022",
+      "methaneM3Day": -0.010970000000000368,
+      "electricityKwhDay": -0.051241524000005256,
+      "annualElectricityKwh": -19.953156260002288,
+      "storedAnnualMinusStoredDailyTimes365": 1.25,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.004723618090451964
+    },
+    {
+      "id": "HRT-0023",
+      "methaneM3Day": 0.04428000000000765,
+      "electricityKwhDay": 0.16022577600003274,
+      "annualElectricityKwh": 58.28240824000386,
+      "storedAnnualMinusStoredDailyTimes365": 0.20000000001164153,
+      "hrtReductionPct": -0.011111111111105743,
+      "gainSequenceDeviation": 0.0044723618090429795
+    },
+    {
+      "id": "HRT-0024",
+      "methaneM3Day": 0.011499999999990962,
+      "electricityKwhDay": 0.03265979999997626,
+      "annualElectricityKwh": 10.92082699999446,
+      "storedAnnualMinusStoredDailyTimes365": 1.0,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.004221105527633995
+    },
+    {
+      "id": "HRT-0025",
+      "methaneM3Day": 0.004699999999992599,
+      "electricityKwhDay": 0.019005239999955847,
+      "annualElectricityKwh": 5.586912599988864,
+      "storedAnnualMinusStoredDailyTimes365": 1.3499999999912689,
+      "hrtReductionPct": -0.055555555555557135,
+      "gainSequenceDeviation": 0.0039698492462321155
+    },
+    {
+      "id": "HRT-0026",
+      "methaneM3Day": -0.012560000000007676,
+      "electricityKwhDay": -0.039716352000027655,
+      "annualElectricityKwh": -15.496468480007024,
+      "storedAnnualMinusStoredDailyTimes365": 1.0,
+      "hrtReductionPct": -0.011111111111112848,
+      "gainSequenceDeviation": 0.003718592964823131
+    },
+    {
+      "id": "HRT-0027",
+      "methaneM3Day": 0.003680000000002792,
+      "electricityKwhDay": 0.019344256000010773,
+      "annualElectricityKwh": 5.960653440008173,
+      "storedAnnualMinusStoredDailyTimes365": 1.1000000000058208,
+      "hrtReductionPct": 0.055555555555557135,
+      "gainSequenceDeviation": 0.0034673366834212516
+    },
+    {
+      "id": "HRT-0028",
+      "methaneM3Day": -0.007109999999997285,
+      "electricityKwhDay": -0.02492721200002279,
+      "annualElectricityKwh": -9.24843238000176,
+      "storedAnnualMinusStoredDailyTimes365": 0.14999999999417923,
+      "hrtReductionPct": 0.011111111111119953,
+      "gainSequenceDeviation": 0.003216080402012267
+    },
+    {
+      "id": "HRT-0029",
+      "methaneM3Day": -0.027059999999991646,
+      "electricityKwhDay": -0.07666775199999165,
+      "annualElectricityKwh": -29.33372948000033,
+      "storedAnnualMinusStoredDailyTimes365": 1.3499999999912689,
+      "hrtReductionPct": 0.06111111111111711,
+      "gainSequenceDeviation": 0.0029648241205961767
+    },
+    {
+      "id": "HRT-0030",
+      "methaneM3Day": 0.023159999999990077,
+      "electricityKwhDay": 0.08588987199996723,
+      "annualElectricityKwh": 30.849803279983462,
+      "storedAnnualMinusStoredDailyTimes365": 0.5,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.0027135678391942974
+    },
+    {
+      "id": "HRT-0031",
+      "methaneM3Day": -0.02072000000000429,
+      "electricityKwhDay": -0.08171222400002875,
+      "annualElectricityKwh": -28.82496176000859,
+      "storedAnnualMinusStoredDailyTimes365": -1.0,
+      "hrtReductionPct": -0.04444444444443718,
+      "gainSequenceDeviation": 0.0024623115577853127
+    },
+    {
+      "id": "HRT-0032",
+      "methaneM3Day": 0.0031599999999940565,
+      "electricityKwhDay": 0.02137387199996965,
+      "annualElectricityKwh": 7.101463279992458,
+      "storedAnnualMinusStoredDailyTimes365": 0.6999999999970896,
+      "hrtReductionPct": -1.4210854715202004e-14,
+      "gainSequenceDeviation": 0.0022110552763834335
+    },
+    {
+      "id": "HRT-0033",
+      "methaneM3Day": 0.013750000000001705,
+      "electricityKwhDay": 0.045227499999981546,
+      "annualElectricityKwh": 16.708037499993225,
+      "storedAnnualMinusStoredDailyTimes365": -0.20000000001164153,
+      "hrtReductionPct": 0.04444444444445139,
+      "gainSequenceDeviation": 0.0019597989949744488
+    },
+    {
+      "id": "HRT-0034",
+      "methaneM3Day": 0.033419999999992456,
+      "electricityKwhDay": 0.10904706399998076,
+      "annualElectricityKwh": 38.852178360000835,
+      "storedAnnualMinusStoredDailyTimes365": 0.9499999999970896,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": 0.001708542713565464
+    },
+    {
+      "id": "HRT-0035",
+      "methaneM3Day": -0.04250000000000398,
+      "electricityKwhDay": -0.14774500000001467,
+      "annualElectricityKwh": -54.97692500000994,
+      "storedAnnualMinusStoredDailyTimes365": 1.0500000000029104,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": 0.0014572864321635848
+    },
+    {
+      "id": "HRT-0036",
+      "methaneM3Day": 0.02541999999999689,
+      "electricityKwhDay": 0.08729746399995975,
+      "annualElectricityKwh": 33.31357435998507,
+      "storedAnnualMinusStoredDailyTimes365": -1.4500000000116415,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": 0.0012060301507546
+    },
+    {
+      "id": "HRT-0037",
+      "methaneM3Day": 0.006480000000003372,
+      "electricityKwhDay": 0.02533401600001639,
+      "annualElectricityKwh": 10.096915840011206,
+      "storedAnnualMinusStoredDailyTimes365": -0.8500000000058208,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.0009547738693456154
+    },
+    {
+      "id": "HRT-0038",
+      "methaneM3Day": 0.009120000000002904,
+      "electricityKwhDay": 0.03916950400000019,
+      "annualElectricityKwh": 12.746868960006395,
+      "storedAnnualMinusStoredDailyTimes365": 1.5500000000029104,
+      "hrtReductionPct": -0.04444444444443718,
+      "gainSequenceDeviation": 0.0007035175879366307
+    },
+    {
+      "id": "HRT-0039",
+      "methaneM3Day": 0.014759999999995443,
+      "electricityKwhDay": 0.054816591999980346,
+      "annualElectricityKwh": 21.408056079992093,
+      "storedAnnualMinusStoredDailyTimes365": -1.4000000000087311,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": 0.00045226130652764596
+    },
+    {
+      "id": "HRT-0040",
+      "methaneM3Day": 0.029839999999992983,
+      "electricityKwhDay": 0.08654572799997595,
+      "annualElectricityKwh": 32.18919071998971,
+      "storedAnnualMinusStoredDailyTimes365": -0.6000000000058208,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.00020100502512576668
+    },
+    {
+      "id": "HRT-0041",
+      "methaneM3Day": -0.03383999999999787,
+      "electricityKwhDay": -0.11948652800001014,
+      "annualElectricityKwh": -43.61258272000123,
+      "storedAnnualMinusStoredDailyTimes365": 0,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -5.0251256283218027e-05
+    },
+    {
+      "id": "HRT-0042",
+      "methaneM3Day": 0.035669999999996094,
+      "electricityKwhDay": 0.1363227639999991,
+      "annualElectricityKwh": 49.8578088600043,
+      "storedAnnualMinusStoredDailyTimes365": -0.10000000000582077,
+      "hrtReductionPct": 0.027777777777771462,
+      "gainSequenceDeviation": -0.0003015075376850973
+    },
+    {
+      "id": "HRT-0043",
+      "methaneM3Day": 0.02477000000001084,
+      "electricityKwhDay": 0.10380848400001241,
+      "annualElectricityKwh": 38.34009666000202,
+      "storedAnnualMinusStoredDailyTimes365": -0.45000000001164153,
+      "hrtReductionPct": -0.038888888888905626,
+      "gainSequenceDeviation": -0.000552763819094082
+    },
+    {
+      "id": "HRT-0044",
+      "methaneM3Day": -0.016119999999993695,
+      "electricityKwhDay": -0.06914590399998133,
+      "annualElectricityKwh": -25.98825496000063,
+      "storedAnnualMinusStoredDailyTimes365": 0.75,
+      "hrtReductionPct": 0.04444444444444429,
+      "gainSequenceDeviation": -0.0008040201005030667
+    },
+    {
+      "id": "HRT-0045",
+      "methaneM3Day": -0.00973000000000468,
+      "electricityKwhDay": -0.05257491600002595,
+      "annualElectricityKwh": -17.239844340016134,
+      "storedAnnualMinusStoredDailyTimes365": -1.9499999999970896,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -0.0010552763819120514
+    },
+    {
+      "id": "HRT-0046",
+      "methaneM3Day": -0.04836999999999847,
+      "electricityKwhDay": -0.15550560400001245,
+      "annualElectricityKwh": -57.70954546000576,
+      "storedAnnualMinusStoredDailyTimes365": 0.9499999999970896,
+      "hrtReductionPct": 0.03333333333334565,
+      "gainSequenceDeviation": -0.0013065326633210361
+    },
+    {
+      "id": "HRT-0047",
+      "methaneM3Day": 0.03781999999999641,
+      "electricityKwhDay": 0.1349075439999865,
+      "annualElectricityKwh": 47.591253559992765,
+      "storedAnnualMinusStoredDailyTimes365": 1.6499999999941792,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": -0.0015577889447229154
+    },
+    {
+      "id": "HRT-0048",
+      "methaneM3Day": -0.005740000000002965,
+      "electricityKwhDay": -0.019918008000047394,
+      "annualElectricityKwh": -7.57007292000344,
+      "storedAnnualMinusStoredDailyTimes365": 0.29999999998835847,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": -0.0018090452261319
+    },
+    {
+      "id": "HRT-0049",
+      "methaneM3Day": 0.0007099999999908846,
+      "electricityKwhDay": 0.01818433199994729,
+      "annualElectricityKwh": 6.7872811799898045,
+      "storedAnnualMinusStoredDailyTimes365": -0.15000000000873115,
+      "hrtReductionPct": -0.01666666666665151,
+      "gainSequenceDeviation": -0.002060301507540885
+    },
+    {
+      "id": "HRT-0050",
+      "methaneM3Day": 0.030879999999996244,
+      "electricityKwhDay": 0.1028344959999572,
+      "annualElectricityKwh": 38.93459103998612,
+      "storedAnnualMinusStoredDailyTimes365": -1.4000000000087311,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": -0.002311557788942764
+    },
+    {
+      "id": "HRT-0051",
+      "methaneM3Day": 0.02020999999999873,
+      "electricityKwhDay": 0.0944697319999932,
+      "annualElectricityKwh": 32.981452179999906,
+      "storedAnnualMinusStoredDailyTimes365": 1.5,
+      "hrtReductionPct": 0.01666666666666572,
+      "gainSequenceDeviation": -0.002562814070351749
+    },
+    {
+      "id": "HRT-0052",
+      "methaneM3Day": 0.02632000000000545,
+      "electricityKwhDay": 0.09028774400002249,
+      "annualElectricityKwh": 32.65502656000899,
+      "storedAnnualMinusStoredDailyTimes365": 0.3000000000029104,
+      "hrtReductionPct": 0.011111111111119953,
+      "gainSequenceDeviation": -0.002814070351753628
+    },
+    {
+      "id": "HRT-0053",
+      "methaneM3Day": 0.04401999999999617,
+      "electricityKwhDay": 0.16914858399999844,
+      "annualElectricityKwh": 61.83923316000437,
+      "storedAnnualMinusStoredDailyTimes365": -0.10000000000582077,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": -0.003065326633169718
+    },
+    {
+      "id": "HRT-0054",
+      "methaneM3Day": 0.033850000000001046,
+      "electricityKwhDay": 0.13124642000002495,
+      "annualElectricityKwh": 49.25494330000947,
+      "storedAnnualMinusStoredDailyTimes365": -1.3499999999912689,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.003316582914578703
+    },
+    {
+      "id": "HRT-0055",
+      "methaneM3Day": -0.02760000000000673,
+      "electricityKwhDay": -0.11192192000001455,
+      "annualElectricityKwh": -42.15150080001331,
+      "storedAnnualMinusStoredDailyTimes365": 1.3000000000029104,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.003567839195980582
+    },
+    {
+      "id": "HRT-0056",
+      "methaneM3Day": -0.039680000000004156,
+      "electricityKwhDay": -0.1423754560000532,
+      "annualElectricityKwh": -51.56704144002288,
+      "storedAnnualMinusStoredDailyTimes365": -0.40000000000873115,
+      "hrtReductionPct": 0.038888888888905626,
+      "gainSequenceDeviation": -0.003819095477389567
+    },
+    {
+      "id": "HRT-0057",
+      "methaneM3Day": -0.020769999999998845,
+      "electricityKwhDay": -0.06814768399999593,
+      "annualElectricityKwh": -24.323904659991967,
+      "storedAnnualMinusStoredDailyTimes365": -0.5500000000029104,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": -0.004070351758791446
+    },
+    {
+      "id": "HRT-0058",
+      "methaneM3Day": 0.028760000000005448,
+      "electricityKwhDay": 0.11953739200001223,
+      "annualElectricityKwh": 42.98114807999809,
+      "storedAnnualMinusStoredDailyTimes365": 0.6499999999941792,
+      "hrtReductionPct": 0.022222222222211485,
+      "gainSequenceDeviation": -0.004321608040200431
+    },
+    {
+      "id": "HRT-0059",
+      "methaneM3Day": -0.030719999999995196,
+      "electricityKwhDay": -0.10788422399997444,
+      "annualElectricityKwh": -38.97774175998347,
+      "storedAnnualMinusStoredDailyTimes365": -0.39999999999417923,
+      "hrtReductionPct": -1.4210854715202004e-14,
+      "gainSequenceDeviation": -0.004572864321609416
+    },
+    {
+      "id": "HRT-0060",
+      "methaneM3Day": 0.02506999999998527,
+      "electricityKwhDay": 0.06934924399993747,
+      "annualElectricityKwh": 26.812474059974193,
+      "storedAnnualMinusStoredDailyTimes365": -1.5,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -0.004824120603011295
+    },
+    {
+      "id": "HRT-0061",
+      "methaneM3Day": -0.041869999999995855,
+      "electricityKwhDay": -0.14952380399998333,
+      "annualElectricityKwh": -55.07618845999241,
+      "storedAnnualMinusStoredDailyTimes365": 0.5,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": 0.004924623115577731
+    },
+    {
+      "id": "HRT-0062",
+      "methaneM3Day": -0.014719999999996958,
+      "electricityKwhDay": -0.06740902399999982,
+      "annualElectricityKwh": -23.504293760008295,
+      "storedAnnualMinusStoredDailyTimes365": -1.0999999999912689,
+      "hrtReductionPct": 0.027777777777778567,
+      "gainSequenceDeviation": 0.004673366834168746
+    },
+    {
+      "id": "HRT-0063",
+      "methaneM3Day": 0.007530000000002701,
+      "electricityKwhDay": 0.021322676000011143,
+      "annualElectricityKwh": 6.282776740001282,
+      "storedAnnualMinusStoredDailyTimes365": 1.5,
+      "hrtReductionPct": 0.01666666666666572,
+      "gainSequenceDeviation": 0.0044221105527597615
+    },
+    {
+      "id": "HRT-0064",
+      "methaneM3Day": -0.021610000000009677,
+      "electricityKwhDay": -0.08072261200001662,
+      "annualElectricityKwh": -29.96375338001235,
+      "storedAnnualMinusStoredDailyTimes365": 0.5,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.004170854271357882
+    },
+    {
+      "id": "HRT-0065",
+      "methaneM3Day": -0.011260000000007153,
+      "electricityKwhDay": -0.05547439200000781,
+      "annualElectricityKwh": -20.948153080011252,
+      "storedAnnualMinusStoredDailyTimes365": 0.7000000000116415,
+      "hrtReductionPct": 0.01666666666666572,
+      "gainSequenceDeviation": 0.0039195979899488975
+    },
+    {
+      "id": "HRT-0066",
+      "methaneM3Day": 0.016919999999984725,
+      "electricityKwhDay": 0.04819326399996271,
+      "annualElectricityKwh": 17.740541359977215,
+      "storedAnnualMinusStoredDailyTimes365": -0.14999999999417923,
+      "hrtReductionPct": -0.01666666666665151,
+      "gainSequenceDeviation": 0.0036683417085470182
+    },
+    {
+      "id": "HRT-0067",
+      "methaneM3Day": 0.02080999999999733,
+      "electricityKwhDay": 0.05552325199997199,
+      "annualElectricityKwh": 21.16598697999143,
+      "storedAnnualMinusStoredDailyTimes365": -0.9000000000087311,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": 0.0034170854271380335
+    },
+    {
+      "id": "HRT-0068",
+      "methaneM3Day": -0.011719999999996844,
+      "electricityKwhDay": -0.04338142399998901,
+      "annualElectricityKwh": -13.98421975999372,
+      "storedAnnualMinusStoredDailyTimes365": -1.8500000000058208,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.003165829145729049
+    },
+    {
+      "id": "HRT-0069",
+      "methaneM3Day": 0.03705999999999676,
+      "electricityKwhDay": 0.15372375199999055,
+      "annualElectricityKwh": 54.959169480003766,
+      "storedAnnualMinusStoredDailyTimes365": 1.1499999999941792,
+      "hrtReductionPct": 0.011111111111105743,
+      "gainSequenceDeviation": 0.002914572864320064
+    },
+    {
+      "id": "HRT-0070",
+      "methaneM3Day": -0.018899999999987926,
+      "electricityKwhDay": -0.08696387999998478,
+      "annualElectricityKwh": -30.64181619998999,
+      "storedAnnualMinusStoredDailyTimes365": -1.1000000000058208,
+      "hrtReductionPct": 0.01666666666665151,
+      "gainSequenceDeviation": 0.0026633165829110794
+    },
+    {
+      "id": "HRT-0071",
+      "methaneM3Day": 0.010880000000000223,
+      "electricityKwhDay": 0.024638495999994348,
+      "annualElectricityKwh": 9.743051040000864,
+      "storedAnnualMinusStoredDailyTimes365": -0.75,
+      "hrtReductionPct": -0.027777777777771462,
+      "gainSequenceDeviation": 0.0024120603015092
+    },
+    {
+      "id": "HRT-0072",
+      "methaneM3Day": 0.03582999999999714,
+      "electricityKwhDay": 0.13358103599998117,
+      "annualElectricityKwh": 47.957078139996156,
+      "storedAnnualMinusStoredDailyTimes365": 0.8000000000029104,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.0021608040201002154
+    },
+    {
+      "id": "HRT-0073",
+      "methaneM3Day": 0.045000000000001705,
+      "electricityKwhDay": 0.15628200000000447,
+      "annualElectricityKwh": 56.8929300000018,
+      "storedAnnualMinusStoredDailyTimes365": 0.14999999999417923,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.0019095477386912307
+    },
+    {
+      "id": "HRT-0074",
+      "methaneM3Day": -0.013039999999989504,
+      "electricityKwhDay": -0.06675916799997594,
+      "annualElectricityKwh": -22.667096320001292,
+      "storedAnnualMinusStoredDailyTimes365": -1.6999999999970896,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.0016582914572893515
+    },
+    {
+      "id": "HRT-0075",
+      "methaneM3Day": -0.014139999999997599,
+      "electricityKwhDay": -0.06225528800001712,
+      "annualElectricityKwh": -23.32318012000178,
+      "storedAnnualMinusStoredDailyTimes365": 0.5999999999912689,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.0014070351758803668
+    },
+    {
+      "id": "HRT-0076",
+      "methaneM3Day": -0.03809999999999292,
+      "electricityKwhDay": -0.1282765199999858,
+      "annualElectricityKwh": -46.62092980000307,
+      "storedAnnualMinusStoredDailyTimes365": -0.19999999999708962,
+      "hrtReductionPct": 0.011111111111119953,
+      "gainSequenceDeviation": 0.0011557788944784875
+    },
+    {
+      "id": "HRT-0077",
+      "methaneM3Day": -0.007780000000003895,
+      "electricityKwhDay": -0.01014797600001316,
+      "annualElectricityKwh": -4.95401123999909,
+      "storedAnnualMinusStoredDailyTimes365": 1.25,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": 0.0009045226130623973
+    },
+    {
+      "id": "HRT-0078",
+      "methaneM3Day": 0.010429999999999495,
+      "electricityKwhDay": 0.055647356000008585,
+      "annualElectricityKwh": 18.51128494000295,
+      "storedAnnualMinusStoredDailyTimes365": 1.8000000000029104,
+      "hrtReductionPct": -0.005555555555545766,
+      "gainSequenceDeviation": 0.0006532663316534126
+    },
+    {
+      "id": "HRT-0079",
+      "methaneM3Day": -0.017199999999988336,
+      "electricityKwhDay": -0.06661823999996841,
+      "annualElectricityKwh": -24.56565759998921,
+      "storedAnnualMinusStoredDailyTimes365": 0.25,
+      "hrtReductionPct": 0.01666666666666572,
+      "gainSequenceDeviation": 0.00040201005025153336
+    },
+    {
+      "id": "HRT-0080",
+      "methaneM3Day": -0.0030399999999985994,
+      "electricityKwhDay": 0.00035683199999425597,
+      "annualElectricityKwh": -0.4697563200024888,
+      "storedAnnualMinusStoredDailyTimes365": 0.6000000000058208,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": 0.00015075376884254865
+    },
+    {
+      "id": "HRT-0081",
+      "methaneM3Day": 0.025500000000000966,
+      "electricityKwhDay": 0.08300459999998111,
+      "annualElectricityKwh": 29.996678999988944,
+      "storedAnnualMinusStoredDailyTimes365": 0.3000000000029104,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": -0.00010050251255933063
+    },
+    {
+      "id": "HRT-0082",
+      "methaneM3Day": 0.0006999999999948159,
+      "electricityKwhDay": -0.010579560000024912,
+      "annualElectricityKwh": -4.761539400002221,
+      "storedAnnualMinusStoredDailyTimes365": 0.8999999999941792,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": -0.00035175879396831533
+    },
+    {
+      "id": "HRT-0083",
+      "methaneM3Day": 0.004099999999993997,
+      "electricityKwhDay": -0.00048828000001321925,
+      "annualElectricityKwh": 1.0717777999961982,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": -0.0006030150753773
+    },
+    {
+      "id": "HRT-0084",
+      "methaneM3Day": 0.034180000000006316,
+      "electricityKwhDay": 0.10363085600002364,
+      "annualElectricityKwh": 39.32526244001929,
+      "storedAnnualMinusStoredDailyTimes365": -1.5,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": -0.0008542713567791793
+    },
+    {
+      "id": "HRT-0085",
+      "methaneM3Day": 0.019400000000004525,
+      "electricityKwhDay": 0.08231448000003638,
+      "annualElectricityKwh": 28.49478520001867,
+      "storedAnnualMinusStoredDailyTimes365": 1.5500000000029104,
+      "hrtReductionPct": 0.022222222222211485,
+      "gainSequenceDeviation": -0.001105527638188164
+    },
+    {
+      "id": "HRT-0086",
+      "methaneM3Day": 0.03895999999999589,
+      "electricityKwhDay": 0.13875923199998397,
+      "annualElectricityKwh": 49.24711967998883,
+      "storedAnnualMinusStoredDailyTimes365": 1.4000000000087311,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": -0.0013567839195971487
+    },
+    {
+      "id": "HRT-0087",
+      "methaneM3Day": 0.021309999999985507,
+      "electricityKwhDay": 0.09080185199994162,
+      "annualElectricityKwh": 33.942675979982596,
+      "storedAnnualMinusStoredDailyTimes365": -0.8000000000029104,
+      "hrtReductionPct": 0.027777777777785673,
+      "gainSequenceDeviation": -0.0016080402010061334
+    },
+    {
+      "id": "HRT-0088",
+      "methaneM3Day": 0.012999999999998124,
+      "electricityKwhDay": 0.06314360000001784,
+      "annualElectricityKwh": 22.197414000009303,
+      "storedAnnualMinusStoredDailyTimes365": 0.8500000000058208,
+      "hrtReductionPct": -0.022222222222211485,
+      "gainSequenceDeviation": -0.0018592964824151181
+    },
+    {
+      "id": "HRT-0089",
+      "methaneM3Day": -0.0020999999999986585,
+      "electricityKwhDay": -0.020773319999989326,
+      "annualElectricityKwh": -5.532261799991829,
+      "storedAnnualMinusStoredDailyTimes365": -2.0500000000029104,
+      "hrtReductionPct": 0.011111111111105743,
+      "gainSequenceDeviation": -0.0021105527638169974
+    },
+    {
+      "id": "HRT-0090",
+      "methaneM3Day": 0.0026499999999956003,
+      "electricityKwhDay": 0.00779937999996605,
+      "annualElectricityKwh": 3.4467736999940826,
+      "storedAnnualMinusStoredDailyTimes365": -0.6000000000058208,
+      "hrtReductionPct": 0.005555555555545766,
+      "gainSequenceDeviation": -0.002361809045225982
+    },
+    {
+      "id": "HRT-0091",
+      "methaneM3Day": -0.03320000000000789,
+      "electricityKwhDay": -0.1041054400000121,
+      "annualElectricityKwh": -38.3484856000141,
+      "storedAnnualMinusStoredDailyTimes365": 0.35000000000582077,
+      "hrtReductionPct": 0.04999999999998295,
+      "gainSequenceDeviation": -0.0026130653266278614
+    },
+    {
+      "id": "HRT-0092",
+      "methaneM3Day": 0.022199999999998,
+      "electricityKwhDay": 0.05900823999999716,
+      "annualElectricityKwh": 22.83800760000304,
+      "storedAnnualMinusStoredDailyTimes365": -1.3000000000029104,
+      "hrtReductionPct": 0.027777777777771462,
+      "gainSequenceDeviation": -0.002864321608036846
+    },
+    {
+      "id": "HRT-0093",
+      "methaneM3Day": -0.023380000000003065,
+      "electricityKwhDay": -0.09429149600003939,
+      "annualElectricityKwh": -34.06639604001248,
+      "storedAnnualMinusStoredDailyTimes365": -0.35000000000582077,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": -0.0031155778894529362
+    },
+    {
+      "id": "HRT-0094",
+      "methaneM3Day": 0.01970000000000738,
+      "electricityKwhDay": 0.05507923999999775,
+      "annualElectricityKwh": 19.35392259999935,
+      "storedAnnualMinusStoredDailyTimes365": 0.75,
+      "hrtReductionPct": 0.022222222222211485,
+      "gainSequenceDeviation": -0.0033668341708548155
+    },
+    {
+      "id": "HRT-0095",
+      "methaneM3Day": 0.01695999999999742,
+      "electricityKwhDay": 0.05252483199998892,
+      "annualElectricityKwh": 17.671563679992687,
+      "storedAnnualMinusStoredDailyTimes365": 1.5,
+      "hrtReductionPct": -0.022222222222211485,
+      "gainSequenceDeviation": -0.0036180904522638
+    },
+    {
+      "id": "HRT-0096",
+      "methaneM3Day": -0.0014500000000055024,
+      "electricityKwhDay": -0.021324340000006714,
+      "annualElectricityKwh": -7.4833841000072425,
+      "storedAnnualMinusStoredDailyTimes365": -0.29999999998835847,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": -0.0038693467336656795
+    },
+    {
+      "id": "HRT-0097",
+      "methaneM3Day": 0.004399999999996851,
+      "electricityKwhDay": 0.008700479999987465,
+      "annualElectricityKwh": 3.37567520000448,
+      "storedAnnualMinusStoredDailyTimes365": -0.19999999999708962,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": -0.004120603015074664
+    },
+    {
+      "id": "HRT-0098",
+      "methaneM3Day": -0.029200000000003,
+      "electricityKwhDay": -0.10686463999999773,
+      "annualElectricityKwh": -39.305593600001885,
+      "storedAnnualMinusStoredDailyTimes365": 0.3000000000029104,
+      "hrtReductionPct": -0.01666666666665151,
+      "gainSequenceDeviation": -0.004371859296483649
+    },
+    {
+      "id": "HRT-0099",
+      "methaneM3Day": 0.007680000000007681,
+      "electricityKwhDay": 0.020145056000018258,
+      "annualElectricityKwh": 9.252945440006442,
+      "storedAnnualMinusStoredDailyTimes365": -1.9000000000087311,
+      "hrtReductionPct": 0.027777777777771462,
+      "gainSequenceDeviation": -0.004623115577885528
+    },
+    {
+      "id": "HRT-0100",
+      "methaneM3Day": -0.023299999999998988,
+      "electricityKwhDay": -0.08277635999999688,
+      "annualElectricityKwh": -32.013371399996686,
+      "storedAnnualMinusStoredDailyTimes365": 1.7999999999883585,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": -0.004874371859294513
+    },
+    {
+      "id": "HRT-0101",
+      "methaneM3Day": -0.03930000000000433,
+      "electricityKwhDay": -0.1421595600000103,
+      "annualElectricityKwh": -52.038239400004386,
+      "storedAnnualMinusStoredDailyTimes365": 0.14999999999417923,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.004874371859294513
+    },
+    {
+      "id": "HRT-0102",
+      "methaneM3Day": 0.02660999999999092,
+      "electricityKwhDay": 0.10678861199997414,
+      "annualElectricityKwh": 39.82784338000056,
+      "storedAnnualMinusStoredDailyTimes365": -0.8500000000058208,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.004623115577885528
+    },
+    {
+      "id": "HRT-0103",
+      "methaneM3Day": 0.04399999999999693,
+      "electricityKwhDay": 0.13743679999998903,
+      "annualElectricityKwh": 51.714431999993394,
+      "storedAnnualMinusStoredDailyTimes365": -1.5500000000029104,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": 0.004371859296483649
+    },
+    {
+      "id": "HRT-0104",
+      "methaneM3Day": 0.01996000000000464,
+      "electricityKwhDay": 0.05469243200002438,
+      "annualElectricityKwh": 21.862737680014106,
+      "storedAnnualMinusStoredDailyTimes365": -1.8999999999941792,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.004120603015074664
+    },
+    {
+      "id": "HRT-0105",
+      "methaneM3Day": 0.04837999999999454,
+      "electricityKwhDay": 0.1623574959999985,
+      "annualElectricityKwh": 59.510486040002434,
+      "storedAnnualMinusStoredDailyTimes365": -0.25,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": 0.0038693467336656795
+    },
+    {
+      "id": "HRT-0106",
+      "methaneM3Day": -0.0169000000000068,
+      "electricityKwhDay": -0.0672574800000234,
+      "annualElectricityKwh": -23.398980200014194,
+      "storedAnnualMinusStoredDailyTimes365": -1.1499999999941792,
+      "hrtReductionPct": -0.04444444444443718,
+      "gainSequenceDeviation": 0.0036180904522638
+    },
+    {
+      "id": "HRT-0107",
+      "methaneM3Day": 0.020970000000005484,
+      "electricityKwhDay": 0.08493352400003573,
+      "annualElectricityKwh": 31.100736260021222,
+      "storedAnnualMinusStoredDailyTimes365": -0.10000000000582077,
+      "hrtReductionPct": 0.011111111111105743,
+      "gainSequenceDeviation": 0.0033668341708548155
+    },
+    {
+      "id": "HRT-0108",
+      "methaneM3Day": -0.0339699999999894,
+      "electricityKwhDay": -0.11075312399998438,
+      "annualElectricityKwh": -40.724890259996755,
+      "storedAnnualMinusStoredDailyTimes365": 0.29999999998835847,
+      "hrtReductionPct": -0.011111111111105743,
+      "gainSequenceDeviation": 0.0031155778894529362
+    },
+    {
+      "id": "HRT-0109",
+      "methaneM3Day": -0.030799999999999272,
+      "electricityKwhDay": -0.12687936000000377,
+      "annualElectricityKwh": -45.01096640000469,
+      "storedAnnualMinusStoredDailyTimes365": -1.3000000000029104,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": 0.002864321608036846
+    },
+    {
+      "id": "HRT-0110",
+      "methaneM3Day": 0.023270000000010782,
+      "electricityKwhDay": 0.09727668400003608,
+      "annualElectricityKwh": 34.405989660008345,
+      "storedAnnualMinusStoredDailyTimes365": 1.1000000000058208,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": 0.0026130653266278614
+    },
+    {
+      "id": "HRT-0111",
+      "methaneM3Day": -0.03647000000000844,
+      "electricityKwhDay": -0.13164212399999542,
+      "annualElectricityKwh": -49.84937526000431,
+      "storedAnnualMinusStoredDailyTimes365": 1.8000000000029104,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.002361809045225982
+    },
+    {
+      "id": "HRT-0112",
+      "methaneM3Day": -0.03200000000000358,
+      "electricityKwhDay": -0.09762639999999578,
+      "annualElectricityKwh": -36.33363599999575,
+      "storedAnnualMinusStoredDailyTimes365": 0.6999999999970896,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": 0.0021105527638169974
+    },
+    {
+      "id": "HRT-0113",
+      "methaneM3Day": 0.03331999999999624,
+      "electricityKwhDay": 0.12157214399996974,
+      "annualElectricityKwh": 45.523832559993025,
+      "storedAnnualMinusStoredDailyTimes365": -1.1500000000087311,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": 0.0018592964824151181
+    },
+    {
+      "id": "HRT-0114",
+      "methaneM3Day": -0.019429999999999836,
+      "electricityKwhDay": -0.05591415600000005,
+      "annualElectricityKwh": -21.558666940007242,
+      "storedAnnualMinusStoredDailyTimes365": 1.1499999999941792,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.0016080402010061334
+    },
+    {
+      "id": "HRT-0115",
+      "methaneM3Day": 0.0004000000000132786,
+      "electricityKwhDay": -0.014684319999958007,
+      "annualElectricityKwh": -4.059776799986139,
+      "storedAnnualMinusStoredDailyTimes365": -1.2999999999883585,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": 0.0013567839195971487
+    },
+    {
+      "id": "HRT-0116",
+      "methaneM3Day": -0.02840999999999383,
+      "electricityKwhDay": -0.08668117199997027,
+      "annualElectricityKwh": -31.388627779990202,
+      "storedAnnualMinusStoredDailyTimes365": -0.25,
+      "hrtReductionPct": 0.016666666666672825,
+      "gainSequenceDeviation": 0.001105527638188164
+    },
+    {
+      "id": "HRT-0117",
+      "methaneM3Day": -0.030959999999993215,
+      "electricityKwhDay": -0.1299216319999914,
+      "annualElectricityKwh": -47.02139567999984,
+      "storedAnnualMinusStoredDailyTimes365": -0.40000000000873115,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": 0.0008542713567791793
+    },
+    {
+      "id": "HRT-0118",
+      "methaneM3Day": 0.02200000000000557,
+      "electricityKwhDay": 0.09701039999998784,
+      "annualElectricityKwh": 34.95879600000626,
+      "storedAnnualMinusStoredDailyTimes365": 0.4499999999970896,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": 0.0006030150753773
+    },
+    {
+      "id": "HRT-0119",
+      "methaneM3Day": -0.04773999999999745,
+      "electricityKwhDay": -0.1691644079999719,
+      "annualElectricityKwh": -62.745008919984684,
+      "storedAnnualMinusStoredDailyTimes365": 1.0,
+      "hrtReductionPct": -0.027777777777771462,
+      "gainSequenceDeviation": 0.00035175879396831533
+    },
+    {
+      "id": "HRT-0120",
+      "methaneM3Day": 0.0009299999999967667,
+      "electricityKwhDay": -0.009826044000021739,
+      "annualElectricityKwh": -4.286506060001557,
+      "storedAnnualMinusStoredDailyTimes365": 0.6999999999970896,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": 0.00010050251255933063
+    },
+    {
+      "id": "HRT-0121",
+      "methaneM3Day": -0.028400000000004866,
+      "electricityKwhDay": -0.08949728000001755,
+      "annualElectricityKwh": -33.11650720000034,
+      "storedAnnualMinusStoredDailyTimes365": 0.4499999999970896,
+      "hrtReductionPct": 0.01666666666665151,
+      "gainSequenceDeviation": -0.00015075376884254865
+    },
+    {
+      "id": "HRT-0122",
+      "methaneM3Day": 0.020379999999995846,
+      "electricityKwhDay": 0.09207189599996468,
+      "annualElectricityKwh": 31.906242039985955,
+      "storedAnnualMinusStoredDailyTimes365": 1.6999999999970896,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -0.00040201005025153336
+    },
+    {
+      "id": "HRT-0123",
+      "methaneM3Day": -0.034469999999991785,
+      "electricityKwhDay": -0.10811172399996849,
+      "annualElectricityKwh": -39.06077925999125,
+      "storedAnnualMinusStoredDailyTimes365": -0.39999999999417923,
+      "hrtReductionPct": 0.04999999999999716,
+      "gainSequenceDeviation": -0.0006532663316534126
+    },
+    {
+      "id": "HRT-0124",
+      "methaneM3Day": 0.03880000000000905,
+      "electricityKwhDay": 0.15822496000001252,
+      "annualElectricityKwh": 56.25211040000431,
+      "storedAnnualMinusStoredDailyTimes365": 1.5,
+      "hrtReductionPct": 0.04444444444443718,
+      "gainSequenceDeviation": -0.0009045226130623973
+    },
+    {
+      "id": "HRT-0125",
+      "methaneM3Day": -0.018770000000003506,
+      "electricityKwhDay": -0.053661284000014575,
+      "annualElectricityKwh": -18.036368660003063,
+      "storedAnnualMinusStoredDailyTimes365": -1.5500000000029104,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.0011557788944784875
+    },
+    {
+      "id": "HRT-0126",
+      "methaneM3Day": 0.04726999999998327,
+      "electricityKwhDay": 0.1498014839999371,
+      "annualElectricityKwh": 56.07754165997903,
+      "storedAnnualMinusStoredDailyTimes365": -1.4000000000087311,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.0014070351758803668
+    },
+    {
+      "id": "HRT-0127",
+      "methaneM3Day": -0.003200000000006753,
+      "electricityKwhDay": -0.004237440000053994,
+      "annualElectricityKwh": 0.0033343999821227044,
+      "storedAnnualMinusStoredDailyTimes365": -1.5500000000029104,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": -0.0016582914572893515
+    },
+    {
+      "id": "HRT-0128",
+      "methaneM3Day": -0.032429999999990855,
+      "electricityKwhDay": -0.12882175599997936,
+      "annualElectricityKwh": -45.8699409399851,
+      "storedAnnualMinusStoredDailyTimes365": -1.1500000000087311,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": -0.0019095477386912307
+    },
+    {
+      "id": "HRT-0129",
+      "methaneM3Day": -0.016280000000008954,
+      "electricityKwhDay": -0.049532176000013806,
+      "annualElectricityKwh": -19.579244240012486,
+      "storedAnnualMinusStoredDailyTimes365": 1.500000000014552,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": -0.0021608040201002154
+    },
+    {
+      "id": "HRT-0130",
+      "methaneM3Day": -0.01849999999998886,
+      "electricityKwhDay": -0.07114019999997367,
+      "annualElectricityKwh": -25.166172999990522,
+      "storedAnnualMinusStoredDailyTimes365": -0.7999999999883585,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.0024120603015092
+    },
+    {
+      "id": "HRT-0131",
+      "methaneM3Day": 0.01888000000001,
+      "electricityKwhDay": 0.05711209600002576,
+      "annualElectricityKwh": 20.095915040015825,
+      "storedAnnualMinusStoredDailyTimes365": 0.75,
+      "hrtReductionPct": -0.027777777777771462,
+      "gainSequenceDeviation": -0.0026633165829110794
+    },
+    {
+      "id": "HRT-0132",
+      "methaneM3Day": 0.0323099999999954,
+      "electricityKwhDay": 0.1218630519999806,
+      "annualElectricityKwh": 43.63001398000051,
+      "storedAnnualMinusStoredDailyTimes365": 0.8499999999912689,
+      "hrtReductionPct": 0.01666666666665151,
+      "gainSequenceDeviation": -0.0029145728643271696
+    },
+    {
+      "id": "HRT-0133",
+      "methaneM3Day": 0.02300000000000324,
+      "electricityKwhDay": 0.07090759999999818,
+      "annualElectricityKwh": 25.081273999996483,
+      "storedAnnualMinusStoredDailyTimes365": 0.8000000000029104,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": -0.003165829145729049
+    },
+    {
+      "id": "HRT-0134",
+      "methaneM3Day": 0.012060000000005289,
+      "electricityKwhDay": 0.04256575200000157,
+      "annualElectricityKwh": 16.18649948001257,
+      "storedAnnualMinusStoredDailyTimes365": -0.6500000000087311,
+      "hrtReductionPct": 0.005555555555552871,
+      "gainSequenceDeviation": -0.0034170854271380335
+    },
+    {
+      "id": "HRT-0135",
+      "methaneM3Day": 0.04308000000000334,
+      "electricityKwhDay": 0.16194673600000442,
+      "annualElectricityKwh": 58.76055864000227,
+      "storedAnnualMinusStoredDailyTimes365": 0.34999999999126885,
+      "hrtReductionPct": 0.04999999999999716,
+      "gainSequenceDeviation": -0.0036683417085470182
+    },
+    {
+      "id": "HRT-0136",
+      "methaneM3Day": 0.036000000000001364,
+      "electricityKwhDay": 0.13747119999999313,
+      "annualElectricityKwh": 52.37698799998907,
+      "storedAnnualMinusStoredDailyTimes365": -2.1999999999970896,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.0039195979899488975
+    },
+    {
+      "id": "HRT-0137",
+      "methaneM3Day": 0.013109999999997513,
+      "electricityKwhDay": 0.03649041199997782,
+      "annualElectricityKwh": 14.119000380000216,
+      "storedAnnualMinusStoredDailyTimes365": -0.8000000000029104,
+      "hrtReductionPct": 0.038888888888891415,
+      "gainSequenceDeviation": -0.004170854271357882
+    },
+    {
+      "id": "HRT-0138",
+      "methaneM3Day": 0.03260000000000218,
+      "electricityKwhDay": 0.10479992000000493,
+      "annualElectricityKwh": 36.70197080000071,
+      "storedAnnualMinusStoredDailyTimes365": 1.5500000000029104,
+      "hrtReductionPct": -0.011111111111119953,
+      "gainSequenceDeviation": -0.0044221105527597615
+    },
+    {
+      "id": "HRT-0139",
+      "methaneM3Day": -0.03359999999999985,
+      "electricityKwhDay": -0.1114131200000088,
+      "annualElectricityKwh": -39.36578880000161,
+      "storedAnnualMinusStoredDailyTimes365": -1.3000000000029104,
+      "hrtReductionPct": 0.011111111111105743,
+      "gainSequenceDeviation": -0.004673366834168746
+    },
+    {
+      "id": "HRT-0140",
+      "methaneM3Day": 0.03706000000000387,
+      "electricityKwhDay": 0.11426375200002781,
+      "annualElectricityKwh": 43.45626948001154,
+      "storedAnnualMinusStoredDailyTimes365": -1.75,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": -0.004924623115577731
+    },
+    {
+      "id": "HRT-0141",
+      "methaneM3Day": -0.007199999999997431,
+      "electricityKwhDay": -0.012250239999985979,
+      "annualElectricityKwh": -3.22133759999997,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": 0.022222222222211485,
+      "gainSequenceDeviation": 0.004824120603011295
+    },
+    {
+      "id": "HRT-0142",
+      "methaneM3Day": -0.01660000000001105,
+      "electricityKwhDay": -0.0772127200000341,
+      "annualElectricityKwh": -27.632642800017493,
+      "storedAnnualMinusStoredDailyTimes365": -0.5500000000029104,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": 0.004572864321609416
+    },
+    {
+      "id": "HRT-0143",
+      "methaneM3Day": -0.026760000000003004,
+      "electricityKwhDay": -0.09646699200001763,
+      "annualElectricityKwh": -35.01045208000869,
+      "storedAnnualMinusStoredDailyTimes365": -0.19999999999708962,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.004321608040200431
+    },
+    {
+      "id": "HRT-0144",
+      "methaneM3Day": -0.03696000000000055,
+      "electricityKwhDay": -0.11495683199999007,
+      "annualElectricityKwh": -42.309243679992505,
+      "storedAnnualMinusStoredDailyTimes365": 0.35000000000582077,
+      "hrtReductionPct": 0.011111111111119953,
+      "gainSequenceDeviation": 0.004070351758791446
+    },
+    {
+      "id": "HRT-0145",
+      "methaneM3Day": 0.0,
+      "electricityKwhDay": -0.007151999999990721,
+      "annualElectricityKwh": -4.210479999994277,
+      "storedAnnualMinusStoredDailyTimes365": 1.6000000000058208,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": 0.003819095477389567
+    },
+    {
+      "id": "HRT-0146",
+      "methaneM3Day": 0.0183799999999934,
+      "electricityKwhDay": 0.047373496000005844,
+      "annualElectricityKwh": 18.5413260399946,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": 0.003567839195980582
+    },
+    {
+      "id": "HRT-0147",
+      "methaneM3Day": -0.045000000000015916,
+      "electricityKwhDay": -0.1574260000000436,
+      "annualElectricityKwh": -57.310490000018035,
+      "storedAnnualMinusStoredDailyTimes365": -0.14999999999417923,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": 0.003316582914578703
+    },
+    {
+      "id": "HRT-0148",
+      "methaneM3Day": 0.012499999999995737,
+      "electricityKwhDay": 0.047828999999978805,
+      "annualElectricityKwh": 17.50758499999938,
+      "storedAnnualMinusStoredDailyTimes365": -0.05000000000291038,
+      "hrtReductionPct": 0.04999999999999716,
+      "gainSequenceDeviation": 0.0030653266331626128
+    },
+    {
+      "id": "HRT-0149",
+      "methaneM3Day": 0.009079999999997312,
+      "electricityKwhDay": 0.034773935999993455,
+      "annualElectricityKwh": 11.692486639993149,
+      "storedAnnualMinusStoredDailyTimes365": 1.0,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": 0.002814070351753628
+    },
+    {
+      "id": "HRT-0150",
+      "methaneM3Day": -0.010119999999993468,
+      "electricityKwhDay": -0.04885470399997871,
+      "annualElectricityKwh": -19.83196696000232,
+      "storedAnnualMinusStoredDailyTimes365": 2.0,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": 0.002562814070351749
+    },
+    {
+      "id": "HRT-0151",
+      "methaneM3Day": 0.010400000000004184,
+      "electricityKwhDay": 0.02477568000000474,
+      "annualElectricityKwh": 7.4431232000060845,
+      "storedAnnualMinusStoredDailyTimes365": 1.6000000000058208,
+      "hrtReductionPct": -0.055555555555557135,
+      "gainSequenceDeviation": 0.002311557788942764
+    },
+    {
+      "id": "HRT-0152",
+      "methaneM3Day": 0.011349999999993088,
+      "electricityKwhDay": 0.03676941999998462,
+      "annualElectricityKwh": 12.120838299990282,
+      "storedAnnualMinusStoredDailyTimes365": 1.3000000000029104,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": 0.002060301507540885
+    },
+    {
+      "id": "HRT-0153",
+      "methaneM3Day": -0.014000000000002899,
+      "electricityKwhDay": -0.0372368000000165,
+      "annualElectricityKwh": -13.841432000001078,
+      "storedAnnualMinusStoredDailyTimes365": 0.25,
+      "hrtReductionPct": -0.027777777777785673,
+      "gainSequenceDeviation": 0.0018090452261319
+    },
+    {
+      "id": "HRT-0154",
+      "methaneM3Day": 0.028500000000008185,
+      "electricityKwhDay": 0.0922282000000223,
+      "annualElectricityKwh": 33.5632930000138,
+      "storedAnnualMinusStoredDailyTimes365": 0.10000000000582077,
+      "hrtReductionPct": 1.4210854715202004e-14,
+      "gainSequenceDeviation": 0.0015577889447229154
+    },
+    {
+      "id": "HRT-0155",
+      "methaneM3Day": -0.013779999999997017,
+      "electricityKwhDay": -0.03567517599998382,
+      "annualElectricityKwh": -12.371439239999745,
+      "storedAnnualMinusStoredDailyTimes365": -0.6499999999941792,
+      "hrtReductionPct": -0.05000000000001137,
+      "gainSequenceDeviation": 0.0013065326633210361
+    },
+    {
+      "id": "HRT-0156",
+      "methaneM3Day": -0.004640000000009081,
+      "electricityKwhDay": -0.03017388800003573,
+      "annualElectricityKwh": -9.763469120007358,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.0010552763819120514
+    },
+    {
+      "id": "HRT-0157",
+      "methaneM3Day": 0.027999999999998693,
+      "electricityKwhDay": 0.09449359999999274,
+      "annualElectricityKwh": 33.44016399999964,
+      "storedAnnualMinusStoredDailyTimes365": 1.0500000000029104,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.0008040201005030667
+    },
+    {
+      "id": "HRT-0158",
+      "methaneM3Day": 0.01158000000000925,
+      "electricityKwhDay": 0.02827893600002085,
+      "annualElectricityKwh": 11.02181164000649,
+      "storedAnnualMinusStoredDailyTimes365": -0.6999999999970896,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.000552763819094082
+    },
+    {
+      "id": "HRT-0159",
+      "methaneM3Day": 0.029080000000007544,
+      "electricityKwhDay": 0.11011793599999464,
+      "annualElectricityKwh": 39.143046640005196,
+      "storedAnnualMinusStoredDailyTimes365": 1.0500000000029104,
+      "hrtReductionPct": -0.04444444444443718,
+      "gainSequenceDeviation": 0.0003015075376850973
+    },
+    {
+      "id": "HRT-0160",
+      "methaneM3Day": -0.02680000000000149,
+      "electricityKwhDay": -0.08933056000000761,
+      "annualElectricityKwh": -31.155654400005005,
+      "storedAnnualMinusStoredDailyTimes365": -1.4499999999970896,
+      "hrtReductionPct": 0.005555555555559977,
+      "gainSequenceDeviation": 5.0251256283218027e-05
+    },
+    {
+      "id": "HRT-0161",
+      "methaneM3Day": -0.015179999999986649,
+      "electricityKwhDay": -0.04550005599995188,
+      "annualElectricityKwh": -17.85752043998218,
+      "storedAnnualMinusStoredDailyTimes365": 1.25,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": -0.00020100502512576668
+    },
+    {
+      "id": "HRT-0162",
+      "methaneM3Day": -0.0337600000000009,
+      "electricityKwhDay": -0.1308673920000274,
+      "annualElectricityKwh": -47.36659808001423,
+      "storedAnnualMinusStoredDailyTimes365": -0.39999999999417923,
+      "hrtReductionPct": -0.0611111111111029,
+      "gainSequenceDeviation": -0.00045226130652764596
+    },
+    {
+      "id": "HRT-0163",
+      "methaneM3Day": 0.0,
+      "electricityKwhDay": 0.0033320000000003347,
+      "annualElectricityKwh": 1.7661800000059884,
+      "storedAnnualMinusStoredDailyTimes365": -0.5500000000029104,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": -0.0007035175879366307
+    },
+    {
+      "id": "HRT-0164",
+      "methaneM3Day": -0.04306999999999306,
+      "electricityKwhDay": -0.14310684399998763,
+      "annualElectricityKwh": -50.83399805999943,
+      "storedAnnualMinusStoredDailyTimes365": -1.3999999999941792,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": -0.0009547738693527208
+    },
+    {
+      "id": "HRT-0165",
+      "methaneM3Day": -0.03155999999999892,
+      "electricityKwhDay": -0.12531915199997457,
+      "annualElectricityKwh": -47.64149047998944,
+      "storedAnnualMinusStoredDailyTimes365": 1.8999999999941792,
+      "hrtReductionPct": -0.022222222222211485,
+      "gainSequenceDeviation": -0.0012060301507474946
+    },
+    {
+      "id": "HRT-0166",
+      "methaneM3Day": 0.012999999999991019,
+      "electricityKwhDay": 0.06332759999997961,
+      "annualElectricityKwh": 23.51457399998617,
+      "storedAnnualMinusStoredDailyTimes365": -0.39999999999417923,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": -0.0014572864321635848
+    },
+    {
+      "id": "HRT-0167",
+      "methaneM3Day": -0.005989999999997053,
+      "electricityKwhDay": -0.025051308000001882,
+      "annualElectricityKwh": -10.593727419996867,
+      "storedAnnualMinusStoredDailyTimes365": 1.4499999999970896,
+      "hrtReductionPct": -0.03333333333334565,
+      "gainSequenceDeviation": -0.001708542713565464
+    },
+    {
+      "id": "HRT-0168",
+      "methaneM3Day": 0.044240000000002055,
+      "electricityKwhDay": 0.1598422080000148,
+      "annualElectricityKwh": 56.39240592000715,
+      "storedAnnualMinusStoredDailyTimes365": 1.9499999999970896,
+      "hrtReductionPct": 0.011111111111119953,
+      "gainSequenceDeviation": -0.0019597989949744488
+    },
+    {
+      "id": "HRT-0169",
+      "methaneM3Day": -0.04619999999999891,
+      "electricityKwhDay": -0.16220103999998514,
+      "annualElectricityKwh": -57.553379599994514,
+      "storedAnnualMinusStoredDailyTimes365": -1.6499999999941792,
+      "hrtReductionPct": 0.03333333333334565,
+      "gainSequenceDeviation": -0.0022110552763834335
+    },
+    {
+      "id": "HRT-0170",
+      "methaneM3Day": 0.033660000000004686,
+      "electricityKwhDay": 0.12808847200003015,
+      "annualElectricityKwh": 47.052292280015536,
+      "storedAnnualMinusStoredDailyTimes365": -0.3000000000029104,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": -0.0024623115577853127
+    },
+    {
+      "id": "HRT-0171",
+      "methaneM3Day": 0.0016200000000026193,
+      "electricityKwhDay": 0.013842504000024292,
+      "annualElectricityKwh": 5.652513959998032,
+      "storedAnnualMinusStoredDailyTimes365": -0.5999999999912689,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": -0.0027135678391942974
+    },
+    {
+      "id": "HRT-0172",
+      "methaneM3Day": 0.02949999999999875,
+      "electricityKwhDay": 0.11420940000002133,
+      "annualElectricityKwh": 39.83643100000336,
+      "storedAnnualMinusStoredDailyTimes365": 1.8500000000058208,
+      "hrtReductionPct": -0.027777777777771462,
+      "gainSequenceDeviation": -0.0029648241205961767
+    },
+    {
+      "id": "HRT-0173",
+      "methaneM3Day": 0.026189999999992608,
+      "electricityKwhDay": 0.08144114799998192,
+      "annualElectricityKwh": 30.9760190199886,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": 0.04444444444443718,
+      "gainSequenceDeviation": -0.003216080402012267
+    },
+    {
+      "id": "HRT-0174",
+      "methaneM3Day": 0.03784000000000276,
+      "electricityKwhDay": 0.1387673279999717,
+      "annualElectricityKwh": 50.7000747199927,
+      "storedAnnualMinusStoredDailyTimes365": -0.05000000000291038,
+      "hrtReductionPct": -0.03333333333333144,
+      "gainSequenceDeviation": -0.0034673366834212516
+    },
+    {
+      "id": "HRT-0175",
+      "methaneM3Day": -0.031999999999996476,
+      "electricityKwhDay": -0.1306543999999974,
+      "annualElectricityKwh": -47.238855999996304,
+      "storedAnnualMinusStoredDailyTimes365": -0.4499999999970896,
+      "hrtReductionPct": 0.027777777777771462,
+      "gainSequenceDeviation": -0.003718592964823131
+    },
+    {
+      "id": "HRT-0176",
+      "methaneM3Day": -0.012889999999998736,
+      "electricityKwhDay": -0.04608478799997329,
+      "annualElectricityKwh": -17.52094761999615,
+      "storedAnnualMinusStoredDailyTimes365": 0.6999999999970896,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": -0.0039698492462321155
+    },
+    {
+      "id": "HRT-0177",
+      "methaneM3Day": -0.019400000000004525,
+      "electricityKwhDay": -0.06049448000001689,
+      "annualElectricityKwh": -21.130485200003022,
+      "storedAnnualMinusStoredDailyTimes365": -0.9499999999970896,
+      "hrtReductionPct": -0.022222222222225696,
+      "gainSequenceDeviation": -0.004221105527633995
+    },
+    {
+      "id": "HRT-0178",
+      "methaneM3Day": 0.041499999999999204,
+      "electricityKwhDay": 0.13963179999998943,
+      "annualElectricityKwh": 51.015606999993906,
+      "storedAnnualMinusStoredDailyTimes365": -0.05000000000291038,
+      "hrtReductionPct": 0.027777777777771462,
+      "gainSequenceDeviation": -0.0044723618090429795
+    },
+    {
+      "id": "HRT-0179",
+      "methaneM3Day": -0.033140000000003056,
+      "electricityKwhDay": -0.13775408800000832,
+      "annualElectricityKwh": -49.030242120003095,
+      "storedAnnualMinusStoredDailyTimes365": -1.25,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": -0.004723618090451964
+    },
+    {
+      "id": "HRT-0180",
+      "methaneM3Day": -0.04847999999999786,
+      "electricityKwhDay": -0.17529241599999068,
+      "annualElectricityKwh": -65.38173183999606,
+      "storedAnnualMinusStoredDailyTimes365": 1.3999999999941792,
+      "hrtReductionPct": -0.005555555555545766,
+      "gainSequenceDeviation": -0.004974874371860949
+    },
+    {
+      "id": "HRT-0181",
+      "methaneM3Day": -0.049450000000000216,
+      "electricityKwhDay": -0.18079793999999083,
+      "annualElectricityKwh": -66.69124810000358,
+      "storedAnnualMinusStoredDailyTimes365": 0.7000000000116415,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.004773869346735182
+    },
+    {
+      "id": "HRT-0182",
+      "methaneM3Day": 0.019639999999988333,
+      "electricityKwhDay": 0.06375588799997445,
+      "annualElectricityKwh": 23.520899119990645,
+      "storedAnnualMinusStoredDailyTimes365": -0.25,
+      "hrtReductionPct": -0.04444444444443718,
+      "gainSequenceDeviation": 0.0045226130653261976
+    },
+    {
+      "id": "HRT-0183",
+      "methaneM3Day": -0.032120000000006144,
+      "electricityKwhDay": -0.09868110400000774,
+      "annualElectricityKwh": -37.26860296000086,
+      "storedAnnualMinusStoredDailyTimes365": 1.25,
+      "hrtReductionPct": -0.04999999999999716,
+      "gainSequenceDeviation": 0.004271356783917213
+    },
+    {
+      "id": "HRT-0184",
+      "methaneM3Day": 0.005749999999991928,
+      "electricityKwhDay": 0.01724989999993909,
+      "annualElectricityKwh": 4.496213499980513,
+      "storedAnnualMinusStoredDailyTimes365": 1.7999999999883585,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.004020100502515334
+    },
+    {
+      "id": "HRT-0185",
+      "methaneM3Day": 0.008470000000002642,
+      "electricityKwhDay": 0.037136524000004556,
+      "annualElectricityKwh": 14.554831260000356,
+      "storedAnnualMinusStoredDailyTimes365": -1.0,
+      "hrtReductionPct": -0.038888888888891415,
+      "gainSequenceDeviation": 0.003768844221106349
+    },
+    {
+      "id": "HRT-0186",
+      "methaneM3Day": 0.048040000000000305,
+      "electricityKwhDay": 0.17471716800002923,
+      "annualElectricityKwh": 62.92176632001065,
+      "storedAnnualMinusStoredDailyTimes365": 0.8500000000058208,
+      "hrtReductionPct": 0.01666666666665151,
+      "gainSequenceDeviation": 0.003517587939697364
+    },
+    {
+      "id": "HRT-0187",
+      "methaneM3Day": 0.03777000000000896,
+      "electricityKwhDay": 0.1545960839999907,
+      "annualElectricityKwh": 55.87757065999904,
+      "storedAnnualMinusStoredDailyTimes365": 0.5500000000029104,
+      "hrtReductionPct": -0.005555555555545766,
+      "gainSequenceDeviation": 0.003266331658295485
+    },
+    {
+      "id": "HRT-0188",
+      "methaneM3Day": 0.024820000000005393,
+      "electricityKwhDay": 0.09729594400002384,
+      "annualElectricityKwh": 34.363019559998065,
+      "storedAnnualMinusStoredDailyTimes365": 1.1500000000087311,
+      "hrtReductionPct": 0.02222222222221859,
+      "gainSequenceDeviation": 0.0030150753768865
+    },
+    {
+      "id": "HRT-0189",
+      "methaneM3Day": -0.023380000000003065,
+      "electricityKwhDay": -0.09093149600002448,
+      "annualElectricityKwh": -31.88999604000128,
+      "storedAnnualMinusStoredDailyTimes365": -1.3000000000029104,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.0027638190954775155
+    },
+    {
+      "id": "HRT-0190",
+      "methaneM3Day": -0.05036000000001195,
+      "electricityKwhDay": -0.1832721120000258,
+      "annualElectricityKwh": -66.09432088000176,
+      "storedAnnualMinusStoredDailyTimes365": -0.8000000000029104,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": 0.0025125628140685308
+    },
+    {
+      "id": "HRT-0191",
+      "methaneM3Day": 0.03697000000000372,
+      "electricityKwhDay": 0.14504072400001178,
+      "annualElectricityKwh": 51.93986425999901,
+      "storedAnnualMinusStoredDailyTimes365": 1.0,
+      "hrtReductionPct": 0.0,
+      "gainSequenceDeviation": 0.002261306532659546
+    },
+    {
+      "id": "HRT-0192",
+      "methaneM3Day": 0.004720000000006053,
+      "electricityKwhDay": -0.002626976000016157,
+      "annualElectricityKwh": 0.8411537599895382,
+      "storedAnnualMinusStoredDailyTimes365": -1.8000000000029104,
+      "hrtReductionPct": 0.03333333333333144,
+      "gainSequenceDeviation": 0.002010050251257667
+    },
+    {
+      "id": "HRT-0193",
+      "methaneM3Day": 0.014709999999993784,
+      "electricityKwhDay": 0.040497131999984504,
+      "annualElectricityKwh": 14.381453179987147,
+      "storedAnnualMinusStoredDailyTimes365": 0.39999999999417923,
+      "hrtReductionPct": 0.005555555555545766,
+      "gainSequenceDeviation": 0.001758793969848682
+    },
+    {
+      "id": "HRT-0194",
+      "methaneM3Day": -0.041700000000005844,
+      "electricityKwhDay": -0.16252964000000247,
+      "annualElectricityKwh": -58.623318600002676,
+      "storedAnnualMinusStoredDailyTimes365": -0.6999999999970896,
+      "hrtReductionPct": 0.022222222222211485,
+      "gainSequenceDeviation": 0.0015075376884468028
+    },
+    {
+      "id": "HRT-0195",
+      "methaneM3Day": -0.04194000000001097,
+      "electricityKwhDay": -0.15945504800004073,
+      "annualElectricityKwh": -56.90109252001275,
+      "storedAnnualMinusStoredDailyTimes365": -1.3000000000029104,
+      "hrtReductionPct": -0.005555555555559977,
+      "gainSequenceDeviation": 0.001256281407037818
+    },
+    {
+      "id": "HRT-0196",
+      "methaneM3Day": 0.010330000000003281,
+      "electricityKwhDay": 0.04148843600000873,
+      "annualElectricityKwh": 13.29327913999441,
+      "storedAnnualMinusStoredDailyTimes365": 1.8500000000058208,
+      "hrtReductionPct": 0.038888888888905626,
+      "gainSequenceDeviation": 0.001005025125621728
+    },
+    {
+      "id": "HRT-0197",
+      "methaneM3Day": -0.010279999999994516,
+      "electricityKwhDay": -0.05647697599997059,
+      "annualElectricityKwh": -19.264096239989158,
+      "storedAnnualMinusStoredDailyTimes365": -1.3500000000058208,
+      "hrtReductionPct": 0.04444444444445139,
+      "gainSequenceDeviation": 0.0007537688442269541
+    },
+    {
+      "id": "HRT-0198",
+      "methaneM3Day": -0.023640000000000327,
+      "electricityKwhDay": -0.06769668799998385,
+      "annualElectricityKwh": -24.50929111998994,
+      "storedAnnualMinusStoredDailyTimes365": -0.19999999999708962,
+      "hrtReductionPct": -0.01666666666666572,
+      "gainSequenceDeviation": 0.000502512562810864
+    },
+    {
+      "id": "HRT-0199",
+      "methaneM3Day": 0.04265999999999792,
+      "electricityKwhDay": 0.14182727200000045,
+      "annualElectricityKwh": 52.01695427999948,
+      "storedAnnualMinusStoredDailyTimes365": -0.25,
+      "hrtReductionPct": 0.027777777777785673,
+      "gainSequenceDeviation": 0.0002512562814089847
+    },
+    {
+      "id": "HRT-0200",
+      "methaneM3Day": 0.007949999999993906,
+      "electricityKwhDay": 0.02395013999998241,
+      "annualElectricityKwh": 8.041801099985605,
+      "storedAnnualMinusStoredDailyTimes365": 0.6999999999970896,
+      "hrtReductionPct": 0.022222222222225696,
+      "gainSequenceDeviation": 0.0
+    }
+  ]
+}

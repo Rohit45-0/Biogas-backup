@@ -1,0 +1,6002 @@
+[
+  {
+    "id": "HRT-0001",
+    "sourceScenario": 1,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 10.2,
+    "srtDays": 54.3,
+    "temperatureC": 36,
+    "ph": 6.95,
+    "upflowMHour": 1.16,
+    "olr": 9.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.61,
+      "methanePct": 67.8,
+      "methaneM3Day": 62.789579999999994,
+      "electricityKwhDay": 225.36436053599996,
+      "annualElectricityKwh": 82257.99159564
+    },
+    "h2sInPpm": 240.9,
+    "h2sOutPpm": 14.6,
+    "stabilityPct": 83.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 2,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0002",
+    "sourceScenario": 2,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 6.7,
+    "srtDays": 57.1,
+    "temperatureC": 38,
+    "ph": 7.31,
+    "upflowMHour": 5.48,
+    "olr": 9.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.64,
+      "methanePct": 63.5,
+      "methaneM3Day": 58.82640000000001,
+      "electricityKwhDay": 211.13971488,
+      "annualElectricityKwh": 77065.9959312
+    },
+    "h2sInPpm": 198.2,
+    "h2sOutPpm": 14.3,
+    "stabilityPct": 82.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 3,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0003",
+    "sourceScenario": 3,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11,
+    "srtDays": 74.2,
+    "temperatureC": 35,
+    "ph": 7.08,
+    "upflowMHour": 0,
+    "olr": 10.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.68,
+      "methanePct": 79.7,
+      "methaneM3Day": 73.86596,
+      "electricityKwhDay": 265.119703632,
+      "annualElectricityKwh": 96768.69182568
+    },
+    "h2sInPpm": 251.4,
+    "h2sOutPpm": 15.4,
+    "stabilityPct": 84.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 4,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0004",
+    "sourceScenario": 4,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 70.4,
+    "srtDays": 12.6,
+    "temperatureC": 55,
+    "ph": 7.24,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.71,
+      "methanePct": 66,
+      "methaneM3Day": 61.188599999999994,
+      "electricityKwhDay": 219.61812311999998,
+      "annualElectricityKwh": 80160.61493879999
+    },
+    "h2sInPpm": 257.4,
+    "h2sOutPpm": 21.5,
+    "stabilityPct": 87.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 5,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0005",
+    "sourceScenario": 5,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 35.3,
+    "srtDays": 17.8,
+    "temperatureC": 37,
+    "ph": 7.14,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.74,
+      "methanePct": 61.8,
+      "methaneM3Day": 57.31332,
+      "electricityKwhDay": 205.70896814399998,
+      "annualElectricityKwh": 75083.77337256
+    },
+    "h2sInPpm": 233.6,
+    "h2sOutPpm": 18.3,
+    "stabilityPct": 93.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 6,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0006",
+    "sourceScenario": 6,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 57.6,
+    "srtDays": 16.1,
+    "temperatureC": 50,
+    "ph": 7.3,
+    "upflowMHour": 0,
+    "olr": 5.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.78,
+      "methanePct": 63.1,
+      "methaneM3Day": 58.544180000000004,
+      "electricityKwhDay": 210.126770856,
+      "annualElectricityKwh": 76696.27136244
+    },
+    "h2sInPpm": 203.1,
+    "h2sOutPpm": 13.4,
+    "stabilityPct": 84,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 7,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0007",
+    "sourceScenario": 7,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 81.6,
+    "srtDays": 3.4,
+    "temperatureC": 55,
+    "ph": 7.29,
+    "upflowMHour": 0,
+    "olr": 2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 92.81,
+      "methanePct": 65.3,
+      "methaneM3Day": 60.604929999999996,
+      "electricityKwhDay": 217.523214756,
+      "annualElectricityKwh": 79395.97338594
+    },
+    "h2sInPpm": 236.4,
+    "h2sOutPpm": 14.4,
+    "stabilityPct": 88.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 8,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0008",
+    "sourceScenario": 8,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 136.9,
+    "srtDays": 5.7,
+    "temperatureC": 37,
+    "ph": 6.96,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 92.84,
+      "methanePct": 65.3,
+      "methaneM3Day": 60.624520000000004,
+      "electricityKwhDay": 217.593527184,
+      "annualElectricityKwh": 79421.63742216
+    },
+    "h2sInPpm": 217.7,
+    "h2sOutPpm": 15.6,
+    "stabilityPct": 92.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 9,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0009",
+    "sourceScenario": 9,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 78.5,
+    "srtDays": 23.3,
+    "temperatureC": 37,
+    "ph": 7.05,
+    "upflowMHour": 0,
+    "olr": 4.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 92.88,
+      "methanePct": 60.2,
+      "methaneM3Day": 55.91376,
+      "electricityKwhDay": 200.685667392,
+      "annualElectricityKwh": 73250.26859808
+    },
+    "h2sInPpm": 214.9,
+    "h2sOutPpm": 19.2,
+    "stabilityPct": 87.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 10,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0010",
+    "sourceScenario": 10,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 10.8,
+    "srtDays": 22.3,
+    "temperatureC": 36,
+    "ph": 7.05,
+    "upflowMHour": 0.85,
+    "olr": 6.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.91,
+      "methanePct": 65.3,
+      "methaneM3Day": 60.67022999999999,
+      "electricityKwhDay": 217.75758951599997,
+      "annualElectricityKwh": 79481.52017333999
+    },
+    "h2sInPpm": 224.6,
+    "h2sOutPpm": 13.7,
+    "stabilityPct": 91.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 11,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0011",
+    "sourceScenario": 11,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 6.4,
+    "srtDays": 26.7,
+    "temperatureC": 38,
+    "ph": 6.95,
+    "upflowMHour": 7.26,
+    "olr": 4.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.94,
+      "methanePct": 65.8,
+      "methaneM3Day": 61.15451999999999,
+      "electricityKwhDay": 219.49580318399995,
+      "annualElectricityKwh": 80115.96816215999
+    },
+    "h2sInPpm": 217,
+    "h2sOutPpm": 19.9,
+    "stabilityPct": 89,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 12,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0012",
+    "sourceScenario": 12,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6.9,
+    "srtDays": 78.7,
+    "temperatureC": 35,
+    "ph": 7.09,
+    "upflowMHour": 0,
+    "olr": 7.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 92.98,
+      "methanePct": 73,
+      "methaneM3Day": 67.8754,
+      "electricityKwhDay": 243.61838568,
+      "annualElectricityKwh": 88920.7107732
+    },
+    "h2sInPpm": 230.4,
+    "h2sOutPpm": 18.9,
+    "stabilityPct": 83.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 13,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0013",
+    "sourceScenario": 13,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 53.7,
+    "srtDays": 24.5,
+    "temperatureC": 55,
+    "ph": 7.25,
+    "upflowMHour": 0,
+    "olr": 5.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.01,
+      "methanePct": 62.1,
+      "methaneM3Day": 57.75921,
+      "electricityKwhDay": 207.309356532,
+      "annualElectricityKwh": 75667.91513418
+    },
+    "h2sInPpm": 257.5,
+    "h2sOutPpm": 15.7,
+    "stabilityPct": 92,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 14,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0014",
+    "sourceScenario": 14,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 34.8,
+    "srtDays": 19.1,
+    "temperatureC": 37,
+    "ph": 7.35,
+    "upflowMHour": 0,
+    "olr": 2.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.04,
+      "methanePct": 63.6,
+      "methaneM3Day": 59.17344000000001,
+      "electricityKwhDay": 212.38531084800002,
+      "annualElectricityKwh": 77520.63845952
+    },
+    "h2sInPpm": 196.2,
+    "h2sOutPpm": 16.6,
+    "stabilityPct": 90.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 15,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0015",
+    "sourceScenario": 15,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 32.5,
+    "srtDays": 23.1,
+    "temperatureC": 50,
+    "ph": 7.26,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.08,
+      "methanePct": 63.5,
+      "methaneM3Day": 59.1058,
+      "electricityKwhDay": 212.14253736,
+      "annualElectricityKwh": 77432.0261364
+    },
+    "h2sInPpm": 230.2,
+    "h2sOutPpm": 16.3,
+    "stabilityPct": 91.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 16,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0016",
+    "sourceScenario": 16,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 76.1,
+    "srtDays": 3.2,
+    "temperatureC": 55,
+    "ph": 6.92,
+    "upflowMHour": 0,
+    "olr": 3.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.11,
+      "methanePct": 64,
+      "methaneM3Day": 59.5904,
+      "electricityKwhDay": 213.88186368,
+      "annualElectricityKwh": 78066.88024320001
+    },
+    "h2sInPpm": 206.4,
+    "h2sOutPpm": 19.1,
+    "stabilityPct": 83.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 17,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0017",
+    "sourceScenario": 17,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 138.3,
+    "srtDays": 5.8,
+    "temperatureC": 37,
+    "ph": 7.36,
+    "upflowMHour": 0,
+    "olr": 2.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.14,
+      "methanePct": 64.6,
+      "methaneM3Day": 60.16843999999999,
+      "electricityKwhDay": 215.95656484799997,
+      "annualElectricityKwh": 78824.14616951998
+    },
+    "h2sInPpm": 207.7,
+    "h2sOutPpm": 14.6,
+    "stabilityPct": 82.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 18,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0018",
+    "sourceScenario": 18,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 94,
+    "srtDays": 22.2,
+    "temperatureC": 37,
+    "ph": 6.94,
+    "upflowMHour": 0,
+    "olr": 5.1,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.18,
+      "methanePct": 63.9,
+      "methaneM3Day": 59.54202,
+      "electricityKwhDay": 213.708218184,
+      "annualElectricityKwh": 78003.49963716
+    },
+    "h2sInPpm": 219.3,
+    "h2sOutPpm": 11.6,
+    "stabilityPct": 90,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 19,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0019",
+    "sourceScenario": 19,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 7.8,
+    "srtDays": 33.3,
+    "temperatureC": 36,
+    "ph": 7.12,
+    "upflowMHour": 0.9,
+    "olr": 8.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.21,
+      "methanePct": 60.2,
+      "methaneM3Day": 56.11242,
+      "electricityKwhDay": 201.39869786399998,
+      "annualElectricityKwh": 73510.52472036
+    },
+    "h2sInPpm": 246.1,
+    "h2sOutPpm": 13.6,
+    "stabilityPct": 84,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 20,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0020",
+    "sourceScenario": 20,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 7.3,
+    "srtDays": 46.9,
+    "temperatureC": 38,
+    "ph": 7.23,
+    "upflowMHour": 4.43,
+    "olr": 6.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.24,
+      "methanePct": 65.8,
+      "methaneM3Day": 61.35191999999999,
+      "electricityKwhDay": 220.20431126399998,
+      "annualElectricityKwh": 80374.57361136
+    },
+    "h2sInPpm": 241.5,
+    "h2sOutPpm": 22.8,
+    "stabilityPct": 94.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 21,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0021",
+    "sourceScenario": 21,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 7.4,
+    "srtDays": 32.6,
+    "temperatureC": 35,
+    "ph": 7.09,
+    "upflowMHour": 0,
+    "olr": 8.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.28,
+      "methanePct": 78.3,
+      "methaneM3Day": 73.03824,
+      "electricityKwhDay": 262.148851008,
+      "annualElectricityKwh": 95684.33061792
+    },
+    "h2sInPpm": 244.7,
+    "h2sOutPpm": 20.6,
+    "stabilityPct": 95.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 22,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0022",
+    "sourceScenario": 22,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 62,
+    "srtDays": 18.7,
+    "temperatureC": 55,
+    "ph": 7.37,
+    "upflowMHour": 0,
+    "olr": 3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.31,
+      "methanePct": 61.3,
+      "methaneM3Day": 57.19903,
+      "electricityKwhDay": 205.298758476,
+      "annualElectricityKwh": 74934.04684374
+    },
+    "h2sInPpm": 183.6,
+    "h2sOutPpm": 14.4,
+    "stabilityPct": 95.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 23,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0023",
+    "sourceScenario": 23,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 45.4,
+    "srtDays": 26.2,
+    "temperatureC": 37,
+    "ph": 7.35,
+    "upflowMHour": 0,
+    "olr": 5.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.34,
+      "methanePct": 64.2,
+      "methaneM3Day": 59.92428000000001,
+      "electricityKwhDay": 215.08022577600002,
+      "annualElectricityKwh": 78504.28240824
+    },
+    "h2sInPpm": 205.3,
+    "h2sOutPpm": 12.6,
+    "stabilityPct": 91.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 24,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0024",
+    "sourceScenario": 24,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 41.9,
+    "srtDays": 13.2,
+    "temperatureC": 50,
+    "ph": 7.03,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.38,
+      "methanePct": 67.5,
+      "methaneM3Day": 63.031499999999994,
+      "electricityKwhDay": 226.23265979999996,
+      "annualElectricityKwh": 82574.920827
+    },
+    "h2sInPpm": 199.3,
+    "h2sOutPpm": 18.7,
+    "stabilityPct": 93.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 25,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0025",
+    "sourceScenario": 25,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 79.4,
+    "srtDays": 3.3,
+    "temperatureC": 55,
+    "ph": 7.2,
+    "upflowMHour": 0,
+    "olr": 2.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.41,
+      "methanePct": 67,
+      "methaneM3Day": 62.58469999999999,
+      "electricityKwhDay": 224.62900523999997,
+      "annualElectricityKwh": 81989.58691259999
+    },
+    "h2sInPpm": 195.7,
+    "h2sOutPpm": 16.5,
+    "stabilityPct": 92.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 26,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0026",
+    "sourceScenario": 26,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 166,
+    "srtDays": 6.9,
+    "temperatureC": 37,
+    "ph": 6.97,
+    "upflowMHour": 0,
+    "olr": 4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.44,
+      "methanePct": 60.1,
+      "methaneM3Day": 56.157439999999994,
+      "electricityKwhDay": 201.56028364799997,
+      "annualElectricityKwh": 73569.50353152
+    },
+    "h2sInPpm": 198.4,
+    "h2sOutPpm": 18.5,
+    "stabilityPct": 91.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 27,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0027",
+    "sourceScenario": 27,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 53.8,
+    "srtDays": 22.6,
+    "temperatureC": 37,
+    "ph": 7.19,
+    "upflowMHour": 0,
+    "olr": 4.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.48,
+      "methanePct": 61.6,
+      "methaneM3Day": 57.58368,
+      "electricityKwhDay": 206.679344256,
+      "annualElectricityKwh": 75437.96065344001
+    },
+    "h2sInPpm": 244.3,
+    "h2sOutPpm": 15.7,
+    "stabilityPct": 92.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 28,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0028",
+    "sourceScenario": 28,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 5,
+    "srtDays": 57.1,
+    "temperatureC": 36,
+    "ph": 7.05,
+    "upflowMHour": 0.69,
+    "olr": 7.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.51,
+      "methanePct": 63.9,
+      "methaneM3Day": 59.75289,
+      "electricityKwhDay": 214.465072788,
+      "annualElectricityKwh": 78279.75156762
+    },
+    "h2sInPpm": 233,
+    "h2sOutPpm": 12.2,
+    "stabilityPct": 86,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 29,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0029",
+    "sourceScenario": 29,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 9.5,
+    "srtDays": 42.2,
+    "temperatureC": 38,
+    "ph": 6.95,
+    "upflowMHour": 4.1,
+    "olr": 9.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.54,
+      "methanePct": 61.1,
+      "methaneM3Day": 57.15294000000001,
+      "electricityKwhDay": 205.13333224800002,
+      "annualElectricityKwh": 74873.66627052
+    },
+    "h2sInPpm": 213.5,
+    "h2sOutPpm": 11,
+    "stabilityPct": 90.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 30,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0030",
+    "sourceScenario": 30,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.6,
+    "srtDays": 86.3,
+    "temperatureC": 35,
+    "ph": 7.29,
+    "upflowMHour": 0,
+    "olr": 7.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.58,
+      "methanePct": 70.2,
+      "methaneM3Day": 65.69315999999999,
+      "electricityKwhDay": 235.78588987199996,
+      "annualElectricityKwh": 86061.84980327998
+    },
+    "h2sInPpm": 188.7,
+    "h2sOutPpm": 11,
+    "stabilityPct": 93.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 31,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0031",
+    "sourceScenario": 31,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 59.2,
+    "srtDays": 18.9,
+    "temperatureC": 55,
+    "ph": 7.33,
+    "upflowMHour": 0,
+    "olr": 4.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.61,
+      "methanePct": 64.8,
+      "methaneM3Day": 60.659279999999995,
+      "electricityKwhDay": 217.71828777599998,
+      "annualElectricityKwh": 79467.17503823999
+    },
+    "h2sInPpm": 213,
+    "h2sOutPpm": 17.3,
+    "stabilityPct": 88,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 32,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0032",
+    "sourceScenario": 32,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 39.6,
+    "srtDays": 28,
+    "temperatureC": 37,
+    "ph": 7.02,
+    "upflowMHour": 0,
+    "olr": 3.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.64,
+      "methanePct": 61.9,
+      "methaneM3Day": 57.963159999999995,
+      "electricityKwhDay": 208.04137387199998,
+      "annualElectricityKwh": 75935.10146327999
+    },
+    "h2sInPpm": 239.7,
+    "h2sOutPpm": 14.2,
+    "stabilityPct": 83.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 33,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0033",
+    "sourceScenario": 33,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 27.2,
+    "srtDays": 19.7,
+    "temperatureC": 50,
+    "ph": 7.31,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.67,
+      "methanePct": 62.5,
+      "methaneM3Day": 58.54375,
+      "electricityKwhDay": 210.1252275,
+      "annualElectricityKwh": 76695.7080375
+    },
+    "h2sInPpm": 191.5,
+    "h2sOutPpm": 10.3,
+    "stabilityPct": 84.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 34,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0034",
+    "sourceScenario": 34,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 85.7,
+    "srtDays": 3.6,
+    "temperatureC": 55,
+    "ph": 6.96,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.71,
+      "methanePct": 60.2,
+      "methaneM3Day": 56.413419999999995,
+      "electricityKwhDay": 202.47904706399999,
+      "annualElectricityKwh": 73904.85217836
+    },
+    "h2sInPpm": 184.4,
+    "h2sOutPpm": 16.8,
+    "stabilityPct": 82.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 35,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0035",
+    "sourceScenario": 35,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 138.6,
+    "srtDays": 5.8,
+    "temperatureC": 37,
+    "ph": 7.1,
+    "upflowMHour": 0,
+    "olr": 4.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.74,
+      "methanePct": 62.5,
+      "methaneM3Day": 58.5875,
+      "electricityKwhDay": 210.282255,
+      "annualElectricityKwh": 76753.02307499999
+    },
+    "h2sInPpm": 220.4,
+    "h2sOutPpm": 12.4,
+    "stabilityPct": 93.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 36,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0036",
+    "sourceScenario": 36,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 50.1,
+    "srtDays": 17.7,
+    "temperatureC": 37,
+    "ph": 7.02,
+    "upflowMHour": 0,
+    "olr": 2.9,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 93.77,
+      "methanePct": 64.6,
+      "methaneM3Day": 60.575419999999994,
+      "electricityKwhDay": 217.41729746399997,
+      "annualElectricityKwh": 79357.31357435999
+    },
+    "h2sInPpm": 213.3,
+    "h2sOutPpm": 20.8,
+    "stabilityPct": 87.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 37,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0037",
+    "sourceScenario": 37,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 8.2,
+    "srtDays": 53.3,
+    "temperatureC": 36,
+    "ph": 7.36,
+    "upflowMHour": 0.65,
+    "olr": 4.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.81,
+      "methanePct": 60.8,
+      "methaneM3Day": 57.036480000000005,
+      "electricityKwhDay": 204.715334016,
+      "annualElectricityKwh": 74721.09691584001
+    },
+    "h2sInPpm": 247.5,
+    "h2sOutPpm": 13.6,
+    "stabilityPct": 95.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 38,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0038",
+    "sourceScenario": 38,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 8.8,
+    "srtDays": 45.7,
+    "temperatureC": 38,
+    "ph": 6.97,
+    "upflowMHour": 7.12,
+    "olr": 10.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.84,
+      "methanePct": 64.3,
+      "methaneM3Day": 60.33912,
+      "electricityKwhDay": 216.569169504,
+      "annualElectricityKwh": 79047.74686896
+    },
+    "h2sInPpm": 221.1,
+    "h2sOutPpm": 12.6,
+    "stabilityPct": 88.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 39,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0039",
+    "sourceScenario": 39,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 8.3,
+    "srtDays": 74.8,
+    "temperatureC": 35,
+    "ph": 6.97,
+    "upflowMHour": 0,
+    "olr": 6.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.87,
+      "methanePct": 74.8,
+      "methaneM3Day": 70.21476,
+      "electricityKwhDay": 252.014816592,
+      "annualElectricityKwh": 91985.40805607999
+    },
+    "h2sInPpm": 213.4,
+    "h2sOutPpm": 18.9,
+    "stabilityPct": 87.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 40,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0040",
+    "sourceScenario": 40,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 65.6,
+    "srtDays": 16.3,
+    "temperatureC": 55,
+    "ph": 7.24,
+    "upflowMHour": 0,
+    "olr": 3.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.91,
+      "methanePct": 62.4,
+      "methaneM3Day": 58.59983999999999,
+      "electricityKwhDay": 210.32654572799999,
+      "annualElectricityKwh": 76769.18919071999
+    },
+    "h2sInPpm": 255.9,
+    "h2sOutPpm": 13.9,
+    "stabilityPct": 88.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 41,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0041",
+    "sourceScenario": 41,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 31.9,
+    "srtDays": 23,
+    "temperatureC": 37,
+    "ph": 7.23,
+    "upflowMHour": 0,
+    "olr": 5.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.94,
+      "methanePct": 66.4,
+      "methaneM3Day": 62.37616,
+      "electricityKwhDay": 223.880513472,
+      "annualElectricityKwh": 81716.38741728
+    },
+    "h2sInPpm": 222.6,
+    "h2sOutPpm": 15.2,
+    "stabilityPct": 86,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 42,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0042",
+    "sourceScenario": 42,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 59.3,
+    "srtDays": 14.6,
+    "temperatureC": 50,
+    "ph": 7.33,
+    "upflowMHour": 0,
+    "olr": 4.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 93.97,
+      "methanePct": 61.1,
+      "methaneM3Day": 57.41567,
+      "electricityKwhDay": 206.076322764,
+      "annualElectricityKwh": 75217.85780886
+    },
+    "h2sInPpm": 229.2,
+    "h2sOutPpm": 21.8,
+    "stabilityPct": 92.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 43,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0043",
+    "sourceScenario": 43,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 76.1,
+    "srtDays": 3.2,
+    "temperatureC": 55,
+    "ph": 6.97,
+    "upflowMHour": 0,
+    "olr": 5.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.01,
+      "methanePct": 67.7,
+      "methaneM3Day": 63.64477000000001,
+      "electricityKwhDay": 228.43380848400002,
+      "annualElectricityKwh": 83378.34009666
+    },
+    "h2sInPpm": 244.1,
+    "h2sOutPpm": 17.2,
+    "stabilityPct": 93,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 44,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0044",
+    "sourceScenario": 44,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 153.2,
+    "srtDays": 6.4,
+    "temperatureC": 37,
+    "ph": 7.03,
+    "upflowMHour": 0,
+    "olr": 5.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.04,
+      "methanePct": 64.7,
+      "methaneM3Day": 60.843880000000006,
+      "electricityKwhDay": 218.380854096,
+      "annualElectricityKwh": 79709.01174504
+    },
+    "h2sInPpm": 187.6,
+    "h2sOutPpm": 13,
+    "stabilityPct": 84.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 45,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0045",
+    "sourceScenario": 45,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 75.1,
+    "srtDays": 23.6,
+    "temperatureC": 37,
+    "ph": 7.16,
+    "upflowMHour": 0,
+    "olr": 3.9,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.07,
+      "methanePct": 66.1,
+      "methaneM3Day": 62.18026999999999,
+      "electricityKwhDay": 223.17742508399996,
+      "annualElectricityKwh": 81459.76015565998
+    },
+    "h2sInPpm": 243.9,
+    "h2sOutPpm": 18.4,
+    "stabilityPct": 90.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 46,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0046",
+    "sourceScenario": 46,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 11.4,
+    "srtDays": 24.7,
+    "temperatureC": 36,
+    "ph": 7.23,
+    "upflowMHour": 0.68,
+    "olr": 4.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.11,
+      "methanePct": 63.3,
+      "methaneM3Day": 59.57163,
+      "electricityKwhDay": 213.814494396,
+      "annualElectricityKwh": 78042.29045454
+    },
+    "h2sInPpm": 241.9,
+    "h2sOutPpm": 16.1,
+    "stabilityPct": 86.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 47,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0047",
+    "sourceScenario": 47,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 9.4,
+    "srtDays": 30.8,
+    "temperatureC": 38,
+    "ph": 7.06,
+    "upflowMHour": 7.05,
+    "olr": 6.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.14,
+      "methanePct": 61.3,
+      "methaneM3Day": 57.70782,
+      "electricityKwhDay": 207.124907544,
+      "annualElectricityKwh": 75600.59125356
+    },
+    "h2sInPpm": 191.8,
+    "h2sOutPpm": 10.2,
+    "stabilityPct": 88.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 48,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0048",
+    "sourceScenario": 48,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 8.3,
+    "srtDays": 81.1,
+    "temperatureC": 35,
+    "ph": 7.37,
+    "upflowMHour": 0,
+    "olr": 8.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.17,
+      "methanePct": 77.8,
+      "methaneM3Day": 73.26426,
+      "electricityKwhDay": 262.96008199199997,
+      "annualElectricityKwh": 95980.42992708
+    },
+    "h2sInPpm": 218.3,
+    "h2sOutPpm": 17.7,
+    "stabilityPct": 95.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 49,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0049",
+    "sourceScenario": 49,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 82.5,
+    "srtDays": 24.4,
+    "temperatureC": 55,
+    "ph": 7.33,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.21,
+      "methanePct": 65.1,
+      "methaneM3Day": 61.33070999999999,
+      "electricityKwhDay": 220.12818433199996,
+      "annualElectricityKwh": 80346.78728117999
+    },
+    "h2sInPpm": 189.8,
+    "h2sOutPpm": 13.4,
+    "stabilityPct": 91.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 50,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0050",
+    "sourceScenario": 50,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 24.3,
+    "srtDays": 21.8,
+    "temperatureC": 37,
+    "ph": 7.05,
+    "upflowMHour": 0,
+    "olr": 5.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.24,
+      "methanePct": 63.7,
+      "methaneM3Day": 60.030879999999996,
+      "electricityKwhDay": 215.46283449599997,
+      "annualElectricityKwh": 78643.93459103999
+    },
+    "h2sInPpm": 215.4,
+    "h2sOutPpm": 18.3,
+    "stabilityPct": 94.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 51,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0051",
+    "sourceScenario": 51,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 61.5,
+    "srtDays": 13.4,
+    "temperatureC": 50,
+    "ph": 7.34,
+    "upflowMHour": 0,
+    "olr": 6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.27,
+      "methanePct": 62.3,
+      "methaneM3Day": 58.73021,
+      "electricityKwhDay": 210.79446973199998,
+      "annualElectricityKwh": 76939.98145218
+    },
+    "h2sInPpm": 247,
+    "h2sOutPpm": 23.4,
+    "stabilityPct": 96,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 52,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0052",
+    "sourceScenario": 52,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 104,
+    "srtDays": 4.3,
+    "temperatureC": 55,
+    "ph": 6.95,
+    "upflowMHour": 0,
+    "olr": 4.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.31,
+      "methanePct": 67.2,
+      "methaneM3Day": 63.37632000000001,
+      "electricityKwhDay": 227.47028774400002,
+      "annualElectricityKwh": 83026.65502656001
+    },
+    "h2sInPpm": 182.3,
+    "h2sOutPpm": 16,
+    "stabilityPct": 84,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 53,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0053",
+    "sourceScenario": 53,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 151.9,
+    "srtDays": 6.3,
+    "temperatureC": 37,
+    "ph": 7.36,
+    "upflowMHour": 0,
+    "olr": 2.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.34,
+      "methanePct": 65.3,
+      "methaneM3Day": 61.60402,
+      "electricityKwhDay": 221.109148584,
+      "annualElectricityKwh": 80704.83923316
+    },
+    "h2sInPpm": 182.9,
+    "h2sOutPpm": 18.2,
+    "stabilityPct": 82.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 54,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0054",
+    "sourceScenario": 54,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 77.1,
+    "srtDays": 27,
+    "temperatureC": 37,
+    "ph": 7.32,
+    "upflowMHour": 0,
+    "olr": 3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.37,
+      "methanePct": 60.5,
+      "methaneM3Day": 57.09385,
+      "electricityKwhDay": 204.92124642000002,
+      "annualElectricityKwh": 74796.25494330001
+    },
+    "h2sInPpm": 244.1,
+    "h2sOutPpm": 13.1,
+    "stabilityPct": 92.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 55,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0055",
+    "sourceScenario": 55,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 9.6,
+    "srtDays": 21.6,
+    "temperatureC": 36,
+    "ph": 6.96,
+    "upflowMHour": 1.76,
+    "olr": 5.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.41,
+      "methanePct": 64,
+      "methaneM3Day": 60.422399999999996,
+      "electricityKwhDay": 216.86807807999998,
+      "annualElectricityKwh": 79156.84849919999
+    },
+    "h2sInPpm": 239.6,
+    "h2sOutPpm": 16.4,
+    "stabilityPct": 93.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 56,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0056",
+    "sourceScenario": 56,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 4.9,
+    "srtDays": 27.7,
+    "temperatureC": 38,
+    "ph": 7.25,
+    "upflowMHour": 6.94,
+    "olr": 6.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.44,
+      "methanePct": 67.8,
+      "methaneM3Day": 64.03031999999999,
+      "electricityKwhDay": 229.81762454399995,
+      "annualElectricityKwh": 83883.43295855998
+    },
+    "h2sInPpm": 228.9,
+    "h2sOutPpm": 22.3,
+    "stabilityPct": 90.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 57,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0057",
+    "sourceScenario": 57,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6.3,
+    "srtDays": 91.9,
+    "temperatureC": 35,
+    "ph": 6.99,
+    "upflowMHour": 0,
+    "olr": 9.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.47,
+      "methanePct": 70.9,
+      "methaneM3Day": 66.97923,
+      "electricityKwhDay": 240.401852316,
+      "annualElectricityKwh": 87746.67609534001
+    },
+    "h2sInPpm": 194.7,
+    "h2sOutPpm": 9.9,
+    "stabilityPct": 88.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 58,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0058",
+    "sourceScenario": 58,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 85.6,
+    "srtDays": 20.3,
+    "temperatureC": 55,
+    "ph": 6.97,
+    "upflowMHour": 0,
+    "olr": 4.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.51,
+      "methanePct": 67.6,
+      "methaneM3Day": 63.888760000000005,
+      "electricityKwhDay": 229.309537392,
+      "annualElectricityKwh": 83697.98114808
+    },
+    "h2sInPpm": 204.1,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 91.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 59,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0059",
+    "sourceScenario": 59,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 39.6,
+    "srtDays": 29.1,
+    "temperatureC": 37,
+    "ph": 7.15,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.54,
+      "methanePct": 63.2,
+      "methaneM3Day": 59.749280000000006,
+      "electricityKwhDay": 214.45211577600003,
+      "annualElectricityKwh": 78275.02225824002
+    },
+    "h2sInPpm": 217.9,
+    "h2sOutPpm": 20.5,
+    "stabilityPct": 83.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 60,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0060",
+    "sourceScenario": 60,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 37.3,
+    "srtDays": 16,
+    "temperatureC": 50,
+    "ph": 7.21,
+    "upflowMHour": 0,
+    "olr": 3.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.57,
+      "methanePct": 65.1,
+      "methaneM3Day": 61.565069999999984,
+      "electricityKwhDay": 220.96934924399994,
+      "annualElectricityKwh": 80653.81247405997
+    },
+    "h2sInPpm": 212.9,
+    "h2sOutPpm": 16.9,
+    "stabilityPct": 85,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 61,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0061",
+    "sourceScenario": 61,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 100.2,
+    "srtDays": 4.2,
+    "temperatureC": 55,
+    "ph": 6.92,
+    "upflowMHour": 0,
+    "olr": 3.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.61,
+      "methanePct": 63.3,
+      "methaneM3Day": 59.888130000000004,
+      "electricityKwhDay": 214.950476196,
+      "annualElectricityKwh": 78456.92381154001
+    },
+    "h2sInPpm": 217.9,
+    "h2sOutPpm": 19.3,
+    "stabilityPct": 90,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 62,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0062",
+    "sourceScenario": 62,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 136.7,
+    "srtDays": 5.7,
+    "temperatureC": 37,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 4.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.64,
+      "methanePct": 65.2,
+      "methaneM3Day": 61.70528,
+      "electricityKwhDay": 221.472590976,
+      "annualElectricityKwh": 80837.49570623999
+    },
+    "h2sInPpm": 205.3,
+    "h2sOutPpm": 12.4,
+    "stabilityPct": 89.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 63,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0063",
+    "sourceScenario": 63,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 68.7,
+    "srtDays": 24.4,
+    "temperatureC": 37,
+    "ph": 7.16,
+    "upflowMHour": 0,
+    "olr": 3.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.67,
+      "methanePct": 65.9,
+      "methaneM3Day": 62.387530000000005,
+      "electricityKwhDay": 223.92132267600002,
+      "annualElectricityKwh": 81731.28277674
+    },
+    "h2sInPpm": 250.9,
+    "h2sOutPpm": 13.5,
+    "stabilityPct": 89.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 64,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0064",
+    "sourceScenario": 64,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 8.2,
+    "srtDays": 32.6,
+    "temperatureC": 36,
+    "ph": 7.15,
+    "upflowMHour": 1.7,
+    "olr": 10.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.71,
+      "methanePct": 60.9,
+      "methaneM3Day": 57.67838999999999,
+      "electricityKwhDay": 207.01927738799998,
+      "annualElectricityKwh": 75562.03624661999
+    },
+    "h2sInPpm": 185.8,
+    "h2sOutPpm": 10.8,
+    "stabilityPct": 82.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 65,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0065",
+    "sourceScenario": 65,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 5.7,
+    "srtDays": 26.9,
+    "temperatureC": 38,
+    "ph": 7.27,
+    "upflowMHour": 5.34,
+    "olr": 6.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.74,
+      "methanePct": 60.1,
+      "methaneM3Day": 56.938739999999996,
+      "electricityKwhDay": 204.36452560799998,
+      "annualElectricityKwh": 74593.05184691999
+    },
+    "h2sInPpm": 246.2,
+    "h2sOutPpm": 14.1,
+    "stabilityPct": 87.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 66,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0066",
+    "sourceScenario": 66,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6.9,
+    "srtDays": 72.1,
+    "temperatureC": 35,
+    "ph": 7.08,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.77,
+      "methanePct": 79.6,
+      "methaneM3Day": 75.43691999999999,
+      "electricityKwhDay": 270.75819326399994,
+      "annualElectricityKwh": 98826.74054135998
+    },
+    "h2sInPpm": 259.6,
+    "h2sOutPpm": 15.9,
+    "stabilityPct": 86.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 67,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0067",
+    "sourceScenario": 67,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 81,
+    "srtDays": 21.2,
+    "temperatureC": 55,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 3.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.81,
+      "methanePct": 60.1,
+      "methaneM3Day": 56.98081,
+      "electricityKwhDay": 204.51552325199998,
+      "annualElectricityKwh": 74648.16598697999
+    },
+    "h2sInPpm": 196.7,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 84.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 68,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0068",
+    "sourceScenario": 68,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 28,
+    "srtDays": 27.5,
+    "temperatureC": 37,
+    "ph": 7.18,
+    "upflowMHour": 0,
+    "olr": 6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.84,
+      "methanePct": 66.7,
+      "methaneM3Day": 63.258280000000006,
+      "electricityKwhDay": 227.04661857600001,
+      "annualElectricityKwh": 82872.01578024
+    },
+    "h2sInPpm": 259.2,
+    "h2sOutPpm": 24.1,
+    "stabilityPct": 88.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 69,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0069",
+    "sourceScenario": 69,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 42.8,
+    "srtDays": 13,
+    "temperatureC": 50,
+    "ph": 7.12,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 94.87,
+      "methanePct": 63.8,
+      "methaneM3Day": 60.52706,
+      "electricityKwhDay": 217.243723752,
+      "annualElectricityKwh": 79293.95916948
+    },
+    "h2sInPpm": 192.1,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 94.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 70,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0070",
+    "sourceScenario": 70,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 74.1,
+    "srtDays": 3.1,
+    "temperatureC": 55,
+    "ph": 7.05,
+    "upflowMHour": 0,
+    "olr": 2.9,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.9,
+      "methanePct": 63.9,
+      "methaneM3Day": 60.64110000000001,
+      "electricityKwhDay": 217.65303612000002,
+      "annualElectricityKwh": 79443.35818380001
+    },
+    "h2sInPpm": 226.9,
+    "h2sOutPpm": 17.1,
+    "stabilityPct": 83.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 71,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0071",
+    "sourceScenario": 71,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 113.5,
+    "srtDays": 4.7,
+    "temperatureC": 37,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 5.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.94,
+      "methanePct": 65.2,
+      "methaneM3Day": 61.90088,
+      "electricityKwhDay": 222.174638496,
+      "annualElectricityKwh": 81093.74305104
+    },
+    "h2sInPpm": 233.6,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 82.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 72,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0072",
+    "sourceScenario": 72,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 65.6,
+    "srtDays": 23.1,
+    "temperatureC": 37,
+    "ph": 7.32,
+    "upflowMHour": 0,
+    "olr": 3.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 94.97,
+      "methanePct": 63.9,
+      "methaneM3Day": 60.685829999999996,
+      "electricityKwhDay": 217.813581036,
+      "annualElectricityKwh": 79501.95707814
+    },
+    "h2sInPpm": 241.5,
+    "h2sOutPpm": 13.9,
+    "stabilityPct": 89.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 73,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0073",
+    "sourceScenario": 73,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 11.3,
+    "srtDays": 54,
+    "temperatureC": 36,
+    "ph": 7.15,
+    "upflowMHour": 1.38,
+    "olr": 6.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95,
+      "methanePct": 64.3,
+      "methaneM3Day": 61.085,
+      "electricityKwhDay": 219.246282,
+      "annualElectricityKwh": 80024.89293
+    },
+    "h2sInPpm": 188.4,
+    "h2sOutPpm": 15.1,
+    "stabilityPct": 94.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 74,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0074",
+    "sourceScenario": 74,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 7.8,
+    "srtDays": 33.6,
+    "temperatureC": 38,
+    "ph": 6.91,
+    "upflowMHour": 4.71,
+    "olr": 5.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.04,
+      "methanePct": 67.4,
+      "methaneM3Day": 64.05696,
+      "electricityKwhDay": 229.913240832,
+      "annualElectricityKwh": 83918.33290368
+    },
+    "h2sInPpm": 215.9,
+    "h2sOutPpm": 18.3,
+    "stabilityPct": 90.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 75,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0075",
+    "sourceScenario": 75,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6,
+    "srtDays": 49.5,
+    "temperatureC": 35,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 9.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.07,
+      "methanePct": 79.8,
+      "methaneM3Day": 75.86586,
+      "electricityKwhDay": 272.297744712,
+      "annualElectricityKwh": 99388.67681988
+    },
+    "h2sInPpm": 229.6,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 92.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 76,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0076",
+    "sourceScenario": 76,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 91.4,
+    "srtDays": 21.4,
+    "temperatureC": 55,
+    "ph": 7.29,
+    "upflowMHour": 0,
+    "olr": 5.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.1,
+      "methanePct": 66.9,
+      "methaneM3Day": 63.621900000000004,
+      "electricityKwhDay": 228.35172348,
+      "annualElectricityKwh": 83348.3790702
+    },
+    "h2sInPpm": 189.1,
+    "h2sOutPpm": 12,
+    "stabilityPct": 88.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 77,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0077",
+    "sourceScenario": 77,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 37.3,
+    "srtDays": 24.8,
+    "temperatureC": 37,
+    "ph": 7.39,
+    "upflowMHour": 0,
+    "olr": 5.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.14,
+      "methanePct": 62.3,
+      "methaneM3Day": 59.27222,
+      "electricityKwhDay": 212.739852024,
+      "annualElectricityKwh": 77650.04598876
+    },
+    "h2sInPpm": 238.7,
+    "h2sOutPpm": 14.9,
+    "stabilityPct": 86.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 78,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0078",
+    "sourceScenario": 78,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 29.9,
+    "srtDays": 12.5,
+    "temperatureC": 50,
+    "ph": 7.14,
+    "upflowMHour": 0,
+    "olr": 5.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.17,
+      "methanePct": 67.9,
+      "methaneM3Day": 64.62043,
+      "electricityKwhDay": 231.935647356,
+      "annualElectricityKwh": 84656.51128494
+    },
+    "h2sInPpm": 217.2,
+    "h2sOutPpm": 11.1,
+    "stabilityPct": 87.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 79,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0079",
+    "sourceScenario": 79,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 110.1,
+    "srtDays": 4.6,
+    "temperatureC": 55,
+    "ph": 7.18,
+    "upflowMHour": 0,
+    "olr": 2.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.2,
+      "methanePct": 66.4,
+      "methaneM3Day": 63.21280000000001,
+      "electricityKwhDay": 226.88338176000002,
+      "annualElectricityKwh": 82812.43434240001
+    },
+    "h2sInPpm": 254,
+    "h2sOutPpm": 15,
+    "stabilityPct": 82.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 80,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0080",
+    "sourceScenario": 80,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 122.8,
+    "srtDays": 5.1,
+    "temperatureC": 37,
+    "ph": 6.95,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.24,
+      "methanePct": 65.4,
+      "methaneM3Day": 62.28696,
+      "electricityKwhDay": 223.560356832,
+      "annualElectricityKwh": 81599.53024368
+    },
+    "h2sInPpm": 237.1,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 94.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 81,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0081",
+    "sourceScenario": 81,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 83.5,
+    "srtDays": 27,
+    "temperatureC": 37,
+    "ph": 7.02,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.27,
+      "methanePct": 65,
+      "methaneM3Day": 61.9255,
+      "electricityKwhDay": 222.2630046,
+      "annualElectricityKwh": 81125.99667899999
+    },
+    "h2sInPpm": 248.7,
+    "h2sOutPpm": 24.8,
+    "stabilityPct": 89.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 82,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0082",
+    "sourceScenario": 82,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 9.4,
+    "srtDays": 36.1,
+    "temperatureC": 36,
+    "ph": 7.24,
+    "upflowMHour": 0.54,
+    "olr": 11.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.3,
+      "methanePct": 61.9,
+      "methaneM3Day": 58.9907,
+      "electricityKwhDay": 211.72942043999998,
+      "annualElectricityKwh": 77281.2384606
+    },
+    "h2sInPpm": 248.2,
+    "h2sOutPpm": 20.5,
+    "stabilityPct": 93.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 83,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0083",
+    "sourceScenario": 83,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 5.8,
+    "srtDays": 35.9,
+    "temperatureC": 38,
+    "ph": 7.34,
+    "upflowMHour": 6.36,
+    "olr": 6.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.34,
+      "methanePct": 61.5,
+      "methaneM3Day": 58.6341,
+      "electricityKwhDay": 210.44951171999998,
+      "annualElectricityKwh": 76814.0717778
+    },
+    "h2sInPpm": 186.8,
+    "h2sOutPpm": 15.5,
+    "stabilityPct": 92,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 84,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0084",
+    "sourceScenario": 84,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 10.8,
+    "srtDays": 99.9,
+    "temperatureC": 35,
+    "ph": 7.1,
+    "upflowMHour": 0,
+    "olr": 6.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.37,
+      "methanePct": 71.4,
+      "methaneM3Day": 68.09418000000001,
+      "electricityKwhDay": 244.40363085600004,
+      "annualElectricityKwh": 89207.32526244002
+    },
+    "h2sInPpm": 226,
+    "h2sOutPpm": 11.3,
+    "stabilityPct": 91.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 85,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0085",
+    "sourceScenario": 85,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 76.6,
+    "srtDays": 17.1,
+    "temperatureC": 55,
+    "ph": 7.15,
+    "upflowMHour": 0,
+    "olr": 5.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.4,
+      "methanePct": 61.1,
+      "methaneM3Day": 58.28940000000001,
+      "electricityKwhDay": 209.21231448000003,
+      "annualElectricityKwh": 76362.49478520002
+    },
+    "h2sInPpm": 209.2,
+    "h2sOutPpm": 20.2,
+    "stabilityPct": 84.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 86,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0086",
+    "sourceScenario": 86,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 24.4,
+    "srtDays": 21.8,
+    "temperatureC": 37,
+    "ph": 7.07,
+    "upflowMHour": 0,
+    "olr": 4.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.44,
+      "methanePct": 63.4,
+      "methaneM3Day": 60.508959999999995,
+      "electricityKwhDay": 217.17875923199998,
+      "annualElectricityKwh": 79270.24711967999
+    },
+    "h2sInPpm": 256.7,
+    "h2sOutPpm": 16,
+    "stabilityPct": 89.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 87,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0087",
+    "sourceScenario": 87,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 37.7,
+    "srtDays": 23.7,
+    "temperatureC": 50,
+    "ph": 7.06,
+    "upflowMHour": 0,
+    "olr": 2.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.47,
+      "methanePct": 67.3,
+      "methaneM3Day": 64.25130999999999,
+      "electricityKwhDay": 230.61080185199995,
+      "annualElectricityKwh": 84172.94267597998
+    },
+    "h2sInPpm": 222.4,
+    "h2sOutPpm": 14,
+    "stabilityPct": 90.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 88,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0088",
+    "sourceScenario": 88,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 103.4,
+    "srtDays": 4.3,
+    "temperatureC": 55,
+    "ph": 7.02,
+    "upflowMHour": 0,
+    "olr": 3.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.5,
+      "methanePct": 62.6,
+      "methaneM3Day": 59.783,
+      "electricityKwhDay": 214.5731436,
+      "annualElectricityKwh": 78319.19741400001
+    },
+    "h2sInPpm": 192.4,
+    "h2sOutPpm": 10.8,
+    "stabilityPct": 86,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 89,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0089",
+    "sourceScenario": 89,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 136.4,
+    "srtDays": 5.7,
+    "temperatureC": 37,
+    "ph": 7.29,
+    "upflowMHour": 0,
+    "olr": 5.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.54,
+      "methanePct": 63.5,
+      "methaneM3Day": 60.6679,
+      "electricityKwhDay": 217.74922668000002,
+      "annualElectricityKwh": 79478.46773820001
+    },
+    "h2sInPpm": 218.1,
+    "h2sOutPpm": 11,
+    "stabilityPct": 91.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 90,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0090",
+    "sourceScenario": 90,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 87.1,
+    "srtDays": 28.5,
+    "temperatureC": 37,
+    "ph": 6.99,
+    "upflowMHour": 0,
+    "olr": 5.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.57,
+      "methanePct": 64.5,
+      "methaneM3Day": 61.642649999999996,
+      "electricityKwhDay": 221.24779937999998,
+      "annualElectricityKwh": 80755.4467737
+    },
+    "h2sInPpm": 188.2,
+    "h2sOutPpm": 12.7,
+    "stabilityPct": 95.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 91,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0091",
+    "sourceScenario": 91,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 8.1,
+    "srtDays": 21.4,
+    "temperatureC": 36,
+    "ph": 6.95,
+    "upflowMHour": 1.15,
+    "olr": 11.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.6,
+      "methanePct": 60.3,
+      "methaneM3Day": 57.64679999999999,
+      "electricityKwhDay": 206.90589455999998,
+      "annualElectricityKwh": 75520.65151439999
+    },
+    "h2sInPpm": 199.7,
+    "h2sOutPpm": 19.3,
+    "stabilityPct": 88.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 92,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0092",
+    "sourceScenario": 92,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 7.1,
+    "srtDays": 22,
+    "temperatureC": 38,
+    "ph": 7.09,
+    "upflowMHour": 5.25,
+    "olr": 4.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.64,
+      "methanePct": 60.5,
+      "methaneM3Day": 57.8622,
+      "electricityKwhDay": 207.67900824,
+      "annualElectricityKwh": 75802.8380076
+    },
+    "h2sInPpm": 235.9,
+    "h2sOutPpm": 21.1,
+    "stabilityPct": 86.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 93,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0093",
+    "sourceScenario": 93,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 8.4,
+    "srtDays": 59.2,
+    "temperatureC": 35,
+    "ph": 6.96,
+    "upflowMHour": 0,
+    "olr": 4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.67,
+      "methanePct": 78.6,
+      "methaneM3Day": 75.19662,
+      "electricityKwhDay": 269.89570850399997,
+      "annualElectricityKwh": 98511.93360395999
+    },
+    "h2sInPpm": 180.1,
+    "h2sOutPpm": 13.4,
+    "stabilityPct": 88.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 94,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0094",
+    "sourceScenario": 94,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 64,
+    "srtDays": 17.6,
+    "temperatureC": 55,
+    "ph": 7.32,
+    "upflowMHour": 0,
+    "olr": 5.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.7,
+      "methanePct": 62.1,
+      "methaneM3Day": 59.429700000000004,
+      "electricityKwhDay": 213.30507924,
+      "annualElectricityKwh": 77856.3539226
+    },
+    "h2sInPpm": 205.8,
+    "h2sOutPpm": 18.1,
+    "stabilityPct": 88.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 95,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0095",
+    "sourceScenario": 95,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 40.4,
+    "srtDays": 18.4,
+    "temperatureC": 37,
+    "ph": 7.37,
+    "upflowMHour": 0,
+    "olr": 3.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.74,
+      "methanePct": 60.4,
+      "methaneM3Day": 57.82696,
+      "electricityKwhDay": 207.552524832,
+      "annualElectricityKwh": 75756.67156367999
+    },
+    "h2sInPpm": 216.9,
+    "h2sOutPpm": 14,
+    "stabilityPct": 84.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 96,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0096",
+    "sourceScenario": 96,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 26.3,
+    "srtDays": 13.8,
+    "temperatureC": 50,
+    "ph": 6.9,
+    "upflowMHour": 0,
+    "olr": 5.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.77,
+      "methanePct": 61.5,
+      "methaneM3Day": 58.89854999999999,
+      "electricityKwhDay": 211.39867565999998,
+      "annualElectricityKwh": 77160.5166159
+    },
+    "h2sInPpm": 182.5,
+    "h2sOutPpm": 17.2,
+    "stabilityPct": 90.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 97,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0097",
+    "sourceScenario": 97,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 83.6,
+    "srtDays": 3.5,
+    "temperatureC": 55,
+    "ph": 7.2,
+    "upflowMHour": 0,
+    "olr": 4.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.8,
+      "methanePct": 66.8,
+      "methaneM3Day": 63.9944,
+      "electricityKwhDay": 229.68870048,
+      "annualElectricityKwh": 83836.3756752
+    },
+    "h2sInPpm": 180.4,
+    "h2sOutPpm": 10.3,
+    "stabilityPct": 90.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 98,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0098",
+    "sourceScenario": 98,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 107.7,
+    "srtDays": 4.5,
+    "temperatureC": 37,
+    "ph": 7.33,
+    "upflowMHour": 0,
+    "olr": 5.1,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.84,
+      "methanePct": 62,
+      "methaneM3Day": 59.4208,
+      "electricityKwhDay": 213.27313536,
+      "annualElectricityKwh": 77844.6944064
+    },
+    "h2sInPpm": 253.5,
+    "h2sOutPpm": 19.6,
+    "stabilityPct": 90.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 99,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0099",
+    "sourceScenario": 99,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 95.3,
+    "srtDays": 20.4,
+    "temperatureC": 37,
+    "ph": 7.06,
+    "upflowMHour": 0,
+    "olr": 5.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 95.87,
+      "methanePct": 66.4,
+      "methaneM3Day": 63.657680000000006,
+      "electricityKwhDay": 228.48014505600003,
+      "annualElectricityKwh": 83395.25294544
+    },
+    "h2sInPpm": 228.1,
+    "h2sOutPpm": 20.3,
+    "stabilityPct": 87.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 100,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0100",
+    "sourceScenario": 100,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 6.5,
+    "srtDays": 21.2,
+    "temperatureC": 36,
+    "ph": 6.91,
+    "upflowMHour": 0.62,
+    "olr": 6.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.9,
+      "methanePct": 61.3,
+      "methaneM3Day": 58.7867,
+      "electricityKwhDay": 210.99722364000002,
+      "annualElectricityKwh": 77013.9866286
+    },
+    "h2sInPpm": 238,
+    "h2sOutPpm": 15.4,
+    "stabilityPct": 92.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 101,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0101",
+    "sourceScenario": 101,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 5.9,
+    "srtDays": 43.8,
+    "temperatureC": 38,
+    "ph": 6.97,
+    "upflowMHour": 7.56,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.94,
+      "methanePct": 65.5,
+      "methaneM3Day": 62.8407,
+      "electricityKwhDay": 225.54784044,
+      "annualElectricityKwh": 82324.9617606
+    },
+    "h2sInPpm": 193.8,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 95.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 102,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0102",
+    "sourceScenario": 102,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6,
+    "srtDays": 31.2,
+    "temperatureC": 35,
+    "ph": 7.19,
+    "upflowMHour": 0,
+    "olr": 11.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 95.97,
+      "methanePct": 71.3,
+      "methaneM3Day": 68.42661,
+      "electricityKwhDay": 245.59678861199998,
+      "annualElectricityKwh": 89642.82784338
+    },
+    "h2sInPpm": 251.8,
+    "h2sOutPpm": 14.1,
+    "stabilityPct": 89.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 103,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0103",
+    "sourceScenario": 103,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 77.8,
+    "srtDays": 15.6,
+    "temperatureC": 55,
+    "ph": 7.2,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96,
+      "methanePct": 62.4,
+      "methaneM3Day": 59.903999999999996,
+      "electricityKwhDay": 215.0074368,
+      "annualElectricityKwh": 78477.714432
+    },
+    "h2sInPpm": 233.1,
+    "h2sOutPpm": 13.6,
+    "stabilityPct": 82.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 104,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0104",
+    "sourceScenario": 104,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 38.3,
+    "srtDays": 18.5,
+    "temperatureC": 37,
+    "ph": 7.03,
+    "upflowMHour": 0,
+    "olr": 5.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.04,
+      "methanePct": 64.9,
+      "methaneM3Day": 62.32996000000001,
+      "electricityKwhDay": 223.71469243200002,
+      "annualElectricityKwh": 81655.86273768001
+    },
+    "h2sInPpm": 224.3,
+    "h2sOutPpm": 18,
+    "stabilityPct": 91.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 105,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0105",
+    "sourceScenario": 105,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 58.8,
+    "srtDays": 19.4,
+    "temperatureC": 50,
+    "ph": 7.39,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.07,
+      "methanePct": 63.4,
+      "methaneM3Day": 60.908379999999994,
+      "electricityKwhDay": 218.612357496,
+      "annualElectricityKwh": 79793.51048604
+    },
+    "h2sInPpm": 221.2,
+    "h2sOutPpm": 22,
+    "stabilityPct": 93.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 106,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0106",
+    "sourceScenario": 106,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 97,
+    "srtDays": 4,
+    "temperatureC": 55,
+    "ph": 6.95,
+    "upflowMHour": 0,
+    "olr": 3.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.1,
+      "methanePct": 67.1,
+      "methaneM3Day": 64.4831,
+      "electricityKwhDay": 231.44274251999997,
+      "annualElectricityKwh": 84476.60101979999
+    },
+    "h2sInPpm": 211.6,
+    "h2sOutPpm": 13.9,
+    "stabilityPct": 84.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 107,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0107",
+    "sourceScenario": 107,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 165.2,
+    "srtDays": 6.9,
+    "temperatureC": 37,
+    "ph": 7,
+    "upflowMHour": 0,
+    "olr": 2.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.13,
+      "methanePct": 66.9,
+      "methaneM3Day": 64.31097000000001,
+      "electricityKwhDay": 230.82493352400004,
+      "annualElectricityKwh": 84251.10073626002
+    },
+    "h2sInPpm": 253,
+    "h2sOutPpm": 22.6,
+    "stabilityPct": 88.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 108,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0108",
+    "sourceScenario": 108,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 83.2,
+    "srtDays": 28.2,
+    "temperatureC": 37,
+    "ph": 7.16,
+    "upflowMHour": 0,
+    "olr": 3.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.17,
+      "methanePct": 65.9,
+      "methaneM3Day": 63.37603000000001,
+      "electricityKwhDay": 227.46924687600003,
+      "annualElectricityKwh": 83026.27510974
+    },
+    "h2sInPpm": 238.5,
+    "h2sOutPpm": 14.5,
+    "stabilityPct": 90,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 109,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0109",
+    "sourceScenario": 109,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 4.8,
+    "srtDays": 54.6,
+    "temperatureC": 36,
+    "ph": 6.95,
+    "upflowMHour": 1.86,
+    "olr": 10.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.2,
+      "methanePct": 61.6,
+      "methaneM3Day": 59.2592,
+      "electricityKwhDay": 212.69312064,
+      "annualElectricityKwh": 77632.9890336
+    },
+    "h2sInPpm": 239.5,
+    "h2sOutPpm": 23.7,
+    "stabilityPct": 95.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 110,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0110",
+    "sourceScenario": 110,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 6.3,
+    "srtDays": 55.5,
+    "temperatureC": 38,
+    "ph": 7.06,
+    "upflowMHour": 6.88,
+    "olr": 7.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.23,
+      "methanePct": 64.9,
+      "methaneM3Day": 62.45327000000001,
+      "electricityKwhDay": 224.15727668400004,
+      "annualElectricityKwh": 81817.40598966001
+    },
+    "h2sInPpm": 226.5,
+    "h2sOutPpm": 18,
+    "stabilityPct": 90.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 111,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0111",
+    "sourceScenario": 111,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.6,
+    "srtDays": 62.7,
+    "temperatureC": 35,
+    "ph": 7.09,
+    "upflowMHour": 0,
+    "olr": 5.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.27,
+      "methanePct": 73.9,
+      "methaneM3Day": 71.14353,
+      "electricityKwhDay": 255.348357876,
+      "annualElectricityKwh": 93202.15062474
+    },
+    "h2sInPpm": 190.5,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 91.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 112,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0112",
+    "sourceScenario": 112,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 64.3,
+    "srtDays": 24.4,
+    "temperatureC": 55,
+    "ph": 6.95,
+    "upflowMHour": 0,
+    "olr": 3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.3,
+      "methanePct": 66,
+      "methaneM3Day": 63.558,
+      "electricityKwhDay": 228.1223736,
+      "annualElectricityKwh": 83264.666364
+    },
+    "h2sInPpm": 250.5,
+    "h2sOutPpm": 21.6,
+    "stabilityPct": 84.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 113,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0113",
+    "sourceScenario": 113,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 28.5,
+    "srtDays": 22.8,
+    "temperatureC": 37,
+    "ph": 7.03,
+    "upflowMHour": 0,
+    "olr": 3.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.33,
+      "methanePct": 60.4,
+      "methaneM3Day": 58.183319999999995,
+      "electricityKwhDay": 208.83157214399998,
+      "annualElectricityKwh": 76223.52383256
+    },
+    "h2sInPpm": 218.5,
+    "h2sOutPpm": 11.4,
+    "stabilityPct": 91.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 114,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0114",
+    "sourceScenario": 114,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 47.8,
+    "srtDays": 13.4,
+    "temperatureC": 50,
+    "ph": 7.05,
+    "upflowMHour": 0,
+    "olr": 3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.37,
+      "methanePct": 66.1,
+      "methaneM3Day": 63.70057,
+      "electricityKwhDay": 228.634085844,
+      "annualElectricityKwh": 83451.44133306
+    },
+    "h2sInPpm": 250.1,
+    "h2sOutPpm": 13.7,
+    "stabilityPct": 95.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 115,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0115",
+    "sourceScenario": 115,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 119.2,
+    "srtDays": 5,
+    "temperatureC": 55,
+    "ph": 6.94,
+    "upflowMHour": 0,
+    "olr": 5.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.4,
+      "methanePct": 61.1,
+      "methaneM3Day": 58.90040000000001,
+      "electricityKwhDay": 211.40531568000003,
+      "annualElectricityKwh": 77162.94022320001
+    },
+    "h2sInPpm": 204.4,
+    "h2sOutPpm": 14.8,
+    "stabilityPct": 83.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 116,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0116",
+    "sourceScenario": 116,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 156.9,
+    "srtDays": 6.5,
+    "temperatureC": 37,
+    "ph": 7.17,
+    "upflowMHour": 0,
+    "olr": 4.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.43,
+      "methanePct": 61.3,
+      "methaneM3Day": 59.11159000000001,
+      "electricityKwhDay": 212.16331882800003,
+      "annualElectricityKwh": 77439.61137222001
+    },
+    "h2sInPpm": 200.3,
+    "h2sOutPpm": 18.4,
+    "stabilityPct": 93.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 117,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0117",
+    "sourceScenario": 117,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 76,
+    "srtDays": 26,
+    "temperatureC": 37,
+    "ph": 7.09,
+    "upflowMHour": 0,
+    "olr": 3.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.47,
+      "methanePct": 63.2,
+      "methaneM3Day": 60.96904000000001,
+      "electricityKwhDay": 218.83007836800002,
+      "annualElectricityKwh": 79872.97860432
+    },
+    "h2sInPpm": 240.8,
+    "h2sOutPpm": 14.8,
+    "stabilityPct": 84.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 118,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0118",
+    "sourceScenario": 118,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 11.5,
+    "srtDays": 55.8,
+    "temperatureC": 36,
+    "ph": 7.03,
+    "upflowMHour": 0.68,
+    "olr": 4.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.5,
+      "methanePct": 66.8,
+      "methaneM3Day": 64.462,
+      "electricityKwhDay": 231.3670104,
+      "annualElectricityKwh": 84448.958796
+    },
+    "h2sInPpm": 194.4,
+    "h2sOutPpm": 15.4,
+    "stabilityPct": 88.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 119,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0119",
+    "sourceScenario": 119,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 5.5,
+    "srtDays": 54.1,
+    "temperatureC": 38,
+    "ph": 7.07,
+    "upflowMHour": 6.84,
+    "olr": 11,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.53,
+      "methanePct": 64.2,
+      "methaneM3Day": 61.972260000000006,
+      "electricityKwhDay": 222.43083559200002,
+      "annualElectricityKwh": 81187.25499108002
+    },
+    "h2sInPpm": 199.9,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 84.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 120,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0120",
+    "sourceScenario": 120,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.6,
+    "srtDays": 92.2,
+    "temperatureC": 35,
+    "ph": 7.16,
+    "upflowMHour": 0,
+    "olr": 10.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.57,
+      "methanePct": 74.9,
+      "methaneM3Day": 72.33093,
+      "electricityKwhDay": 259.610173956,
+      "annualElectricityKwh": 94757.71349394
+    },
+    "h2sInPpm": 222.4,
+    "h2sOutPpm": 16.3,
+    "stabilityPct": 88.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 121,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0121",
+    "sourceScenario": 121,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 54.3,
+    "srtDays": 13.6,
+    "temperatureC": 55,
+    "ph": 7.14,
+    "upflowMHour": 0,
+    "olr": 5.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.6,
+      "methanePct": 67.6,
+      "methaneM3Day": 65.3016,
+      "electricityKwhDay": 234.38050271999998,
+      "annualElectricityKwh": 85548.8834928
+    },
+    "h2sInPpm": 193.1,
+    "h2sOutPpm": 14,
+    "stabilityPct": 84.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 122,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0122",
+    "sourceScenario": 122,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 30.1,
+    "srtDays": 15.5,
+    "temperatureC": 37,
+    "ph": 7.36,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.63,
+      "methanePct": 62.6,
+      "methaneM3Day": 60.490379999999995,
+      "electricityKwhDay": 217.11207189599997,
+      "annualElectricityKwh": 79245.90624203999
+    },
+    "h2sInPpm": 228.7,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 87.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 123,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0123",
+    "sourceScenario": 123,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 49.5,
+    "srtDays": 14.4,
+    "temperatureC": 50,
+    "ph": 7.31,
+    "upflowMHour": 0,
+    "olr": 6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.67,
+      "methanePct": 65.9,
+      "methaneM3Day": 63.70553000000001,
+      "electricityKwhDay": 228.65188827600002,
+      "annualElectricityKwh": 83457.93922074001
+    },
+    "h2sInPpm": 217.5,
+    "h2sOutPpm": 20.1,
+    "stabilityPct": 94.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 124,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0124",
+    "sourceScenario": 124,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 88.4,
+    "srtDays": 3.7,
+    "temperatureC": 55,
+    "ph": 7.07,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.7,
+      "methanePct": 66.4,
+      "methaneM3Day": 64.20880000000001,
+      "electricityKwhDay": 230.45822496000002,
+      "annualElectricityKwh": 84117.2521104
+    },
+    "h2sInPpm": 229.8,
+    "h2sOutPpm": 14.4,
+    "stabilityPct": 93.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 125,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0125",
+    "sourceScenario": 125,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 111.3,
+    "srtDays": 4.6,
+    "temperatureC": 37,
+    "ph": 7.12,
+    "upflowMHour": 0,
+    "olr": 5.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.73,
+      "methanePct": 65.1,
+      "methaneM3Day": 62.97123,
+      "electricityKwhDay": 226.01633871599998,
+      "annualElectricityKwh": 82495.96363134
+    },
+    "h2sInPpm": 180.2,
+    "h2sOutPpm": 9.1,
+    "stabilityPct": 85.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 126,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0126",
+    "sourceScenario": 126,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 51,
+    "srtDays": 21.9,
+    "temperatureC": 37,
+    "ph": 6.98,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 96.77,
+      "methanePct": 65.1,
+      "methaneM3Day": 62.997269999999986,
+      "electricityKwhDay": 226.10980148399995,
+      "annualElectricityKwh": 82530.07754165998
+    },
+    "h2sInPpm": 211.4,
+    "h2sOutPpm": 11.4,
+    "stabilityPct": 86.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 127,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0127",
+    "sourceScenario": 127,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 9.8,
+    "srtDays": 46.4,
+    "temperatureC": 36,
+    "ph": 7.14,
+    "upflowMHour": 1.19,
+    "olr": 8.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.8,
+      "methanePct": 67.6,
+      "methaneM3Day": 65.43679999999999,
+      "electricityKwhDay": 234.86576255999995,
+      "annualElectricityKwh": 85726.00333439998
+    },
+    "h2sInPpm": 207.4,
+    "h2sOutPpm": 18.9,
+    "stabilityPct": 91.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 128,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0128",
+    "sourceScenario": 128,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 9.1,
+    "srtDays": 38,
+    "temperatureC": 38,
+    "ph": 7.27,
+    "upflowMHour": 4.16,
+    "olr": 11.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.83,
+      "methanePct": 67.9,
+      "methaneM3Day": 65.74757000000001,
+      "electricityKwhDay": 235.98117824400003,
+      "annualElectricityKwh": 86133.13005906001
+    },
+    "h2sInPpm": 222.5,
+    "h2sOutPpm": 14.9,
+    "stabilityPct": 86.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 129,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0129",
+    "sourceScenario": 129,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.7,
+    "srtDays": 55.6,
+    "temperatureC": 35,
+    "ph": 7.1,
+    "upflowMHour": 0,
+    "olr": 9.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.87,
+      "methanePct": 75.6,
+      "methaneM3Day": 73.23371999999999,
+      "electricityKwhDay": 262.85046782399996,
+      "annualElectricityKwh": 95940.42075575999
+    },
+    "h2sInPpm": 237.6,
+    "h2sOutPpm": 17.7,
+    "stabilityPct": 94.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 130,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0130",
+    "sourceScenario": 130,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 68.1,
+    "srtDays": 20.4,
+    "temperatureC": 55,
+    "ph": 7.1,
+    "upflowMHour": 0,
+    "olr": 3.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.9,
+      "methanePct": 63.5,
+      "methaneM3Day": 61.53150000000001,
+      "electricityKwhDay": 220.8488598,
+      "annualElectricityKwh": 80609.83382700001
+    },
+    "h2sInPpm": 190.1,
+    "h2sOutPpm": 18.1,
+    "stabilityPct": 91.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 131,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0131",
+    "sourceScenario": 131,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 39.7,
+    "srtDays": 24.9,
+    "temperatureC": 37,
+    "ph": 7.06,
+    "upflowMHour": 0,
+    "olr": 2.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.93,
+      "methanePct": 61.6,
+      "methaneM3Day": 59.70888000000001,
+      "electricityKwhDay": 214.30711209600003,
+      "annualElectricityKwh": 78222.09591504002
+    },
+    "h2sInPpm": 242.3,
+    "h2sOutPpm": 13.8,
+    "stabilityPct": 85.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 132,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0132",
+    "sourceScenario": 132,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 56.1,
+    "srtDays": 13.7,
+    "temperatureC": 50,
+    "ph": 6.97,
+    "upflowMHour": 0,
+    "olr": 3.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 96.97,
+      "methanePct": 62.3,
+      "methaneM3Day": 60.41231,
+      "electricityKwhDay": 216.831863052,
+      "annualElectricityKwh": 79143.63001398
+    },
+    "h2sInPpm": 234,
+    "h2sOutPpm": 12.7,
+    "stabilityPct": 84.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 133,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0133",
+    "sourceScenario": 133,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 98,
+    "srtDays": 4.1,
+    "temperatureC": 55,
+    "ph": 7.38,
+    "upflowMHour": 0,
+    "olr": 4.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97,
+      "methanePct": 64.9,
+      "methaneM3Day": 62.953,
+      "electricityKwhDay": 225.9509076,
+      "annualElectricityKwh": 82472.081274
+    },
+    "h2sInPpm": 200.4,
+    "h2sOutPpm": 13.8,
+    "stabilityPct": 86.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 134,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0134",
+    "sourceScenario": 134,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 166.3,
+    "srtDays": 6.9,
+    "temperatureC": 37,
+    "ph": 7.24,
+    "upflowMHour": 0,
+    "olr": 3.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.03,
+      "methanePct": 60.2,
+      "methaneM3Day": 58.412060000000004,
+      "electricityKwhDay": 209.65256575200002,
+      "annualElectricityKwh": 76523.18649948001
+    },
+    "h2sInPpm": 212,
+    "h2sOutPpm": 11.9,
+    "stabilityPct": 90.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 135,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0135",
+    "sourceScenario": 135,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 69.3,
+    "srtDays": 29,
+    "temperatureC": 37,
+    "ph": 7.06,
+    "upflowMHour": 0,
+    "olr": 5.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.07,
+      "methanePct": 64.4,
+      "methaneM3Day": 62.51308,
+      "electricityKwhDay": 224.371946736,
+      "annualElectricityKwh": 81895.76055864
+    },
+    "h2sInPpm": 219.2,
+    "h2sOutPpm": 15,
+    "stabilityPct": 86.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 136,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0136",
+    "sourceScenario": 136,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 6,
+    "srtDays": 57,
+    "temperatureC": 36,
+    "ph": 7.39,
+    "upflowMHour": 1.87,
+    "olr": 10.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.1,
+      "methanePct": 66,
+      "methaneM3Day": 64.086,
+      "electricityKwhDay": 230.0174712,
+      "annualElectricityKwh": 83956.37698799999
+    },
+    "h2sInPpm": 241.2,
+    "h2sOutPpm": 14.9,
+    "stabilityPct": 88.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 137,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0137",
+    "sourceScenario": 137,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 6.7,
+    "srtDays": 45.8,
+    "temperatureC": 38,
+    "ph": 7.03,
+    "upflowMHour": 4.96,
+    "olr": 6.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.13,
+      "methanePct": 64.7,
+      "methaneM3Day": 62.843109999999996,
+      "electricityKwhDay": 225.556490412,
+      "annualElectricityKwh": 82328.11900038
+    },
+    "h2sInPpm": 212.8,
+    "h2sOutPpm": 19,
+    "stabilityPct": 93.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 138,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0138",
+    "sourceScenario": 138,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.2,
+    "srtDays": 41.7,
+    "temperatureC": 35,
+    "ph": 7.07,
+    "upflowMHour": 0,
+    "olr": 4.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.17,
+      "methanePct": 78,
+      "methaneM3Day": 75.79260000000001,
+      "electricityKwhDay": 272.03479992,
+      "annualElectricityKwh": 99292.7019708
+    },
+    "h2sInPpm": 247.1,
+    "h2sOutPpm": 23,
+    "stabilityPct": 92.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 139,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0139",
+    "sourceScenario": 139,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 53.6,
+    "srtDays": 17.1,
+    "temperatureC": 55,
+    "ph": 7,
+    "upflowMHour": 0,
+    "olr": 6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.2,
+      "methanePct": 61.2,
+      "methaneM3Day": 59.4864,
+      "electricityKwhDay": 213.50858688,
+      "annualElectricityKwh": 77930.6342112
+    },
+    "h2sInPpm": 213.8,
+    "h2sOutPpm": 14.8,
+    "stabilityPct": 95.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 140,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0140",
+    "sourceScenario": 140,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 47.5,
+    "srtDays": 16,
+    "temperatureC": 37,
+    "ph": 7.3,
+    "upflowMHour": 0,
+    "olr": 2.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.23,
+      "methanePct": 62.2,
+      "methaneM3Day": 60.47706,
+      "electricityKwhDay": 217.06426375200002,
+      "annualElectricityKwh": 79228.45626948001
+    },
+    "h2sInPpm": 250.8,
+    "h2sOutPpm": 16.8,
+    "stabilityPct": 83.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 141,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0141",
+    "sourceScenario": 141,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 64,
+    "srtDays": 14.3,
+    "temperatureC": 50,
+    "ph": 7.18,
+    "upflowMHour": 0,
+    "olr": 3.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.27,
+      "methanePct": 64,
+      "methaneM3Day": 62.2528,
+      "electricityKwhDay": 223.43774976,
+      "annualElectricityKwh": 81554.7786624
+    },
+    "h2sInPpm": 234.9,
+    "h2sOutPpm": 15.8,
+    "stabilityPct": 95.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 142,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0142",
+    "sourceScenario": 142,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 120,
+    "srtDays": 5,
+    "temperatureC": 55,
+    "ph": 6.95,
+    "upflowMHour": 0,
+    "olr": 4.1,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.3,
+      "methanePct": 65.8,
+      "methaneM3Day": 64.0234,
+      "electricityKwhDay": 229.79278727999997,
+      "annualElectricityKwh": 83874.36735719998
+    },
+    "h2sInPpm": 258.1,
+    "h2sOutPpm": 21.7,
+    "stabilityPct": 88.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 143,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0143",
+    "sourceScenario": 143,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 126.6,
+    "srtDays": 5.3,
+    "temperatureC": 37,
+    "ph": 7.24,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.33,
+      "methanePct": 62.8,
+      "methaneM3Day": 61.123239999999996,
+      "electricityKwhDay": 219.38353300799997,
+      "annualElectricityKwh": 80074.98954791999
+    },
+    "h2sInPpm": 243,
+    "h2sOutPpm": 14.2,
+    "stabilityPct": 93.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 144,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0144",
+    "sourceScenario": 144,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 68,
+    "srtDays": 19.8,
+    "temperatureC": 37,
+    "ph": 7.3,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.36,
+      "methanePct": 63.9,
+      "methaneM3Day": 62.21304,
+      "electricityKwhDay": 223.295043168,
+      "annualElectricityKwh": 81502.69075632001
+    },
+    "h2sInPpm": 251.4,
+    "h2sOutPpm": 23.3,
+    "stabilityPct": 94.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 145,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0145",
+    "sourceScenario": 145,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 4.8,
+    "srtDays": 41.4,
+    "temperatureC": 36,
+    "ph": 6.93,
+    "upflowMHour": 0.73,
+    "olr": 4.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.4,
+      "methanePct": 60,
+      "methaneM3Day": 58.44,
+      "electricityKwhDay": 209.752848,
+      "annualElectricityKwh": 76559.78952
+    },
+    "h2sInPpm": 214.9,
+    "h2sOutPpm": 13.2,
+    "stabilityPct": 82.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 146,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0146",
+    "sourceScenario": 146,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 7.9,
+    "srtDays": 26.7,
+    "temperatureC": 38,
+    "ph": 7.33,
+    "upflowMHour": 7.29,
+    "olr": 5.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.43,
+      "methanePct": 66.6,
+      "methaneM3Day": 64.88838,
+      "electricityKwhDay": 232.897373496,
+      "annualElectricityKwh": 85007.54132604
+    },
+    "h2sInPpm": 223.1,
+    "h2sOutPpm": 13.2,
+    "stabilityPct": 83.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 147,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0147",
+    "sourceScenario": 147,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 8.4,
+    "srtDays": 81.6,
+    "temperatureC": 35,
+    "ph": 7.28,
+    "upflowMHour": 0,
+    "olr": 6.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.46,
+      "methanePct": 75,
+      "methaneM3Day": 73.09499999999998,
+      "electricityKwhDay": 262.35257399999995,
+      "annualElectricityKwh": 95758.68950999998
+    },
+    "h2sInPpm": 240,
+    "h2sOutPpm": 18.4,
+    "stabilityPct": 87.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 148,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0148",
+    "sourceScenario": 148,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 58.5,
+    "srtDays": 14.7,
+    "temperatureC": 55,
+    "ph": 6.96,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.5,
+      "methanePct": 60.7,
+      "methaneM3Day": 59.1825,
+      "electricityKwhDay": 212.41782899999998,
+      "annualElectricityKwh": 77532.507585
+    },
+    "h2sInPpm": 194.1,
+    "h2sOutPpm": 17.7,
+    "stabilityPct": 93.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 149,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0149",
+    "sourceScenario": 149,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 33.6,
+    "srtDays": 29.9,
+    "temperatureC": 37,
+    "ph": 7.23,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.53,
+      "methanePct": 63.6,
+      "methaneM3Day": 62.02908,
+      "electricityKwhDay": 222.634773936,
+      "annualElectricityKwh": 81261.69248664
+    },
+    "h2sInPpm": 211.4,
+    "h2sOutPpm": 11.9,
+    "stabilityPct": 95.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 150,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0150",
+    "sourceScenario": 150,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 65.9,
+    "srtDays": 14.5,
+    "temperatureC": 50,
+    "ph": 7.23,
+    "upflowMHour": 0,
+    "olr": 2.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.56,
+      "methanePct": 62.3,
+      "methaneM3Day": 60.779880000000006,
+      "electricityKwhDay": 218.151145296,
+      "annualElectricityKwh": 79625.16803304
+    },
+    "h2sInPpm": 238.8,
+    "h2sOutPpm": 17.1,
+    "stabilityPct": 89.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 151,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0151",
+    "sourceScenario": 151,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 111.8,
+    "srtDays": 4.7,
+    "temperatureC": 55,
+    "ph": 6.91,
+    "upflowMHour": 0,
+    "olr": 4.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.6,
+      "methanePct": 60.4,
+      "methaneM3Day": 58.9504,
+      "electricityKwhDay": 211.58477568,
+      "annualElectricityKwh": 77228.4431232
+    },
+    "h2sInPpm": 228.1,
+    "h2sOutPpm": 17.3,
+    "stabilityPct": 85.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 152,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0152",
+    "sourceScenario": 152,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 126.1,
+    "srtDays": 5.3,
+    "temperatureC": 37,
+    "ph": 7.31,
+    "upflowMHour": 0,
+    "olr": 5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.63,
+      "methanePct": 64.5,
+      "methaneM3Day": 62.971349999999994,
+      "electricityKwhDay": 226.01676941999997,
+      "annualElectricityKwh": 82496.12083829999
+    },
+    "h2sInPpm": 210.8,
+    "h2sOutPpm": 18.2,
+    "stabilityPct": 89.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 153,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0153",
+    "sourceScenario": 153,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 63.1,
+    "srtDays": 23.5,
+    "temperatureC": 37,
+    "ph": 6.93,
+    "upflowMHour": 0,
+    "olr": 4.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.66,
+      "methanePct": 60,
+      "methaneM3Day": 58.596,
+      "electricityKwhDay": 210.31276319999998,
+      "annualElectricityKwh": 76764.158568
+    },
+    "h2sInPpm": 197,
+    "h2sOutPpm": 10.9,
+    "stabilityPct": 91,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 154,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0154",
+    "sourceScenario": 154,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 5.4,
+    "srtDays": 38.8,
+    "temperatureC": 36,
+    "ph": 7.37,
+    "upflowMHour": 1.84,
+    "olr": 7.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.7,
+      "methanePct": 60.5,
+      "methaneM3Day": 59.10850000000001,
+      "electricityKwhDay": 212.15222820000002,
+      "annualElectricityKwh": 77435.56329300001
+    },
+    "h2sInPpm": 197.2,
+    "h2sOutPpm": 13.9,
+    "stabilityPct": 84.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 155,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0155",
+    "sourceScenario": 155,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 8.1,
+    "srtDays": 24,
+    "temperatureC": 38,
+    "ph": 7.11,
+    "upflowMHour": 4.86,
+    "olr": 5.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.73,
+      "methanePct": 61.4,
+      "methaneM3Day": 60.006220000000006,
+      "electricityKwhDay": 215.374324824,
+      "annualElectricityKwh": 78611.62856076
+    },
+    "h2sInPpm": 190.8,
+    "h2sOutPpm": 10.9,
+    "stabilityPct": 86.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 156,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0156",
+    "sourceScenario": 156,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 8.2,
+    "srtDays": 33.9,
+    "temperatureC": 35,
+    "ph": 7.03,
+    "upflowMHour": 0,
+    "olr": 6.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.76,
+      "methanePct": 76.1,
+      "methaneM3Day": 74.39536,
+      "electricityKwhDay": 267.019826112,
+      "annualElectricityKwh": 97462.23653087999
+    },
+    "h2sInPpm": 196.4,
+    "h2sOutPpm": 10.9,
+    "stabilityPct": 95,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 157,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0157",
+    "sourceScenario": 157,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 52.8,
+    "srtDays": 13.4,
+    "temperatureC": 55,
+    "ph": 7.21,
+    "upflowMHour": 0,
+    "olr": 2.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.8,
+      "methanePct": 61,
+      "methaneM3Day": 59.658,
+      "electricityKwhDay": 214.1244936,
+      "annualElectricityKwh": 78155.440164
+    },
+    "h2sInPpm": 248.2,
+    "h2sOutPpm": 15.5,
+    "stabilityPct": 93.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 158,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0158",
+    "sourceScenario": 158,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 36.6,
+    "srtDays": 30,
+    "temperatureC": 37,
+    "ph": 7.1,
+    "upflowMHour": 0,
+    "olr": 2.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.83,
+      "methanePct": 62.6,
+      "methaneM3Day": 61.241580000000006,
+      "electricityKwhDay": 219.80827893600002,
+      "annualElectricityKwh": 80230.02181164
+    },
+    "h2sInPpm": 255.9,
+    "h2sOutPpm": 18.2,
+    "stabilityPct": 93.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 159,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0159",
+    "sourceScenario": 159,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 32.2,
+    "srtDays": 24.7,
+    "temperatureC": 50,
+    "ph": 7.15,
+    "upflowMHour": 0,
+    "olr": 4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 97.86,
+      "methanePct": 67.8,
+      "methaneM3Day": 66.34908,
+      "electricityKwhDay": 238.140117936,
+      "annualElectricityKwh": 86921.14304664
+    },
+    "h2sInPpm": 210.5,
+    "h2sOutPpm": 16.9,
+    "stabilityPct": 90.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 160,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0160",
+    "sourceScenario": 160,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 78.1,
+    "srtDays": 3.3,
+    "temperatureC": 55,
+    "ph": 7,
+    "upflowMHour": 0,
+    "olr": 3.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.9,
+      "methanePct": 60.8,
+      "methaneM3Day": 59.523199999999996,
+      "electricityKwhDay": 213.64066943999998,
+      "annualElectricityKwh": 77978.8443456
+    },
+    "h2sInPpm": 249.3,
+    "h2sOutPpm": 17.6,
+    "stabilityPct": 87,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 161,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0161",
+    "sourceScenario": 161,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 125.4,
+    "srtDays": 5.2,
+    "temperatureC": 37,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 3.7,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.93,
+      "methanePct": 67.4,
+      "methaneM3Day": 66.00482000000001,
+      "electricityKwhDay": 236.90449994400004,
+      "annualElectricityKwh": 86470.14247956002
+    },
+    "h2sInPpm": 254.6,
+    "h2sOutPpm": 20.5,
+    "stabilityPct": 86.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 162,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0162",
+    "sourceScenario": 162,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 69.7,
+    "srtDays": 23.5,
+    "temperatureC": 37,
+    "ph": 7.23,
+    "upflowMHour": 0,
+    "olr": 3.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 97.96,
+      "methanePct": 64.4,
+      "methaneM3Day": 63.08624,
+      "electricityKwhDay": 226.42913260799997,
+      "annualElectricityKwh": 82646.63340191999
+    },
+    "h2sInPpm": 205.7,
+    "h2sOutPpm": 17,
+    "stabilityPct": 87.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 163,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0163",
+    "sourceScenario": 163,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 4.8,
+    "srtDays": 48.9,
+    "temperatureC": 36,
+    "ph": 7.01,
+    "upflowMHour": 0.75,
+    "olr": 7.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98,
+      "methanePct": 64.5,
+      "methaneM3Day": 63.21,
+      "electricityKwhDay": 226.873332,
+      "annualElectricityKwh": 82808.76618
+    },
+    "h2sInPpm": 240.4,
+    "h2sOutPpm": 20.9,
+    "stabilityPct": 93.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 164,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0164",
+    "sourceScenario": 164,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 9.6,
+    "srtDays": 46.8,
+    "temperatureC": 38,
+    "ph": 7.37,
+    "upflowMHour": 6.39,
+    "olr": 4.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.03,
+      "methanePct": 63.1,
+      "methaneM3Day": 61.856930000000006,
+      "electricityKwhDay": 222.016893156,
+      "annualElectricityKwh": 81036.16600194
+    },
+    "h2sInPpm": 253.9,
+    "h2sOutPpm": 18,
+    "stabilityPct": 82.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 165,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0165",
+    "sourceScenario": 165,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 6.2,
+    "srtDays": 77.6,
+    "temperatureC": 35,
+    "ph": 6.91,
+    "upflowMHour": 0,
+    "olr": 8.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.06,
+      "methanePct": 77.4,
+      "methaneM3Day": 75.89844000000001,
+      "electricityKwhDay": 272.41468084800005,
+      "annualElectricityKwh": 99431.35850952001
+    },
+    "h2sInPpm": 248.2,
+    "h2sOutPpm": 18.7,
+    "stabilityPct": 88.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 166,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0166",
+    "sourceScenario": 166,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 48.3,
+    "srtDays": 22.2,
+    "temperatureC": 55,
+    "ph": 7.34,
+    "upflowMHour": 0,
+    "olr": 3.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.1,
+      "methanePct": 63,
+      "methaneM3Day": 61.80299999999999,
+      "electricityKwhDay": 221.82332759999997,
+      "annualElectricityKwh": 80965.51457399999
+    },
+    "h2sInPpm": 225.2,
+    "h2sOutPpm": 19.5,
+    "stabilityPct": 84.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 167,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0167",
+    "sourceScenario": 167,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 42.6,
+    "srtDays": 22.4,
+    "temperatureC": 37,
+    "ph": 7.38,
+    "upflowMHour": 0,
+    "olr": 4.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.13,
+      "methanePct": 67.7,
+      "methaneM3Day": 66.43401,
+      "electricityKwhDay": 238.444948692,
+      "annualElectricityKwh": 87032.40627258
+    },
+    "h2sInPpm": 248.5,
+    "h2sOutPpm": 22.5,
+    "stabilityPct": 90.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 168,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0168",
+    "sourceScenario": 168,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 66.2,
+    "srtDays": 16.9,
+    "temperatureC": 50,
+    "ph": 7.31,
+    "upflowMHour": 0,
+    "olr": 2.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.16,
+      "methanePct": 63.9,
+      "methaneM3Day": 62.72424,
+      "electricityKwhDay": 225.129842208,
+      "annualElectricityKwh": 82172.39240592
+    },
+    "h2sInPpm": 225.2,
+    "h2sOutPpm": 11.5,
+    "stabilityPct": 90.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 169,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0169",
+    "sourceScenario": 169,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 92.4,
+    "srtDays": 3.8,
+    "temperatureC": 55,
+    "ph": 7.11,
+    "upflowMHour": 0,
+    "olr": 3.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.2,
+      "methanePct": 60.9,
+      "methaneM3Day": 59.8038,
+      "electricityKwhDay": 214.64779896000002,
+      "annualElectricityKwh": 78346.4466204
+    },
+    "h2sInPpm": 243.6,
+    "h2sOutPpm": 14.2,
+    "stabilityPct": 86,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 170,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0170",
+    "sourceScenario": 170,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 117.9,
+    "srtDays": 4.9,
+    "temperatureC": 37,
+    "ph": 6.91,
+    "upflowMHour": 0,
+    "olr": 5.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.23,
+      "methanePct": 64.2,
+      "methaneM3Day": 63.063660000000006,
+      "electricityKwhDay": 226.34808847200003,
+      "annualElectricityKwh": 82617.05229228002
+    },
+    "h2sInPpm": 217.1,
+    "h2sOutPpm": 14.2,
+    "stabilityPct": 84.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 171,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0171",
+    "sourceScenario": 171,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 80.1,
+    "srtDays": 20.7,
+    "temperatureC": 37,
+    "ph": 6.92,
+    "upflowMHour": 0,
+    "olr": 4.5,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.26,
+      "methanePct": 63.7,
+      "methaneM3Day": 62.591620000000006,
+      "electricityKwhDay": 224.653842504,
+      "annualElectricityKwh": 81998.65251396
+    },
+    "h2sInPpm": 221.8,
+    "h2sOutPpm": 19.8,
+    "stabilityPct": 84,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 172,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0172",
+    "sourceScenario": 172,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 5.5,
+    "srtDays": 23.9,
+    "temperatureC": 36,
+    "ph": 7.1,
+    "upflowMHour": 1.02,
+    "olr": 11.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.3,
+      "methanePct": 66.5,
+      "methaneM3Day": 65.3695,
+      "electricityKwhDay": 234.6242094,
+      "annualElectricityKwh": 85637.836431
+    },
+    "h2sInPpm": 258,
+    "h2sOutPpm": 24.8,
+    "stabilityPct": 91.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 173,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0173",
+    "sourceScenario": 173,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 9.2,
+    "srtDays": 37.2,
+    "temperatureC": 38,
+    "ph": 6.92,
+    "upflowMHour": 6.54,
+    "olr": 7.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.33,
+      "methanePct": 64.3,
+      "methaneM3Day": 63.226189999999995,
+      "electricityKwhDay": 226.93144114799998,
+      "annualElectricityKwh": 82829.97601901999
+    },
+    "h2sInPpm": 259.5,
+    "h2sOutPpm": 13.5,
+    "stabilityPct": 82.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 174,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0174",
+    "sourceScenario": 174,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 10.2,
+    "srtDays": 51.1,
+    "temperatureC": 35,
+    "ph": 6.92,
+    "upflowMHour": 0,
+    "olr": 11.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.36,
+      "methanePct": 79.4,
+      "methaneM3Day": 78.09784,
+      "electricityKwhDay": 280.308767328,
+      "annualElectricityKwh": 102312.70007471999
+    },
+    "h2sInPpm": 247,
+    "h2sOutPpm": 23.2,
+    "stabilityPct": 82.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 175,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0175",
+    "sourceScenario": 175,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 88.1,
+    "srtDays": 14,
+    "temperatureC": 55,
+    "ph": 7.36,
+    "upflowMHour": 0,
+    "olr": 4.1,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.4,
+      "methanePct": 64.5,
+      "methaneM3Day": 63.468,
+      "electricityKwhDay": 227.7993456,
+      "annualElectricityKwh": 83146.761144
+    },
+    "h2sInPpm": 211.8,
+    "h2sOutPpm": 16.5,
+    "stabilityPct": 82.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 176,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0176",
+    "sourceScenario": 176,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 47.3,
+    "srtDays": 19.7,
+    "temperatureC": 37,
+    "ph": 7.04,
+    "upflowMHour": 0,
+    "olr": 2.8,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.43,
+      "methanePct": 67.7,
+      "methaneM3Day": 66.63711,
+      "electricityKwhDay": 239.17391521200003,
+      "annualElectricityKwh": 87298.47905238
+    },
+    "h2sInPpm": 187.5,
+    "h2sOutPpm": 10.6,
+    "stabilityPct": 91.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 177,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0177",
+    "sourceScenario": 177,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 63.8,
+    "srtDays": 24.7,
+    "temperatureC": 50,
+    "ph": 7.37,
+    "upflowMHour": 0,
+    "olr": 5.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.46,
+      "methanePct": 61,
+      "methaneM3Day": 60.060599999999994,
+      "electricityKwhDay": 215.56950551999998,
+      "annualElectricityKwh": 78682.8695148
+    },
+    "h2sInPpm": 243.7,
+    "h2sOutPpm": 17.7,
+    "stabilityPct": 89.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 178,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0178",
+    "sourceScenario": 178,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 115.1,
+    "srtDays": 4.8,
+    "temperatureC": 55,
+    "ph": 7.25,
+    "upflowMHour": 0,
+    "olr": 5.9,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.5,
+      "methanePct": 63.9,
+      "methaneM3Day": 62.9415,
+      "electricityKwhDay": 225.9096318,
+      "annualElectricityKwh": 82457.015607
+    },
+    "h2sInPpm": 216.5,
+    "h2sOutPpm": 17.5,
+    "stabilityPct": 87.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 179,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0179",
+    "sourceScenario": 179,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 124.2,
+    "srtDays": 5.2,
+    "temperatureC": 37,
+    "ph": 6.94,
+    "upflowMHour": 0,
+    "olr": 2.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.53,
+      "methanePct": 66.2,
+      "methaneM3Day": 65.22686,
+      "electricityKwhDay": 234.112245912,
+      "annualElectricityKwh": 85450.96975788
+    },
+    "h2sInPpm": 215.7,
+    "h2sOutPpm": 11.5,
+    "stabilityPct": 90.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 180,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0180",
+    "sourceScenario": 180,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 49.7,
+    "srtDays": 17.4,
+    "temperatureC": 37,
+    "ph": 7.39,
+    "upflowMHour": 0,
+    "olr": 2.8,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.56,
+      "methanePct": 61.7,
+      "methaneM3Day": 60.81152,
+      "electricityKwhDay": 218.264707584,
+      "annualElectricityKwh": 79666.61826816
+    },
+    "h2sInPpm": 221.3,
+    "h2sOutPpm": 11.8,
+    "stabilityPct": 95.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 181,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0181",
+    "sourceScenario": 181,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 5.9,
+    "srtDays": 26.1,
+    "temperatureC": 36,
+    "ph": 7,
+    "upflowMHour": 0.57,
+    "olr": 4.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.59,
+      "methanePct": 64.5,
+      "methaneM3Day": 63.59055,
+      "electricityKwhDay": 228.23920206,
+      "annualElectricityKwh": 83307.3087519
+    },
+    "h2sInPpm": 253,
+    "h2sOutPpm": 18.5,
+    "stabilityPct": 90.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 182,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0182",
+    "sourceScenario": 182,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 5.2,
+    "srtDays": 44.7,
+    "temperatureC": 38,
+    "ph": 7.37,
+    "upflowMHour": 7.2,
+    "olr": 10.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.63,
+      "methanePct": 62.8,
+      "methaneM3Day": 61.93963999999999,
+      "electricityKwhDay": 222.31375588799997,
+      "annualElectricityKwh": 81144.52089911999
+    },
+    "h2sInPpm": 187.2,
+    "h2sOutPpm": 16.6,
+    "stabilityPct": 88.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 183,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0183",
+    "sourceScenario": 183,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 11.7,
+    "srtDays": 56.5,
+    "temperatureC": 35,
+    "ph": 7.17,
+    "upflowMHour": 0,
+    "olr": 10.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.66,
+      "methanePct": 71.8,
+      "methaneM3Day": 70.83788,
+      "electricityKwhDay": 254.251318896,
+      "annualElectricityKwh": 92801.73139704
+    },
+    "h2sInPpm": 205.7,
+    "h2sOutPpm": 13.8,
+    "stabilityPct": 91.4,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 184,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0184",
+    "sourceScenario": 184,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 68.9,
+    "srtDays": 15,
+    "temperatureC": 55,
+    "ph": 6.98,
+    "upflowMHour": 0,
+    "olr": 4.9,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.69,
+      "methanePct": 67.5,
+      "methaneM3Day": 66.61574999999999,
+      "electricityKwhDay": 239.09724989999995,
+      "annualElectricityKwh": 87270.49621349998
+    },
+    "h2sInPpm": 195,
+    "h2sOutPpm": 18.5,
+    "stabilityPct": 89,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 185,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0185",
+    "sourceScenario": 185,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 36.5,
+    "srtDays": 22.6,
+    "temperatureC": 37,
+    "ph": 7.4,
+    "upflowMHour": 0,
+    "olr": 3.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.73,
+      "methanePct": 63.9,
+      "methaneM3Day": 63.08847,
+      "electricityKwhDay": 226.437136524,
+      "annualElectricityKwh": 82649.55483126
+    },
+    "h2sInPpm": 218.2,
+    "h2sOutPpm": 17.2,
+    "stabilityPct": 82.9,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 186,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0186",
+    "sourceScenario": 186,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 52.5,
+    "srtDays": 15,
+    "temperatureC": 50,
+    "ph": 6.93,
+    "upflowMHour": 0,
+    "olr": 4.6,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.76,
+      "methanePct": 67.9,
+      "methaneM3Day": 67.05804,
+      "electricityKwhDay": 240.68471716800002,
+      "annualElectricityKwh": 87849.92176632001
+    },
+    "h2sInPpm": 217.5,
+    "h2sOutPpm": 12,
+    "stabilityPct": 88.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 187,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0187",
+    "sourceScenario": 187,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 74.9,
+    "srtDays": 3.1,
+    "temperatureC": 55,
+    "ph": 7.22,
+    "upflowMHour": 0,
+    "olr": 5.3,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.79,
+      "methanePct": 66.3,
+      "methaneM3Day": 65.49777,
+      "electricityKwhDay": 235.084596084,
+      "annualElectricityKwh": 85805.87757066
+    },
+    "h2sInPpm": 214.3,
+    "h2sOutPpm": 14.6,
+    "stabilityPct": 94,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 188,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0188",
+    "sourceScenario": 188,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 141.4,
+    "srtDays": 5.9,
+    "temperatureC": 37,
+    "ph": 7.23,
+    "upflowMHour": 0,
+    "olr": 3.4,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.83,
+      "methanePct": 65.4,
+      "methaneM3Day": 64.63482,
+      "electricityKwhDay": 231.987295944,
+      "annualElectricityKwh": 84675.36301956
+    },
+    "h2sInPpm": 256.8,
+    "h2sOutPpm": 20.9,
+    "stabilityPct": 88,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 189,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0189",
+    "sourceScenario": 189,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 87,
+    "srtDays": 22.6,
+    "temperatureC": 37,
+    "ph": 7.13,
+    "upflowMHour": 0,
+    "olr": 4.9,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 98.86,
+      "methanePct": 61.7,
+      "methaneM3Day": 60.99662,
+      "electricityKwhDay": 218.92906850399999,
+      "annualElectricityKwh": 79909.11000396
+    },
+    "h2sInPpm": 239.6,
+    "h2sOutPpm": 22.4,
+    "stabilityPct": 84.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 190,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0190",
+    "sourceScenario": 190,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 9,
+    "srtDays": 55.8,
+    "temperatureC": 36,
+    "ph": 6.96,
+    "upflowMHour": 1.62,
+    "olr": 6.2,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.89,
+      "methanePct": 67.6,
+      "methaneM3Day": 66.84964,
+      "electricityKwhDay": 239.93672788799998,
+      "annualElectricityKwh": 87576.90567912
+    },
+    "h2sInPpm": 192.4,
+    "h2sOutPpm": 17.3,
+    "stabilityPct": 86.1,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 191,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0191",
+    "sourceScenario": 191,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 7.2,
+    "srtDays": 50.4,
+    "temperatureC": 38,
+    "ph": 6.99,
+    "upflowMHour": 7.53,
+    "olr": 9.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.93,
+      "methanePct": 62.9,
+      "methaneM3Day": 62.22697,
+      "electricityKwhDay": 223.345040724,
+      "annualElectricityKwh": 81520.93986426
+    },
+    "h2sInPpm": 218.3,
+    "h2sOutPpm": 20.2,
+    "stabilityPct": 85.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 192,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  },
+  {
+    "id": "HRT-0192",
+    "sourceScenario": 192,
+    "pathway": "H3",
+    "technology": "AnMBR anaerobic membrane bioreactor",
+    "configuration": "membrane biomass retention, high CH4 content",
+    "hrtHours": 7.8,
+    "srtDays": 38.9,
+    "temperatureC": 35,
+    "ph": 7.25,
+    "upflowMHour": 0,
+    "olr": 8.4,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.96,
+      "methanePct": 70.7,
+      "methaneM3Day": 69.96472,
+      "electricityKwhDay": 251.117373024,
+      "annualElectricityKwh": 91657.84115375999
+    },
+    "h2sInPpm": 218.5,
+    "h2sOutPpm": 13.3,
+    "stabilityPct": 92.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 193,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/"
+    }
+  },
+  {
+    "id": "HRT-0193",
+    "sourceScenario": 193,
+    "pathway": "H4",
+    "technology": "TPAD temperature-phased (55->35 C)",
+    "configuration": "thermophilic hydrolysis + mesophilic methanogenesis",
+    "hrtHours": 87.1,
+    "srtDays": 17.8,
+    "temperatureC": 55,
+    "ph": 7.02,
+    "upflowMHour": 0,
+    "olr": 5.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 98.99,
+      "methanePct": 62.9,
+      "methaneM3Day": 62.264709999999994,
+      "electricityKwhDay": 223.48049713199998,
+      "annualElectricityKwh": 81570.38145317999
+    },
+    "h2sInPpm": 194.1,
+    "h2sOutPpm": 14.9,
+    "stabilityPct": 87.5,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 194,
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w"
+    }
+  },
+  {
+    "id": "HRT-0194",
+    "sourceScenario": 194,
+    "pathway": "H5",
+    "technology": "Thermochemical NaOH pre-treatment + high-rate AD",
+    "configuration": "solubilization accelerates hydrolysis (T80 -79.6%)",
+    "hrtHours": 29.8,
+    "srtDays": 26.3,
+    "temperatureC": 37,
+    "ph": 7.04,
+    "upflowMHour": 0,
+    "olr": 3.3,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 99.03,
+      "methanePct": 61,
+      "methaneM3Day": 60.4083,
+      "electricityKwhDay": 216.81747036,
+      "annualElectricityKwh": 79138.3766814
+    },
+    "h2sInPpm": 215.1,
+    "h2sOutPpm": 18.3,
+    "stabilityPct": 87.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 195,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0195",
+    "sourceScenario": 195,
+    "pathway": "H6",
+    "technology": "Thermal pre-treatment 50 C + co-digestion",
+    "configuration": "short thermal solubilization then high-rate digestion",
+    "hrtHours": 35.3,
+    "srtDays": 21.9,
+    "temperatureC": 50,
+    "ph": 7.15,
+    "upflowMHour": 0,
+    "olr": 5.7,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 99.06,
+      "methanePct": 65.1,
+      "methaneM3Day": 64.48805999999999,
+      "electricityKwhDay": 231.46054495199996,
+      "annualElectricityKwh": 84483.09890747999
+    },
+    "h2sInPpm": 249.4,
+    "h2sOutPpm": 12.5,
+    "stabilityPct": 90.6,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 196,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/"
+    }
+  },
+  {
+    "id": "HRT-0196",
+    "sourceScenario": 196,
+    "pathway": "C1",
+    "technology": "Thermophilic CSTR (55 C)",
+    "configuration": "conventional mixed digester at 55 C; methanogens grow 2-3x faster",
+    "hrtHours": 114.7,
+    "srtDays": 4.8,
+    "temperatureC": 55,
+    "ph": 7.3,
+    "upflowMHour": 0,
+    "olr": 5.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 99.09,
+      "methanePct": 63.7,
+      "methaneM3Day": 63.12033,
+      "electricityKwhDay": 226.551488436,
+      "annualElectricityKwh": 82691.29327914
+    },
+    "h2sInPpm": 186.5,
+    "h2sOutPpm": 18.5,
+    "stabilityPct": 88.7,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 197,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/"
+    }
+  },
+  {
+    "id": "HRT-0197",
+    "sourceScenario": 197,
+    "pathway": "C2",
+    "technology": "CSTR + thermochemical NaOH pre-treatment",
+    "configuration": "pre-treated feed digested faster in standard CSTR",
+    "hrtHours": 131.6,
+    "srtDays": 5.5,
+    "temperatureC": 37,
+    "ph": 7.18,
+    "upflowMHour": 0,
+    "olr": 3.6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 99.13,
+      "methanePct": 64.4,
+      "methaneM3Day": 63.83972000000001,
+      "electricityKwhDay": 229.13352302400003,
+      "annualElectricityKwh": 83633.73590376001
+    },
+    "h2sInPpm": 246.9,
+    "h2sOutPpm": 23.4,
+    "stabilityPct": 85.2,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 198,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf"
+    }
+  },
+  {
+    "id": "HRT-0198",
+    "sourceScenario": 198,
+    "pathway": "C3",
+    "technology": "Hybrid CSTR with biomass carriers",
+    "configuration": "fixed-film carriers inside CSTR partially decouple SRT from HRT",
+    "hrtHours": 86.1,
+    "srtDays": 27.7,
+    "temperatureC": 37,
+    "ph": 7.34,
+    "upflowMHour": 0,
+    "olr": 6,
+    "olrBasis": "UNRESOLVED_COD_VS",
+    "outputs": {
+      "biogasM3Day": 99.16,
+      "methanePct": 67.1,
+      "methaneM3Day": 66.53636,
+      "electricityKwhDay": 238.812303312,
+      "annualElectricityKwh": 87166.49070888001
+    },
+    "h2sInPpm": 205.1,
+    "h2sOutPpm": 16.4,
+    "stabilityPct": 85.8,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 199,
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/"
+    }
+  },
+  {
+    "id": "HRT-0199",
+    "sourceScenario": 199,
+    "pathway": "H1",
+    "technology": "UASB high-rate reactor",
+    "configuration": "upflow anaerobic sludge blanket, granular biomass retention",
+    "hrtHours": 8.9,
+    "srtDays": 33.8,
+    "temperatureC": 36,
+    "ph": 7.05,
+    "upflowMHour": 1.91,
+    "olr": 8.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 99.19,
+      "methanePct": 61.4,
+      "methaneM3Day": 60.90266,
+      "electricityKwhDay": 218.591827272,
+      "annualElectricityKwh": 79786.01695428
+    },
+    "h2sInPpm": 195.6,
+    "h2sOutPpm": 19,
+    "stabilityPct": 95.3,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 200,
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor"
+    }
+  },
+  {
+    "id": "HRT-0200",
+    "sourceScenario": 200,
+    "pathway": "H2",
+    "technology": "EGSB expanded granular sludge bed",
+    "configuration": "expanded bed, higher OLR & upflow velocity",
+    "hrtHours": 6.4,
+    "srtDays": 47.3,
+    "temperatureC": 38,
+    "ph": 6.99,
+    "upflowMHour": 7.34,
+    "olr": 5.5,
+    "olrBasis": "COD",
+    "outputs": {
+      "biogasM3Day": 99.23,
+      "methanePct": 66.5,
+      "methaneM3Day": 65.98795,
+      "electricityKwhDay": 236.84395013999998,
+      "annualElectricityKwh": 86448.04180109999
+    },
+    "h2sInPpm": 201.2,
+    "h2sOutPpm": 10.9,
+    "stabilityPct": 84,
+    "provenance": {
+      "file": "task2.1.xlsx",
+      "sheet": "200 Scenarios",
+      "row": 201,
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/"
+    }
+  }
+]
