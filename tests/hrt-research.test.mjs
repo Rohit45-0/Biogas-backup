@@ -57,6 +57,10 @@ test("hours research uses a fitted model, explicit units and durable evidence",{
     const current=(await call("/api/research/hrt",meta.defaults)).data;
     assert.equal(current.retentionTime.beforeHours,24);assert.equal(current.comparison.hrtHours,24);
     assert.ok(current.selected.hrtHours>=2&&current.selected.hrtHours<=24);
+    assert.equal(current.jointImprovement.status,"IMPROVED");
+    assert.ok(Math.round(current.selected.biogasM3Day*365)>Math.round(current.comparison.biogasM3Day*365));
+    assert.ok(Math.round(current.selected.methaneM3Day*365)>Math.round(current.comparison.methaneM3Day*365));
+    assert.ok(Math.round(current.selected.electricityKwhDay*365)>Math.round(current.comparison.electricityKwhDay*365));
     for(const item of current.recommendations){
       assert.equal(item.target,current.selected[item.key]);assert.equal(item.current,current.comparison[item.key]);
       assert.equal(item.change,item.target-item.current);
@@ -64,6 +68,14 @@ test("hours research uses a fitted model, explicit units and durable evidence",{
     const hrt=current.recommendations.find(item=>item.key==="hrtHours");assert.equal(hrt.unit,"hours");assert.equal(hrt.current,24);
     const baseline=(await call("/api/research/hrt",{...meta.defaults,objective:"target_hrt",targetHours:24})).data;
     assert.deepEqual(current.comparison,baseline.selected);
+    assert.equal(baseline.jointImprovement.status,"NO_JOINT_IMPROVEMENT");
+    const reported=(await call("/api/research/hrt",{...meta.defaults,baseline:{value:20.6,unit:"hours"},objective:"target_hrt",targetHours:2})).data;
+    assert.equal(reported.jointImprovement.status,"NO_JOINT_IMPROVEMENT");
+    assert.deepEqual(reported.selected,reported.comparison);
+    assert.equal(reported.retentionTime.direction,"unchanged");
+    assert.equal(reported.selected.methaneM3Day*365,reported.comparison.methaneM3Day*365);
+    assert.equal(reported.selected.electricityKwhDay*365,reported.comparison.electricityKwhDay*365);
+    const noImprovementVerification=await call("/api/research/hrt/verify",{runId:reported.runId});assert.equal(noImprovementVerification.data.status,"PASS");
     const restored=(await call(`/api/research/hrt?runId=${current.runId}`)).data;assert.deepEqual(restored.recommendations,current.recommendations);
     const verified=await call("/api/research/hrt/verify",{runId:current.runId});assert.equal(verified.data.status,"PASS");
     const copilot=await call("/api/copilot",{question:"Why this HRT?",mode:"HOURS_RESEARCH",researchRunId:current.runId,prediction:{bestSetpoints:{hrt:602}}});
@@ -77,7 +89,7 @@ test("hours research uses a fitted model, explicit units and durable evidence",{
   });
   await t.test("saved evidence, replay, CSV and fresh-session listing agree",async()=>{
     const saved=(await call(`/api/audit?runId=${run.runId}`)).data;assert.equal(saved.integrity,true);assert.equal(saved.record.kind,"hrt_research");assert.equal(saved.record.response.outputHash,run.outputHash);
-    const verified=await call("/api/research/hrt/verify",{runId:run.runId});assert.equal(verified.status,200);assert.equal(verified.data.status,"PASS");assert.equal(verified.data.saved,true);assert.equal(verified.data.checks.length,8);
+    const verified=await call("/api/research/hrt/verify",{runId:run.runId});assert.equal(verified.status,200);assert.equal(verified.data.status,"PASS");assert.equal(verified.data.saved,true);assert.equal(verified.data.checks.length,9);assert.ok(verified.data.checks.some(check=>check.name==="Production comparison reconciles"&&check.passed));
     const csv=await fetch(base+`/api/research/hrt?runId=${run.runId}&format=csv`,{headers:{Cookie:cookie}});assert.equal(csv.status,200);const lines=(await csv.text()).trim().split(/\r?\n/);assert.equal(lines.length,2001);assert.match(lines[0],/electricity_kwh_day/);assert.match(lines[1],/synthetic_research_model_evaluation_not_plant_measurement/);
     assert.equal((await call(`/api/research/hrt?runId=${run.runId}`,undefined,userCookie)).status,403);
     assert.equal((await call("/api/auth/logout",{})).status,200);cookie=await login("admin");
@@ -100,9 +112,16 @@ test("hours research uses a fitted model, explicit units and durable evidence",{
       assert.equal(current.retentionTime.beforeHours,current.scenario.hrtHours);
       assert.equal(current.comparison.hrtHours,current.scenario.hrtHours);
       // A generated input must use the actual fitted prediction, without output jitter.
-      const manual=(await call("/api/research/hrt",{...defaults,objective:"target_hrt",targetHours:current.scenario.hrtHours})).data;
+      const manual=(await call("/api/research/hrt",{...defaults,baseline:{value:current.scenario.hrtHours,unit:"hours"},objective:"target_hrt",targetHours:current.scenario.hrtHours})).data;
       assert.deepEqual(current.comparison,manual.selected);
-      assert.deepEqual(current.selected,run.selected,"Unchanged optimization goals keep the same global optimum");
+      if(current.jointImprovement.status==="IMPROVED"){
+        assert.ok(current.selected.biogasM3Day>current.comparison.biogasM3Day);
+        assert.ok(current.selected.methaneM3Day>current.comparison.methaneM3Day);
+        assert.ok(current.selected.electricityKwhDay>current.comparison.electricityKwhDay);
+      }else{
+        assert.equal(current.jointImprovement.status,"NO_JOINT_IMPROVEMENT");
+        assert.deepEqual(current.selected,current.comparison);
+      }
       if(previousPrediction)assert.notDeepEqual(current.comparison,previousPrediction);
       for(const item of current.recommendations)assert.equal(item.current,current.comparison[item.key]);
       const evidence=(await call(`/api/audit?runId=${current.runId}`)).data;
@@ -113,10 +132,64 @@ test("hours research uses a fitted model, explicit units and durable evidence",{
       assert.deepEqual(replay.comparison,current.comparison);
       assert.equal((await call("/api/research/hrt/verify",{runId:current.runId})).data.status,"PASS");
       const copilot=(await call("/api/copilot",{question:"Why the same recommendation on each run?",mode:"HOURS_RESEARCH",researchRunId:current.runId})).data;
-      assert.match(copilot.answer,/same optimization goal can return the same optimum/);
+      assert.match(copilot.answer,current.jointImprovement.status==="IMPROVED"?/same optimization goal can return the same optimum/:/No candidate met the joint improvement rule/);
       assert.ok(copilot.answer.includes(current.comparison.biogasM3Day.toFixed(2)));
       previous=current.scenario.hrtHours;previousPrediction=current.comparison;
     }
+  });
+  await t.test("different eligible candidates keep the same baseline and reconcile every output",async()=>{
+    const defaults=(await call("/api/research/hrt")).data.defaults;
+    for(const previousSelectedHrtHours of [null,"22",1.9,24.1])assert.equal((await call("/api/research/hrt",{...defaults,previousSelectedHrtHours})).status,422);
+    let previous=(await call("/api/research/hrt",defaults)).data;
+    const comparison=previous.comparison;
+    for(let i=0;i<5;i++){
+      const payload={...defaults,previousSelectedHrtHours:previous.selected.hrtHours};
+      const response=await call("/api/research/hrt",payload);assert.equal(response.status,200);
+      const current=response.data;
+      assert.deepEqual(current.comparison,comparison,"candidate variation cannot change the submitted baseline");
+      assert.equal(current.jointImprovement.status,"IMPROVED");
+      assert.equal(current.candidateSelection.changedFromPrevious,true);
+      assert.ok(current.candidateSelection.alternativeCount>0);
+      for(const [key,digits] of [["biogasM3Day",1],["methaneM3Day",1],["electricityKwhDay",2]]){
+        assert.ok(current.selected[key]>comparison[key]+1/365,key);
+        assert.notEqual(current.selected[key].toFixed(digits),previous.selected[key].toFixed(digits),key);
+      }
+      assert.deepEqual(current.selected,current.candidates.find(p=>p.hrtHours===current.selected.hrtHours),"all fields must belong to one actually evaluated candidate");
+      assert.deepEqual(current.candidatePreview[0],current.selected,"preview starts with the actual selected candidate");
+      assert.equal(current.selected.methaneM3Day,current.selected.biogasM3Day*current.selected.methanePct/100);
+      assert.equal(current.selected.electricityKwhDay,current.selected.methaneM3Day*9.97*.36);
+      assert.equal((await call("/api/research/hrt",current.request)).data.outputHash,current.outputHash);
+      if(i===0)assert.equal((await call("/api/research/hrt/verify",{runId:current.runId})).data.status,"PASS");
+      previous=current;
+    }
+    const maximum={...defaults,objective:"maximum_energy"};
+    const best=(await call("/api/research/hrt",maximum)).data;
+    const another=(await call("/api/research/hrt",{...maximum,previousSelectedHrtHours:best.selected.hrtHours})).data;
+    assert.equal(another.candidateSelection.changedFromPrevious,true);assert.equal(another.jointImprovement.status,"IMPROVED");
+    assert.ok(another.selected.electricityKwhDay>another.comparison.electricityKwhDay);
+    assert.ok(another.selected.electricityKwhDay<best.selected.electricityKwhDay,"new selection is ranked within distinct eligible alternatives");
+    assert.deepEqual(another.comparison,best.comparison);
+    const explanation=(await call("/api/copilot",{question:"Why this HRT?",mode:"HOURS_RESEARCH",researchRunId:another.runId})).data;
+    assert.match(explanation.answer,/among eligible candidates with production values that differ from the previous selection/);
+    const repetition=(await call("/api/copilot",{question:"Why does this repeat run change?",mode:"HOURS_RESEARCH",researchRunId:another.runId})).data;
+    assert.match(repetition.answer,/different qualifying production scenario/);assert.match(repetition.answer,/baseline fixed/);
+  });
+  await t.test("variation cannot manufacture gains, resample a baseline or change an exact target",async()=>{
+    const defaults=(await call("/api/research/hrt")).data.defaults;
+    for(const hours of [13.5,20.6,2]){
+      const current=(await call("/api/research/hrt",{...defaults,baseline:{value:hours,unit:"hours"},previousSelectedHrtHours:22})).data;
+      assert.equal(current.comparison.hrtHours,hours);assert.deepEqual(current.selected,current.comparison);
+      assert.equal(current.jointImprovement.status,"NO_JOINT_IMPROVEMENT");assert.equal(current.candidateSelection.eligibleCount,0);
+    }
+    const target=(await call("/api/research/hrt",{...defaults,objective:"target_hrt",targetHours:21.5,previousSelectedHrtHours:21.5})).data;
+    assert.equal(target.selected.hrtHours,21.5);assert.equal(target.candidateSelection.strategy,"EXACT_REQUESTED_HRT");
+    const peak=(await call("/api/research/hrt",{...defaults,retainedMethanePct:100})).data;
+    const only=(await call("/api/research/hrt",{...defaults,retainedMethanePct:100,previousSelectedHrtHours:peak.selected.hrtHours})).data;
+    assert.deepEqual(only.selected,peak.selected);assert.equal(only.candidateSelection.alternativeCount,0);assert.equal(only.candidateSelection.changedFromPrevious,false);
+    const automatic={...defaults,scenario:{mode:"automatic",seed:"baseline-fixed-review",previousHrtHours:24}};
+    const before=(await call("/api/research/hrt",automatic)).data;
+    const after=(await call("/api/research/hrt",{...automatic,previousSelectedHrtHours:before.selected.hrtHours})).data;
+    assert.deepEqual(after.scenario,before.scenario);assert.deepEqual(after.comparison,before.comparison);
   });
   await t.test("tampered research records cannot be exported or replayed",async()=>{
     const file=path.join(storage,"audit-v2/records",run.runId+".json"),record=JSON.parse(await readFile(file,"utf8"));record.response.selected.hrtHours=.5;await writeFile(file,JSON.stringify(record));

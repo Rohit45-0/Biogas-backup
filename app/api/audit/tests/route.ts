@@ -1,5 +1,5 @@
 import {NextResponse} from "next/server";
-import {getSession} from "../../../lib/auth";
+import {getSession,canAudit} from "../../../lib/auth";
 import {auditStoreReady,getEvidence,storageProvider,storeEvidence,validRunId,verifyEvidence} from "../../../lib/audit";
 import {profiles,resolveRequest,validateInputs} from "../../../lib/inputs";
 import {manifest,manifestHash} from "../../../lib/manifest";
@@ -13,13 +13,13 @@ const headers={"Cache-Control":"no-store"};
 export async function GET(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401,headers});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403,headers});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403,headers});
   return NextResponse.json({profiles,manifest,manifestHash,storage:{provider:storageProvider(),available:await auditStoreReady()},validation:{status:"NOT PLANT-VALIDATED",detail:"These tests verify software execution and record integrity. They do not establish prediction accuracy or realized plant gains."}},{headers});
 }
 export async function POST(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401,headers});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403,headers});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403,headers});
   let body:{runId?:string};
   try{body=await request.json();}catch{return NextResponse.json({error:"Invalid JSON"},{status:400,headers});}
   if(typeof body?.runId!=="string"||!validRunId(body.runId))return NextResponse.json({error:"A valid run ID is required"},{status:400,headers});

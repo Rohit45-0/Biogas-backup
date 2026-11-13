@@ -1,0 +1,211 @@
+{
+  "version": "reactor-study-2026-11-09-v1",
+  "sources": [
+    {
+      "id": "A",
+      "file": "Aquaivolt High-Rate AD incl. CSTR  200 Scenarios.xlsx",
+      "sha256": "sha256:1dfdd6728e305dcad203445ac3c7a3add6fe8de41608a6149a87c7e06fc02aa8",
+      "scenarioCount": 200,
+      "pathways": {
+        "H1": 23,
+        "H2": 23,
+        "H3": 22,
+        "H4": 22,
+        "H5": 22,
+        "H6": 22,
+        "C1": 22,
+        "C2": 22,
+        "C3": 22
+      }
+    },
+    {
+      "id": "B",
+      "file": "Aquaivolt High-Rate AD  HRT Hours, 200 Scenarios.xlsx",
+      "sha256": "sha256:71cc51bd6c9c4ca662777d831ad55849a59397ecaf3b1209287e3745364b50ee",
+      "scenarioCount": 200,
+      "pathways": {
+        "H1": 34,
+        "H2": 34,
+        "H3": 33,
+        "H4": 33,
+        "H5": 33,
+        "H6": 33
+      }
+    }
+  ],
+  "sourceCount": 400,
+  "technologies": [
+    {
+      "id": "H1",
+      "name": "UASB high-rate reactor",
+      "planningHrtHours": [
+        4,
+        12
+      ],
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor",
+      "olrBasis": "COD",
+      "scenarioCount": 57,
+      "observedHrtHours": [
+        4.1,
+        11.5
+      ],
+      "defaultBaselineId": "T2-A-0001",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "H2",
+      "name": "EGSB expanded granular sludge bed",
+      "planningHrtHours": [
+        4,
+        10
+      ],
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/",
+      "olrBasis": "COD",
+      "scenarioCount": 57,
+      "observedHrtHours": [
+        4.2,
+        10
+      ],
+      "defaultBaselineId": "T2-A-0002",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "H3",
+      "name": "AnMBR anaerobic membrane bioreactor",
+      "planningHrtHours": [
+        6,
+        12
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/",
+      "olrBasis": "COD",
+      "scenarioCount": 55,
+      "observedHrtHours": [
+        6,
+        12
+      ],
+      "defaultBaselineId": "T2-A-0003",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "H4",
+      "name": "TPAD temperature-phased (55->35 C)",
+      "planningHrtHours": [
+        48,
+        96
+      ],
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w",
+      "olrBasis": "COD",
+      "scenarioCount": 55,
+      "observedHrtHours": [
+        48.3,
+        94
+      ],
+      "defaultBaselineId": "T2-A-0004",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "H5",
+      "name": "Thermochemical NaOH pre-treatment + high-rate AD",
+      "planningHrtHours": [
+        24,
+        48
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf",
+      "olrBasis": "COD",
+      "scenarioCount": 55,
+      "observedHrtHours": [
+        24.3,
+        47.6
+      ],
+      "defaultBaselineId": "T2-A-0005",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "H6",
+      "name": "Thermal pre-treatment 50 C + co-digestion",
+      "planningHrtHours": [
+        24,
+        72
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/",
+      "olrBasis": "COD",
+      "scenarioCount": 55,
+      "observedHrtHours": [
+        26.3,
+        69.6
+      ],
+      "defaultBaselineId": "T2-A-0006",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "C1",
+      "name": "Thermophilic CSTR (55 C)",
+      "planningHrtHours": [
+        72,
+        120
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        74.1,
+        120
+      ],
+      "defaultBaselineId": "T2-A-0007",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "C2",
+      "name": "CSTR + thermochemical NaOH pre-treatment",
+      "planningHrtHours": [
+        96,
+        168
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        107.7,
+        166.3
+      ],
+      "defaultBaselineId": "T2-A-0008",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    },
+    {
+      "id": "C3",
+      "name": "Hybrid CSTR with biomass carriers",
+      "planningHrtHours": [
+        48,
+        96
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        49.7,
+        95.3
+      ],
+      "defaultBaselineId": "T2-A-0009",
+      "baselinePolicy": "First source row in this pathway, chosen in source order without screening outcomes; user can select another row."
+    }
+  ],
+  "energy": {
+    "methaneKwhM3": 9.97,
+    "electricalEfficiency": 0.36,
+    "daysPerYear": 365
+  },
+  "workbookReference": {
+    "hrtHours": 360,
+    "biogasM3Day": 66.15,
+    "methanePct": 63.63,
+    "methaneM3Day": 42.09124500000001,
+    "electricityKwhDay": 151.07389655400002,
+    "annualElectricityKwh": 55141.97224221,
+    "technology": "Conventional mesophilic CSTR",
+    "origin": "workbook_reference"
+  },
+  "dataRole": "WORKBOOK_PLANNING_SIMULATION",
+  "mergePolicy": "All 400 source records retained with file-qualified IDs. No fully identical rows across files. Related simulations are not independent plant observations.",
+  "baselinePolicy": "Same-reactor studies use an explicit source scenario or entered operating conditions. The fixed 360-hour conventional CSTR reference is only for technology upgrades.",
+  "calculationBasis": "Canonical outputs use stored biogas and methane percentage; methane, gross electricity and annual projections are derived without intermediate rounding."
+}

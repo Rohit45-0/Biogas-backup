@@ -16,7 +16,7 @@ const dairy={feedstock:"Dairy WW",feedRate:846,temperature:36.5,ph:7.2,olr:3.2,h
 const request={profileId:"DAIRY-WW-001",operatingConditions:dairy,seed:"audit-test-001"};
 async function start(storage=true){
   const listener=createServer();listener.listen(0,"127.0.0.1");await once(listener,"listening");const port=listener.address().port;await new Promise(r=>listener.close(r));base=`http://127.0.0.1:${port}`;
-  server=spawn(process.execPath,[path.join(root,"node_modules/next/dist/bin/next"),"start","--hostname","127.0.0.1","--port",String(port)],{cwd:root,windowsHide:true,env:{...process.env,VERCEL:"",BLOB_READ_WRITE_TOKEN:"",AQUA_AUDIT_DIR:storage?dataDir:"",AQUA_SESSION_SECRET:secret,AQUA_ADMIN_USERNAME:"admin",AQUA_ADMIN_PASSWORD:password,AQUA_USER_USERNAME:"user",AQUA_USER_PASSWORD:password}});
+  server=spawn(process.execPath,[path.join(root,"node_modules/next/dist/bin/next"),"start","--hostname","127.0.0.1","--port",String(port)],{cwd:root,windowsHide:true,env:{...process.env,VERCEL:"",BLOB_READ_WRITE_TOKEN:"",AQUA_AUDIT_DIR:storage?dataDir:"",AQUA_SECURITY_DIR:dataDir,AQUA_SESSION_SECRET:secret,AQUA_ADMIN_USERNAME:"admin",AQUA_ADMIN_PASSWORD:password,AQUA_USER_USERNAME:"user",AQUA_USER_PASSWORD:password}});
   server.stdout.on("data",d=>logs+=d);server.stderr.on("data",d=>logs+=d);
   let ready=false;
   for(let i=0;i<100;i++){try{const r=await fetch(base+"/api/auth/session");if(r.status===401){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,100));}

@@ -6,7 +6,7 @@ This repository contains the Aquaivolt biogas dashboard, its server-side predict
 
 **Live dashboard:** [aquaivolt-command-center.vercel.app](https://aquaivolt-command-center.vercel.app/)
 
-**Hours-scale dashboard:** [HRT, AI recommendations and production views](docs/HRT_RESEARCH_GUIDE.md) share one fitted 2–24-hour synthetic research model and one saved backend run. New comparisons default to 24 hours. Original day-scale model artifacts and tests remain in Audit Trail. See the [current architecture](docs/ARCHITECTURE_2026-11-02.md) and [empirical model study](ai-workflow/research/MODEL_STUDY.md).
+**Current workspace dashboard:** [Input-based model comparison](docs/PAIRED_DASHBOARD_2026-11-07.md) evaluates a model trained on 200 planning simulation rows against 2,000 supported candidate inputs. Each run selects an input, prioritizing more than 40% predicted gain in biogas, methane and electricity against an HRT-dependent baseline. This is an exploratory cross-model comparison with weak held-out validation. The [older HRT study](docs/HRT_RESEARCH_GUIDE.md) and original day-scale audit models remain available. This describes the local implementation; it does not identify the build currently serving the live URL.
 
 **Client installation guide:** [Run the current dashboard locally](CLIENT_QUICK_START.md). Start here for Windows installation, local account setup, Audit Trail checks and troubleshooting.
 
@@ -17,20 +17,20 @@ For a searchable map of the current application and Python workflow, see [Graphi
 ## What happens when the user calculates production?
 
 ```text
-Comparison HRT in hours + objective + methane-retention goal
+Run AI optimization
       ↓
-Authentication and validation
+Authenticate and validate the request; save a selection seed
       ↓
-Evaluate the fitted hours-scale model at 2,000 HRT points
+Evaluate all 2,000 inputs with the trained 200-row Ridge model
       ↓
-Select the scenario and calculate biogas, methane and electricity potential
+Evaluate each input's baseline with the existing model at the same HRT
       ↓
-Compare with the same model at the entered HRT; assemble recommendation rows
+Prioritize >40% predicted gain in all three outputs; choose an eligible input
       ↓
-Save evidence; share the result across charts, recommendations, reports and Copilot
+Save evidence; share one comparison across bars, reports, audit and Copilot
 ```
 
-The hours-scale model uses HRT as its independent input. Temperature, pH, feed rate and loading vary together along the supplied synthetic trajectory. Independent plant performance has not been validated.
+The new model uses pathway, HRT, temperature, pH, feed and loading. The separate baseline responds to HRT only, because the source workbook's BEFORE labels are constant. Each selected input has deterministic predictions; random selection changes the input, not its output. These are planning simulations, not demonstrated plant improvements.
 
 The original day-scale models retained in Audit Trail accept:
 
@@ -48,7 +48,8 @@ The original day-scale models retained in Audit Trail accept:
 
 | Component | Location | Purpose |
 |---|---|---|
-| Deployed prediction API | [`app/api/predict/route.ts`](app/api/predict/route.ts) | Authenticated input contract and run persistence |
+| Main dashboard API | [`app/api/research/hrt/route.ts`](app/api/research/hrt/route.ts) | Hours-scale research execution, saved results and candidate exports |
+| Original scenario API | [`app/api/predict/route.ts`](app/api/predict/route.ts) | Day-scale audit tests and historical compatibility |
 | Main dashboard and AI recommendations | [`app/lib/hrt-research.ts`](app/lib/hrt-research.ts) | Hours-scale inference, comparison and 2,000-point goal selection |
 | Original scenario engine (Audit Trail) | [`app/lib/model.ts`](app/lib/model.ts) | Preserved reference-anchor inference and seeded search |
 | Trained ML prediction API | [`app/api/ml/predict/route.ts`](app/api/ml/predict/route.ts) | Audit Trail: actual Ridge and Gradient Boosting predictions |
@@ -163,7 +164,7 @@ Export reproduction and runtime tests are documented in [`ai-workflow/README.md`
 
 ## Presentation explanation
 
-> The overview uses a reference-based scenario engine and a 2,000-candidate search. The Admin Audit Trail additionally executes the saved Ridge and Gradient Boosting pipelines at a separate ML endpoint. Both paths return explicit inputs, outputs, execution traces, model/build hashes, run IDs and confirmed storage status. Trained ML predictions and scenario optimization estimates are clearly separated. Independent plant validation remains outstanding.
+> Overview and AI recommendations use the fitted hours-scale research model at `/api/research/hrt` and a 2,000-point objective search. Admin Audit Trail executes the saved Ridge and Gradient Boosting pipelines at `/api/ml/predict`, and retains the original day-scale scenario tests at `/api/predict`. Each path returns its inputs, outputs, trace, model/build identity, run ID and storage status. The hours-model source is a synthetic workbook; execution and replay do not establish measured plant accuracy or optimization benefit.
 
 ## Repository map
 

@@ -15,6 +15,8 @@ export const validationProtocol={
   prerequisites:["Equipment commissioned and instruments calibrated","Timestamped operating inputs and measured outputs aligned to the same sampling period","Evaluation samples excluded from model fitting and tuning","Frozen model artifacts and an evaluation protocol agreed before testing"],
   scope:"Operator-reported measurements and descriptive errors only. Independent provenance, holdout separation and acceptance criteria require auditor review.",
   optimizationBenefit:"Not established by prediction errors. Requires measured before-and-after periods with comparable operating conditions and a reviewed study design.",
+  proposedAcceptance:{status:"PROPOSED_NOT_APPROVED",prediction:"Improve every predeclared output over persistence/training-mean baseline with a positive 95% confidence interval and approved physical-unit error limits.",productionBenefit:"Positive matched net production/energy benefit with confidence interval above the pre-agreed meaningful effect; account for auxiliary and retrofit energy.",earlyWarning:"Discuss targets: at least 80% event recall, positive median lead over first fixed warning, at least 2 h median lead to onset, at most 1 false advisory episode per 30 normal days.",sampleSize:"Determine from pilot variability and independent events/periods; insufficient evidence is inconclusive."},
+  protocolDocument:"docs/PLANT_VALIDATION_PROTOCOL_2026-11-13.md",
 };
 function invalid(field:string,message:string):never{throw new InputError([{field,message}]);}
 function object(value:unknown,field:string):Record<string,unknown>{

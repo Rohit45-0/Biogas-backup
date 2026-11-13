@@ -1,12 +1,23 @@
 {
-  "sourceHash": "sha256:7a6b7ba4e8081a600a0d8c041213345aa7390654bdc2a0b0e7d273cf38c27411",
+  "sourceHash": "sha256:4e6ecacaedf4dc8a0d3b0b7f9613f72aa0344a42fa3785d78c19ae398ebd7b2f",
   "files": {
-    "app/lib/hrt-research.ts": "82219e8a6ef7bcc9bcfeabe9194ff1a17f4f30e0bb68d007c563db715fb7cce5",
-    "app/lib/hrt-research-execution.ts": "15a7b1634cf11992099d443ccbd47db5da73e02456e12a293e61ad75a344230f",
+    "app/lib/workbook-comparison.ts": "3c07748e04649cdfe3c1f37f259f320b350670694cd2756608cee530c46106f4",
+    "app/lib/research-result-integrity.ts": "b4dbd1ad3ff7a57329df800fd92143c9b30e2c8add820306381d115c3d15ee06",
+    "app/lib/hrt-research.ts": "6266085355a04ed665d28ddf513273d590e6dd78d8c2ea5837102fd5d9202757",
+    "app/lib/research-candidate-selection.ts": "f256634907a9ef49f3df851dfc3c039a7d625a517f81bd1336c542b7e6b5b69d",
+    "app/lib/hrt-research-execution.ts": "41de42d98df9762559ca87ced1f37f2e3ffeadda13d12a2e51c9000368610ea4",
     "app/lib/hrt.ts": "91ee63a65847368c942bb8ac7641a34ca15349223a9be2784f8ef49cfb579cc5",
-    "app/api/research/hrt/route.ts": "eef8867b0b4699441c8ef705e83983d34a3e6502ea125c131626e16a64432ac5",
-    "app/api/research/hrt/verify/route.ts": "86691487b4581c0f3f7ce0122a4a6825452ee20d8ad86b482de25df01eae287b",
+    "app/api/research/hrt/route.ts": "3dccf42c0535953968081fce95dfd2b5f31f49fba00f40567f12409b8a18cb9a",
+    "app/api/research/hrt/verify/route.ts": "7d87932c2a045ea5c068595f78cee796a696418f4fef52788a6873e544d4315b",
     "ai-workflow/research/hours-model.json": "8e803056525cecd5f2b41e410b7e3dc4fe09921b56b797e44f4d3b0cb6dc8833",
-    "ai-workflow/research/hours-data.json": "f759dd69a6ed9348181594c54cd88cc42cca6f62d0694a77048b911c995126c3"
+    "ai-workflow/research/hours-data.json": "f759dd69a6ed9348181594c54cd88cc42cca6f62d0694a77048b911c995126c3",
+    "app/lib/paired-scenarios.ts": "8ff341ec7d579f8ab42f99bc03926d2d50872eca0feb2a32215ace456c50eafd",
+    "ai-workflow/research/paired-200-2026-11-07/model.json": "e20b27bf42a4359c26ab8ec1df15b6b8f863b482ad95470b4e930e170d9cfcf4",
+    "ai-workflow/research/paired-200-2026-11-07/inputs.json": "fb003384c97e3ef837d2fdac66645d80c9b90285ba6a576d4c8a29efeb354811",
+    "ai-workflow/research/paired-200-2026-11-07/source.json": "59866e5245ba57c9bcf55ace125dc3809e3e018c991c08065d4e9a65a7a2d9a1",
+    "app/lib/same-tank-model.ts": "b799a6dd15866cf84b51befaeed41959faf98135cf16d307acafda72b0917c2a",
+    "ai-workflow/research/same-tank-500-2026-11-10/model.json": "bf70c81beda64802e50855a537e75aa1fb35993151de6bf32f1040daa50486c1",
+    "ai-workflow/research/same-tank-500-2026-11-10/inputs.json": "b7f86775aa51cb717420ead2fddbeeec27c30d1dc5fa22e52ab314de0e063141",
+    "ai-workflow/research/same-tank-500-2026-11-10/source.json": "9010e50d1ec954a84b2941617d72f9af4cf4d3c9168b74c0aa9cfba2206a4035"
   }
 }

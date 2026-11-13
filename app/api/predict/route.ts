@@ -1,5 +1,5 @@
 import {NextResponse} from "next/server";
-import {getSession} from "../../lib/auth";
+import {getSession,canAudit} from "../../lib/auth";
 import {InputError,profiles,resolveRequest} from "../../lib/inputs";
 import {baselineFor,searchOptimizationCandidates} from "../../lib/model";
 import {executeRequest} from "../../lib/execution";
@@ -19,7 +19,7 @@ export async function GET(req:Request){
     try{
       const id=url.searchParams.get("runId")??url.searchParams.get("seed")??"";
       const record=await getEvidence(id);
-      if(!record||record.kind!=="optimization"||(session.role!=="admin"&&record.username!==session.username))return NextResponse.json({error:"Run not found"},{status:404});
+      if(!record||record.kind!=="optimization"||(!canAudit(session)&&record.username!==session.username))return NextResponse.json({error:"Run not found"},{status:404});
       if(!verifyEvidence(record))return NextResponse.json({error:"Stored evidence integrity failed"},{status:409});
       if(record.manifestHash!==manifestHash)return NextResponse.json({error:"Run uses a different model build. Download the original audit JSON instead."},{status:409});
       const response=record.response as {seed:string;modelName:string;modelVersion:string};
@@ -40,7 +40,7 @@ export async function POST(req:Request){
   let body:unknown;
   try{const raw=await req.text();if(raw.length>16000)return NextResponse.json({error:"Request too large"},{status:413});body=JSON.parse(raw);}
   catch{return NextResponse.json({error:"Valid JSON is required"},{status:400});}
-  if(body&&typeof body==="object"&&"seed" in body&&session.role!=="admin")return NextResponse.json({error:"Fixed-seed tests require Admin access"},{status:403});
+  if(body&&typeof body==="object"&&"seed" in body&&!canAudit(session))return NextResponse.json({error:"Fixed-seed tests require Reviewer or admin access"},{status:403});
   try{
     if(req.headers.get("accept")?.includes("application/x-ndjson")){
       resolveRequest(body);

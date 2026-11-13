@@ -1,0 +1,50 @@
+import assert from "node:assert/strict";
+import {spawn} from "node:child_process";
+import {once} from "node:events";
+import {createServer} from "node:net";
+import {mkdir,readFile,writeFile} from "node:fs/promises";
+import {randomUUID} from "node:crypto";
+import path from "node:path";
+import {chromium} from "playwright";
+const out=path.resolve("test-results/security-remediation-ui");await mkdir(out,{recursive:true});
+const password=randomUUID(),dataDir=path.join(out,"records-"+randomUUID()),listener=createServer();
+listener.listen(0,"127.0.0.1");await once(listener,"listening");const port=listener.address().port;await new Promise(r=>listener.close(r));
+const base="http://127.0.0.1:"+port;
+const server=spawn(process.execPath,["node_modules/next/dist/bin/next","start","--hostname","127.0.0.1","--port",String(port)],{windowsHide:true,env:{...process.env,VERCEL:"",BLOB_READ_WRITE_TOKEN:"",AQUA_AUDIT_DIR:dataDir,AQUA_SESSION_SECRET:randomUUID(),AQUA_ADMIN_USERNAME:"admin",AQUA_ADMIN_PASSWORD:password,AQUA_USER_USERNAME:"user",AQUA_USER_PASSWORD:password}});
+let browser,logs="";server.stdout.on("data",d=>logs+=d);server.stderr.on("data",d=>logs+=d);
+try{
+ for(let i=0;i<150;i++){try{if((await fetch(base+"/api/auth/session")).status===401)break;}catch{}await new Promise(r=>setTimeout(r,100));}
+ browser=await chromium.launch({headless:true,channel:"msedge"});const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage(),errors=[];
+ page.on("pageerror",e=>errors.push(e.message));
+ await page.goto(base);await page.getByLabel("Username",{exact:true}).fill("admin");await page.getByLabel("Password",{exact:true}).fill(password);const loginResponse=page.waitForResponse(r=>r.url().endsWith("/api/auth/login"));await page.getByRole("button",{name:/Continue/}).click();const logged=await loginResponse;assert.equal(logged.status(),200,await logged.text());
+ await page.getByRole("button",{name:"Settings",exact:true}).click();
+ const security=page.getByRole("region",{name:"Account security"});
+ await security.getByLabel("Current password",{exact:true}).fill(password);
+ await security.getByLabel("New password (12–128 characters)",{exact:true}).fill(password);
+ await security.getByLabel("Username",{exact:true}).fill("auditor.ui");await security.getByLabel("Assigned person",{exact:true}).fill("Auditor UI test");
+ await security.getByRole("button",{name:"Create account using new password above"}).click();
+ await security.getByText("Account created.",{exact:false}).waitFor();
+ await security.screenshot({path:path.join(out,"account-security.png")});
+ const r=await context.request.post(base+"/api/ml/predict",{data:{operatingConditions:{feedstock:"Dairy WW",feedRate:846,temperature:36.5,ph:7.2,olr:3.2,hrt:22,codIn:7600,vfa:1100,mixing:50}}});assert.equal(r.status(),200);const run=await r.json();
+ const file=path.join(dataDir,"audit-v2/records",run.runId+".json"),record=JSON.parse(await readFile(file,"utf8"));record.signature="0".repeat(64);await writeFile(file,JSON.stringify(record));
+ await page.getByRole("button",{name:"Audit Trail",exact:true}).click();await page.getByText("LOADED",{exact:true}).waitFor();
+ await page.getByText("Independent model verification — download exact deployed files",{exact:true}).click();
+ await page.locator('section[aria-label="Trained ML predictions"]').screenshot({path:path.join(out,"model-downloads.png")});
+ await page.getByRole("button",{name:"Audit records",exact:true}).click();await page.getByLabel("Run or verification report ID").fill(run.runId);await page.getByRole("button",{name:"Retrieve",exact:true}).click();
+ await page.getByText("INTEGRITY CHECK FAILED — investigation copy only.",{exact:true}).waitFor();await page.locator(".at-opened").screenshot({path:path.join(out,"failed-record.png")});
+ const copied=(await context.cookies()).find(c=>c.name==="aqua_session").value;
+ await page.getByRole("button",{name:"Log out",exact:true}).click();await page.getByRole("heading",{name:"Sign in",exact:true}).waitFor();
+ assert.equal((await fetch(base+"/api/audit",{headers:{Cookie:"aqua_session="+copied}})).status,401);
+ await page.getByLabel("Username",{exact:true}).fill("auditor.ui");await page.getByLabel("Password",{exact:true}).fill(password);await page.getByRole("button",{name:/Continue/}).click();
+ await page.getByRole("button",{name:"Audit Trail",exact:true}).click();await page.getByText("LOADED",{exact:true}).waitFor();
+ assert.equal((await context.request.post(base+"/api/settings",{data:{}})).status(),403);
+ await page.screenshot({path:path.join(out,"reviewer-audit.png"),fullPage:true});
+ await page.getByRole("button",{name:"Alerts",exact:true}).click();
+ await page.getByRole("button",{name:"Compare both policies across six events"}).click();
+ await page.getByText("Earlier than the first fixed alarm:",{exact:true}).waitFor();
+ await page.getByRole("heading",{name:"Early-warning improvement & first-alarm comparison"}).locator("..").screenshot({path:path.join(out,"warning-comparison.png")});
+ assert.equal(errors.length,0,errors.join("\n"));
+ await writeFile(path.join(out,"summary.json"),JSON.stringify({passed:true,browserErrors:errors,screenshots:["account-security","model-downloads","failed-record","reviewer-audit","warning-comparison"]},null,2));
+ console.log(JSON.stringify({passed:true,out}));
+}catch(e){await writeFile(path.join(out,"server.log"),logs);throw e;}finally{await browser?.close();server.kill();}
+

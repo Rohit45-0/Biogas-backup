@@ -7,3 +7,4 @@
 
 .hr-verification.failed{background:#fff1ee;border-color:#eac5bc;color:#a13627}
 .hr-time-change[data-direction="increase"]{background:#fff8ea;border-color:#eadbb9}.hr-time-change[data-direction="increase"] b{color:#936c1c}.hr-time-change[data-direction="unchanged"] b{color:#527187}.hr-recommendations td strong{color:#245b79;font-weight:700}.hr-recommendations tbody tr:first-child{background:#f1f8fc}.hr-recommendations td:first-child{font-weight:700}.hr-workspace .chat-panel{z-index:100}.hr-workspace .chat-panel form button{min-width:38px}
+.hr-outcome{padding:12px 15px;border-radius:6px;margin-bottom:16px;font-size:calc(12px * var(--app-font-scale));background:#fff8e7;color:#896a24;border:1px solid #eddcae}

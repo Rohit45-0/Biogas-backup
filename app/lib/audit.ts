@@ -7,7 +7,7 @@ import {auditPage,type AuditEntry} from "./audit-pagination";
 export type ThresholdSettings = {methaneMinimum:number;h2sWarning:number;oxygenMaximum:number;pressureMinimum:number;pressureMaximum:number;facilityName:string;facilityLocation:string};
 export const defaultThresholds:ThresholdSettings={methaneMinimum:55,h2sWarning:500,oxygenMaximum:2,pressureMinimum:12,pressureMaximum:30,facilityName:"Aquaivolt Demonstration Plant",facilityLocation:"Lebanon"};
 export type EvidenceRecord = {
-  id:string;createdAt:string;username:string;role:string;kind:"optimization"|"verification"|"ml_prediction"|"ml_verification"|"plant_observation"|"plant_evaluation"|"hrt_research"|"hrt_verification";
+  id:string;createdAt:string;username:string;role:string;kind:"optimization"|"verification"|"ml_prediction"|"ml_verification"|"plant_observation"|"plant_evaluation"|"hrt_research"|"hrt_verification"|"hrt_optimization"|"reactor_optimization"|"reactor_search"|"demo_monitoring"|"demo_monitoring_verification"|"demo_model_link"|"early_warning"|"early_warning_review"|"early_warning_evaluation"|"early_warning_verification";
   request:unknown;inputs:unknown;response:unknown;modelVersion:string;manifestHash:string;
   requestHash:string;inputsHash:string;responseHash:string;outputHash:string;
 };
@@ -50,11 +50,14 @@ export async function storeEvidence(record:EvidenceRecord) {
   return signed;
 }
 export function verifyEvidence(record:SignedRecord) {
-  if(!record||typeof record.signature!=="string"||typeof record.recordHash!=="string")return false;
+  return inspectEvidence(record).integrity;
+}
+export function inspectEvidence(record:SignedRecord) {
+  if(!record||typeof record.signature!=="string"||typeof record.recordHash!=="string")return {integrity:false,status:"FAIL",checks:{structure:false},finding:"Missing record signature or digest.",cause:"UNDETERMINED"};
   const {signature,recordHash,...content}=record;
-  return fingerprint(content)===recordHash && verifySignature(content,signature)
-    && fingerprint(content.request)===content.requestHash && fingerprint(content.inputs)===content.inputsHash
-    && fingerprint(content.response)===content.responseHash;
+  const checks={recordDigest:fingerprint(content)===recordHash,hmac:verifySignature(content,signature),requestDigest:fingerprint(content.request)===content.requestHash,inputsDigest:fingerprint(content.inputs)===content.inputsHash,responseDigest:fingerprint(content.response)===content.responseHash};
+  const integrity=Object.values(checks).every(Boolean);
+  return {integrity,status:integrity?"PASS":"FAIL",checks,finding:integrity?"All stored digests and HMAC verify.":!checks.recordDigest||!checks.requestDigest||!checks.inputsDigest||!checks.responseDigest?"Stored content and digest disagree. Preserve the record and investigate the write path.":"Digests match, but no configured audit verification key matches the HMAC.",cause:integrity?"NONE":"UNDETERMINED",notice:"A failed check identifies the inconsistency; it does not prove tampering or establish a historical cause. Originals are never rewritten or re-signed."};
 }
 export async function getEvidence(id:string):Promise<SignedRecord|null> {
   if(!validRunId(id))return null;

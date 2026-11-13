@@ -1,0 +1,12 @@
+.hr-workspace .paired-scenario-table{min-width:1060px;font-variant-numeric:tabular-nums}
+.hr-workspace .paired-scenario-table th,.hr-workspace .paired-scenario-table td{padding:10px 12px}
+.hr-workspace .paired-scenario-table thead th{text-align:center}
+.hr-workspace .paired-scenario-table thead th:first-child[rowspan]{text-align:left}
+.hr-workspace .paired-scenario-table thead small{display:block;margin-top:3px;color:#c8e3ee;font-size:14px;font-weight:400}
+.hr-workspace .paired-scenario-table thead tr+tr th{border-top:1px solid #365773;background:#1b4d6c}
+.hr-workspace .paired-scenario-table tbody th{color:#557385;font-weight:500;border-right:0;border-bottom:1px solid #edf2f5}
+.hr-workspace .paired-scenario-table tbody td{text-align:right}
+.hr-workspace .paired-scenario-table tbody .paired-group-start{border-left:1px solid #dce7ee}
+.hr-workspace .paired-scenario-table tbody .paired-after{color:#087e69;font-weight:650}
+.hr-workspace .paired-scenario-table tr.selected th{color:#0f8d74}
+.hr-workspace .paired-scenario-scroll:focus-visible{outline:2px solid #147ff1;outline-offset:-2px}

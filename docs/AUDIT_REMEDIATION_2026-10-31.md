@@ -1,6 +1,10 @@
 # AQUAIVOLT audit remediation and retest checklist
 
+10 November update: use [CURRENT_AUDIT_GUIDE.md](CURRENT_AUDIT_GUIDE.md) for current model mapping and [EARLY_WARNING_2026-11-10.md](EARLY_WARNING_2026-11-10.md) for the warning workflow. Deployment and production evidence for the latest release are included in the dated client delivery package. Historical statements below describe the verification date shown.
+
 Source changes prepared 31 October 2026 for the planned 5 November retest. This document describes the updated source, not a claim that production has already been redeployed or that the auditor has approved it.
+
+4 November reconciliation: Overview now uses `/api/research/hrt` (fitted hours-scale research model). The original `/api/predict` scenario engine and `/api/ml/predict` trained pipelines remain in Audit Trail with their original day-based input units. Use the [updated Audit Trail guide](AUDIT_TRAIL.md) for the current UI-to-endpoint mapping and research replay steps. The model verification screen, README and research guide now use the same mapping.
 
 ## Findings and corrective actions
 
@@ -20,9 +24,9 @@ The trained ONNX/joblib files are unchanged. Their artifact versions and hashes 
 2. Execute Test null rejection. Expected: HTTP 422 and a pH-specific issue. Verification of a valid current-build ML run should retain eleven passing execution/integrity checks; scenario verification retains nine.
 3. Submit pH 11 with otherwise complete valid inputs. Expected: exploratory HTTP 200 with OUTSIDE_REFERENCE_ENVELOPE, a pH-specific feedstock envelope warning, NOT_CALIBRATED uncertainty, no claimed calibrated interval, and no plant-validated operating range. Repeat for different feedstocks and check the reference rows/ranges change. The exported prediction CSV and retrievable JSON must retain these disclosures.
 4. Create enough records to span at least three list pages. Confirm the newest record is on the first page, every expected ID appears exactly once across pages, and the loaded count reaches the total. Create a run while paging: Refresh should include it in a new view. Repeat after logout/login. Compare direct ID retrieval to listing. Stored time is the ordering key, not a UUID's alphabetical order.
-5. Review HRT in Overview, production pages and Scenario execution. A change from 22 to 23.1 model days is +1.1 days / +26.4 hours, explicitly an increase. A decrease carries a negative sign. The selection is not described as an operational improvement merely because HRT changed.
+5. Review HRT in Overview, production pages and Scenario execution. In the original day-scale scenario path, a change from 22 to 23.1 model days is +1.1 days / +26.4 hours, explicitly an increase. In Overview, comparison and selected HRT come directly from the separate hours-scale model. A decrease carries a negative sign. The selection is not described as an operational improvement merely because HRT changed.
 6. Download JSON and evidence CSV. Expected: server-authenticated wording, HMAC-SHA-256 disclosure and independentlyVerifiable=false. A server integrity PASS does not authenticate the physical source of measurements.
-7. Review Plant validation before equipment arrival: it must remain pending. Once real measurements exist, record the measurement source, plant/dataset/sample IDs, timestamp, three raw measured outputs, corresponding ML run and four required declarations. Save and retrieve the observation by ID.
+7. Review Plant validation before equipment arrival: it must remain pending. Once real measurements exist, record the measurement source, plant/dataset/sample IDs, timestamp, three raw measured outputs, corresponding ML run and four required declarations. Save and retrieve the observation by ID. This workflow currently evaluates the original Ridge/Gradient Boosting ML runs; it does not validate the hours-scale dashboard model.
 8. Generate an error report from observations in a single plant, dataset and frozen model build. Review MAE, RMSE, signed bias and R2 for each model/output. A single observation or constant target must not produce a fabricated R2. Duplicate IDs, duplicate samples/prediction runs, mixed plants/builds and tampered records must be rejected.
 9. Download the measured-error report. It must remain REVIEW_REQUIRED, with optimization benefit NOT ESTABLISHED. Operator-selected samples and declarations do not independently prove a representative untouched holdout set.
 
@@ -39,6 +43,15 @@ The trained ONNX/joblib files are unchanged. Their artifact versions and hashes 
 Run `pnpm test` in an isolated local checkout. It covers native model parity, authenticated APIs, multi-page local listing, a mocked multi-page private-Blob listing, negative input cases, HRT direction/units, evidence disclosure, measured-error arithmetic, duplicate rejection, tamper detection and persistence. Tests use clearly labeled fixtures in an isolated local directory, not real plant evidence or production records.
 
 Production verification must use the intended deployed build and actual private Blob account. Successful local or mocked tests do not substitute for that deployment check. No analyzer connection, equipment control, automatic retraining, calibrated confidence interval, public-key signing or grant approval is claimed by this update.
+
+### Verification completed on 4 November 2026
+
+- Production build and TypeScript compilation passed. `pnpm test` passed all 39 automated tests, including both original trained models on 674 Python parity fixtures each, audit persistence/pagination, null rejection, tampering, measurement reports and hours-model replay.
+- After correcting the remaining model descriptions in the UI, the production build passed again. `pnpm test:ui` passed in Microsoft Edge: 25-record UI pagination, visibility after a new login, pH warnings, export disclosures, measurement entry, current model/endpoint reconciliation and hours-model execution. Audit layouts passed at 390, 768, 850, 1024 and 1440 pixels.
+- `pnpm test:research-ui` passed: actual scenario input variation, retry after a failed workflow, one request per workflow, completion only after a backend response, shared dashboard/recommendation values, signed HRT changes, exports, saved replay and all production views at 390 through 1920 pixels.
+- This verification used isolated local test storage and explicitly labeled fixtures. It did not create plant evidence or retest the auditor's production record IDs. The 4 November wording changes have not been deployed by this verification run.
+
+Local evidence summaries and screenshots are in `test-results/audit-remediation-ui/` and `test-results/hrt-research-ui/`. Those directories are intentionally excluded from Git. Deployment and a retest against the actual production storage remain release steps; equipment-dependent validation has no completion date until commissioning and the evaluation protocol are agreed.
 
 ### Repeatable browser verification
 

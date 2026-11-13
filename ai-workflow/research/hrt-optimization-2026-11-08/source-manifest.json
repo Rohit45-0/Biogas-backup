@@ -1,0 +1,274 @@
+{
+  "version": "hrt-technology-study-2026-11-08-v1",
+  "sources": [
+    {
+      "file": "task2.1.xlsx",
+      "sha256": "sha256:1dfdd6728e305dcad203445ac3c7a3add6fe8de41608a6149a87c7e06fc02aa8",
+      "role": "primary",
+      "scenarioCount": 200,
+      "pathways": {
+        "H1": 23,
+        "H2": 23,
+        "H3": 22,
+        "H4": 22,
+        "H5": 22,
+        "H6": 22,
+        "C1": 22,
+        "C2": 22,
+        "C3": 22
+      },
+      "sheets": {
+        "Summary": {
+          "rowCount": 24,
+          "columnCount": 5,
+          "formulaCount": 0
+        },
+        "200 Scenarios": {
+          "rowCount": 201,
+          "columnCount": 31,
+          "formulaCount": 0
+        },
+        "Technology Averages": {
+          "rowCount": 10,
+          "columnCount": 11,
+          "formulaCount": 0
+        },
+        "Assumptions": {
+          "rowCount": 10,
+          "columnCount": 1,
+          "formulaCount": 0
+        }
+      }
+    },
+    {
+      "file": "task2.xlsx",
+      "sha256": "sha256:71cc51bd6c9c4ca662777d831ad55849a59397ecaf3b1209287e3745364b50ee",
+      "role": "reference_only",
+      "scenarioCount": 200,
+      "pathways": {
+        "H1": 34,
+        "H2": 34,
+        "H3": 33,
+        "H4": 33,
+        "H5": 33,
+        "H6": 33
+      },
+      "sheets": {
+        "Summary": {
+          "rowCount": 20,
+          "columnCount": 5,
+          "formulaCount": 0
+        },
+        "200 Scenarios": {
+          "rowCount": 201,
+          "columnCount": 31,
+          "formulaCount": 0
+        },
+        "Technology Averages": {
+          "rowCount": 7,
+          "columnCount": 10,
+          "formulaCount": 0
+        },
+        "Assumptions": {
+          "rowCount": 10,
+          "columnCount": 1,
+          "formulaCount": 0
+        }
+      }
+    }
+  ],
+  "primarySource": {
+    "file": "task2.1.xlsx",
+    "sha256": "sha256:1dfdd6728e305dcad203445ac3c7a3add6fe8de41608a6149a87c7e06fc02aa8",
+    "role": "primary",
+    "scenarioCount": 200,
+    "pathways": {
+      "H1": 23,
+      "H2": 23,
+      "H3": 22,
+      "H4": 22,
+      "H5": 22,
+      "H6": 22,
+      "C1": 22,
+      "C2": 22,
+      "C3": 22
+    },
+    "sheets": {
+      "Summary": {
+        "rowCount": 24,
+        "columnCount": 5,
+        "formulaCount": 0
+      },
+      "200 Scenarios": {
+        "rowCount": 201,
+        "columnCount": 31,
+        "formulaCount": 0
+      },
+      "Technology Averages": {
+        "rowCount": 10,
+        "columnCount": 11,
+        "formulaCount": 0
+      },
+      "Assumptions": {
+        "rowCount": 10,
+        "columnCount": 1,
+        "formulaCount": 0
+      }
+    }
+  },
+  "trainingRows": 200,
+  "calculationBasis": "Canonical outputs use stored biogas and methane percentage; methane, gross electricity and annual projections are derived without intermediate rounding.",
+  "energy": {
+    "methaneKwhM3": 9.97,
+    "electricalEfficiency": 0.36,
+    "daysPerYear": 365
+  },
+  "dataRole": "WORKBOOK_PLANNING_SIMULATION",
+  "baseline": {
+    "hrtHours": 360,
+    "biogasM3Day": 66.15,
+    "methanePct": 63.63,
+    "methaneM3Day": 42.09124500000001,
+    "electricityKwhDay": 151.07389655400002,
+    "annualElectricityKwh": 55141.97224221,
+    "technology": "Conventional mesophilic CSTR",
+    "origin": "workbook_reference"
+  },
+  "technologies": [
+    {
+      "id": "H1",
+      "name": "UASB high-rate reactor",
+      "planningHrtHours": [
+        4,
+        12
+      ],
+      "sourceUrl": "https://sswm.info/factsheet/uasb-reactor",
+      "olrBasis": "COD",
+      "scenarioCount": 23,
+      "observedHrtHours": [
+        4.8,
+        11.5
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "EGSB expanded granular sludge bed",
+      "planningHrtHours": [
+        4,
+        10
+      ],
+      "sourceUrl": "https://ir.library.louisville.edu/etd/494/",
+      "olrBasis": "COD",
+      "scenarioCount": 23,
+      "observedHrtHours": [
+        4.9,
+        9.6
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "AnMBR anaerobic membrane bioreactor",
+      "planningHrtHours": [
+        6,
+        12
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703433/",
+      "olrBasis": "COD",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        6,
+        11.7
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "TPAD temperature-phased (55->35 C)",
+      "planningHrtHours": [
+        48,
+        96
+      ],
+      "sourceUrl": "https://www.nature.com/articles/s41598-024-62998-w",
+      "olrBasis": "COD",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        48.3,
+        91.4
+      ]
+    },
+    {
+      "id": "H5",
+      "name": "Thermochemical NaOH pre-treatment + high-rate AD",
+      "planningHrtHours": [
+        24,
+        48
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf",
+      "olrBasis": "COD",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        24.3,
+        47.5
+      ]
+    },
+    {
+      "id": "H6",
+      "name": "Thermal pre-treatment 50 C + co-digestion",
+      "planningHrtHours": [
+        24,
+        72
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10979283/",
+      "olrBasis": "COD",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        26.3,
+        66.2
+      ]
+    },
+    {
+      "id": "C1",
+      "name": "Thermophilic CSTR (55 C)",
+      "planningHrtHours": [
+        72,
+        120
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3811223/",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        74.1,
+        120
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "CSTR + thermochemical NaOH pre-treatment",
+      "planningHrtHours": [
+        96,
+        168
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8303515/pdf/molecules-26-04175.pdf",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        107.7,
+        166.3
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "Hybrid CSTR with biomass carriers",
+      "planningHrtHours": [
+        48,
+        96
+      ],
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9672170/",
+      "olrBasis": "UNRESOLVED_COD_VS",
+      "scenarioCount": 22,
+      "observedHrtHours": [
+        49.7,
+        95.3
+      ]
+    }
+  ]
+}

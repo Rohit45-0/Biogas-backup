@@ -1,5 +1,5 @@
 import {NextResponse} from "next/server";
-import {getSession} from "../../../lib/auth";
+import {getSession,canAudit} from "../../../lib/auth";
 import {InputError,resolveRequest} from "../../../lib/inputs";
 import {executeRequest} from "../../../lib/execution";
 
@@ -8,7 +8,7 @@ export const maxDuration=120;
 export async function POST(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403});
   try{
     const text=await request.text();
     if(text.length>24000)return NextResponse.json({error:"Request too large"},{status:413});

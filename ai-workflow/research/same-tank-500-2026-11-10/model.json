@@ -1,0 +1,243 @@
+{
+  "version": "same-tank-ridge-500-2026-11-10-v1",
+  "learner": "One-hot stage + StandardScaler + Ridge (alpha 10)",
+  "source": {
+    "file": "Aquaivolt Same-Reactor +40% & HRT Hours  Verdict + 500 Scenarios.xlsx",
+    "sheet": "500 Scenarios",
+    "sha256": "sha256:a56750d701fbac6b49888029368647636766a828bd42948ec4168211bbd5c52f"
+  },
+  "fitRows": 500,
+  "developmentRows": 400,
+  "testRows": 100,
+  "features": [
+    "stage",
+    "afterHrtHours",
+    "temperatureC",
+    "ph",
+    "srtDays"
+  ],
+  "targets": [
+    "biogasM3Day",
+    "methanePct"
+  ],
+  "stages": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6"
+  ],
+  "stageInfo": [
+    {
+      "id": "R1",
+      "label": "Stage 1: Operational tuning only (no hardware)",
+      "added": "thermophilic 55 C + co-digestion + trace elements + optimized mixing",
+      "feedRequirements": [
+        "any feed"
+      ],
+      "sourceVerdicts": [
+        "DOABLE - proven"
+      ],
+      "count": 84,
+      "min": [
+        72.3,
+        55.0,
+        6.9,
+        3.0
+      ],
+      "max": [
+        119.8,
+        55.0,
+        7.39,
+        5.0
+      ]
+    },
+    {
+      "id": "R2",
+      "label": "Stage 2: + feed pre-treatment (NaOH / thermal 50 C)",
+      "added": "solubilizes organics; digestion time -79.6%, methane +56% (derated)",
+      "feedRequirements": [
+        "any feed"
+      ],
+      "sourceVerdicts": [
+        "DOABLE - proven"
+      ],
+      "count": 84,
+      "min": [
+        48.1,
+        50.0,
+        6.9,
+        2.0
+      ],
+      "max": [
+        95.9,
+        50.0,
+        7.39,
+        4.0
+      ]
+    },
+    {
+      "id": "R3",
+      "label": "Stage 3: + co-digestion synergies (FW+GW, sludge+FW)",
+      "added": "+44.96-52% biogas from substrate synergy",
+      "feedRequirements": [
+        "any feed"
+      ],
+      "sourceVerdicts": [
+        "DOABLE - simplest"
+      ],
+      "count": 83,
+      "min": [
+        96.7,
+        37.0,
+        6.91,
+        4.0
+      ],
+      "max": [
+        167.8,
+        37.0,
+        7.4,
+        7.0
+      ]
+    },
+    {
+      "id": "R4",
+      "label": "Stage 4: + biomass carriers retrofitted inside the same tank",
+      "added": "fixed-film media retains methanogens; SRT decoupled from HRT",
+      "feedRequirements": [
+        "solubilized feed"
+      ],
+      "sourceVerdicts": [
+        "DOABLE - retrofit needed"
+      ],
+      "count": 83,
+      "min": [
+        12.1,
+        37.0,
+        6.9,
+        20.5
+      ],
+      "max": [
+        47.4,
+        37.0,
+        7.4,
+        79.0
+      ]
+    },
+    {
+      "id": "R5",
+      "label": "Stage 5: + full solubilization of feed to soluble COD",
+      "added": "pre-treatment converts solids to dissolved COD; hours become possible",
+      "feedRequirements": [
+        "soluble COD only"
+      ],
+      "sourceVerdicts": [
+        "DOABLE - only if feed made soluble"
+      ],
+      "count": 83,
+      "min": [
+        4.2,
+        35.0,
+        6.91,
+        20.0
+      ],
+      "max": [
+        12.0,
+        35.0,
+        7.4,
+        79.5
+      ]
+    },
+    {
+      "id": "R6",
+      "label": "Limit case: plain mixed tank, no retention, no pre-treatment",
+      "added": "physics floor: SRT = HRT, methanogens wash out below ~3 days",
+      "feedRequirements": [
+        "any feed"
+      ],
+      "sourceVerdicts": [
+        "NOT DOABLE to hours"
+      ],
+      "count": 83,
+      "min": [
+        72.3,
+        37.0,
+        6.9,
+        3.0
+      ],
+      "max": [
+        119.0,
+        37.0,
+        7.37,
+        5.0
+      ]
+    }
+  ],
+  "mean": [
+    72.35640000000005,
+    41.876,
+    7.147880000000001,
+    18.396799999999995
+  ],
+  "scale": [
+    44.22408731720757,
+    7.727394386208084,
+    0.14565131513309446,
+    22.764245424788395
+  ],
+  "coefficients": [
+    [
+      -0.020957104913281937,
+      0.071535559088542,
+      0.285999028917243,
+      -0.33382559229284836,
+      -0.3100557654519883,
+      0.3073038746523307,
+      -0.03863306905167032,
+      0.15177766941844936,
+      -0.06264924250471857,
+      0.3385699555231193
+    ],
+    [
+      -0.42819950457353917,
+      0.5903066885674978,
+      0.5590761555068294,
+      0.5245232132438896,
+      1.6137944687271433,
+      -2.8595010214717953,
+      -0.8254457850603201,
+      -0.4220301055451364,
+      0.07005593650747827,
+      0.14090839409174868
+    ]
+  ],
+  "intercept": [
+    95.91865884309166,
+    66.44087578563199
+  ],
+  "holdout": {
+    "biogas_m3_day": {
+      "mae": 1.4801500814443223,
+      "r2": -0.04819222700265602
+    },
+    "methane_m3_day": {
+      "mae": 1.922656028423753,
+      "r2": 0.4582443395223462
+    },
+    "electricity_kwh_day": {
+      "mae": 6.900221377218531,
+      "r2": 0.4583232993185401
+    }
+  },
+  "validationMethod": "Seeded stratified 400/100 split; scaler fitted only on development rows. Final model refitted on all 500 after evaluation.",
+  "limitations": [
+    "Source data are planning simulations, not plant measurements.",
+    "Before values are constant in the supplied file; no dynamic untreated baseline can be learned.",
+    "Scenario identifiers and all BEFORE/AFTER target columns are excluded from the model features.",
+    "Fast HRT stages require the listed feed preparation and biomass-retention retrofits. Software alone does not supply them.",
+    "Held-out scores measure simulated-data agreement only; calibrated prediction intervals and plant validation are unavailable.",
+    "Electricity is gross potential at 36% conversion efficiency; retrofit energy costs are not supplied.",
+    "HRT is a candidate input, not a learned causal effect. Other conditions vary between candidates."
+  ]
+}

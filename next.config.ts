@@ -9,8 +9,11 @@ const nextConfig: NextConfig = {
   serverExternalPackages:["onnxruntime-node"],
   outputFileTracingIncludes:{"/api/ml/*":[
     "./ai-workflow/models/onnx/*.onnx",
+    "./ai-workflow/models/onnx/manifest.json",
+    "./scripts/independent-model-check.py",
+    "./docs/MODEL_VERIFICATION_2026-11-13.md",
     ...(process.platform==="linux"?[`./${nativeRoot}/bin/napi-v6/linux/x64/*`]:[]),
-  ]},
+  ],"/api/research/reactor-optimization":["./ai-workflow/research/reactor-study-2026-11-09/*.xlsx","./docs/TASK2_AUDITOR_GUIDE_2026-11-09.md"],"/api/research/reactor-search":["./ai-workflow/research/reactor-study-2026-11-09/*.xlsx","./docs/TASK2_AUDITOR_GUIDE_2026-11-09.md"]},
   outputFileTracingExcludes:process.platform==="linux"?{"/*":[
     "./node_modules/onnxruntime-node/bin/napi-v6/win32/**/*",
     "./node_modules/onnxruntime-node/bin/napi-v6/darwin/**/*",

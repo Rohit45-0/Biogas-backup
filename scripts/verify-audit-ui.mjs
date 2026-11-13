@@ -52,8 +52,18 @@ try{
   await plant.getByRole('button',{name:'Calculate measured errors'}).click();await plant.getByRole('heading',{name:'1 reported observations'}).waitFor();
   assert.match(await plant.innerText(),/REVIEW REQUIRED/);assert.equal(await plant.getByRole('cell',{name:'Not defined',exact:true}).count(),6);
   await page.screenshot({path:path.join(out,'desktop-plant-validation.png'),fullPage:true});
+  await page.getByRole('button',{name:'2. Scenario verification',exact:true}).click();
+  const reconciliation=page.getByRole('table',{name:'Model and documentation reconciliation'});
+  await reconciliation.waitFor();
+  assert.match(await reconciliation.getByRole('row').filter({hasText:'Hours-scale fitted research model'}).innerText(),/Overview.*HRT in hours/);
+  assert.match(await reconciliation.getByRole('row').filter({hasText:'Scenario ensemble'}).innerText(),/Original day-scale scenario tests.*days/);
+  assert.equal(await page.getByRole('link',{name:'Hours-scale model metadata',exact:true}).getAttribute('href'),'/api/research/hrt');
+  assert.equal(await page.getByRole('link',{name:'Original scenario manifest',exact:true}).getAttribute('href'),'/api/model');
   await page.getByRole('button',{name:'Hours-scale research',exact:true}).click();const study=page.locator('.hr-workspace');
-  await study.locator('.hr-header-actions').getByRole('button',{name:'Run AI optimization',exact:true}).click();await study.locator('.hr-selected-time strong').filter({hasText:'7.88'}).waitFor();
+  const researchResponse=page.waitForResponse(r=>new URL(r.url()).pathname==='/api/research/hrt'&&r.request().method()==='POST');
+  await study.locator('.hr-header-actions').getByRole('button',{name:'Run AI optimization',exact:true}).click();
+  const research=await researchResponse;assert.equal(research.status(),200);const researchRun=await research.json();assert.equal(researchRun.audit.saved,true);
+  await study.locator('.hr-footer').filter({hasText:researchRun.runId.slice(0,8)}).waitFor();
   assert.match(await study.locator('.hr-time-change').innerText(),/HRT change/);assert.doesNotMatch(await study.locator('.hr-time-change').innerText(),/HRT reduction|What AI improved/);
   await page.screenshot({path:path.join(out,'desktop-overview.png'),fullPage:true});
   const widths=[];
@@ -65,7 +75,7 @@ try{
     await page.getByRole('button',{name:'ML predictions',exact:true}).click();await page.screenshot({path:path.join(out,`ml-${width}.png`),fullPage:true});
   }
   assert.deepEqual(errors,[]);
-  const summary={status:'PASS',checkedAt:new Date().toISOString(),desktop:1440,responsiveWidths:widths,checks:['pH warning visibility','25-record UI pagination','record visibility after logout/login','measurement form and undefined R2','HRT neutral labels','server-authenticated exports','phone/tablet/desktop navigation without overlap'],scope:'Isolated local software fixtures, not real plant measurements',screenshots:out};
+  const summary={status:'PASS',checkedAt:new Date().toISOString(),desktop:1440,responsiveWidths:widths,checks:['pH warning visibility','25-record UI pagination','record visibility after logout/login','measurement form and undefined R2','current model and endpoint reconciliation','Overview executes and saves the hours-scale model','HRT neutral labels','server-authenticated exports','phone/tablet/desktop navigation without overlap'],scope:'Isolated local software fixtures, not real plant measurements',screenshots:out};
   await writeFile(path.join(out,'summary.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify(summary));
 }finally{
   if(browser)await browser.close();

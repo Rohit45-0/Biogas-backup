@@ -1,5 +1,5 @@
 import {NextResponse} from "next/server";
-import {getSession} from "../../../lib/auth";
+import {getSession,canAudit} from "../../../lib/auth";
 import {InputError} from "../../../lib/inputs";
 import {mlManifest,mlManifestHash} from "../../../lib/ml-manifest";
 import {loadMlModels} from "../../../lib/ml-runtime";
@@ -13,7 +13,7 @@ const headers={"Cache-Control":"no-store"};
 export async function GET(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401,headers});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403,headers});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403,headers});
   const url=new URL(request.url);
   try{
     if(url.searchParams.get("format")==="csv"){
@@ -37,7 +37,7 @@ export async function GET(request:Request){
 export async function POST(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401,headers});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403,headers});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403,headers});
   let body:unknown;
   try{const text=await request.text();if(text.length>16000)return NextResponse.json({error:"Request too large"},{status:413,headers});body=JSON.parse(text);}
   catch{return NextResponse.json({error:"Valid JSON is required"},{status:400,headers});}

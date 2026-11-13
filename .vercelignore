@@ -20,3 +20,4 @@ graphify-out
 .codex
 .agents
 .graphifyignore
+test-results-*.txt

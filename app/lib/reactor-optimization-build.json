@@ -1,0 +1,14 @@
+{
+  "sourceHash": "sha256:20ac8eb89557d6e673a45ecab37321c9353ea76fe0d44648a84c7e7c72a6b04c",
+  "files": {
+    "app/lib/reactor-optimization.ts": "0bb251baa7c7f25e54bcfa87c7f8e6ffd62bcd8a2633881c1a5f7eb97aaed799",
+    "app/lib/reactor-optimization-execution.ts": "7232a5a01c4bfcd11eff2f474533727a5abeddde36adb5a3edf4f06ba3a75f57",
+    "app/api/research/reactor-optimization/route.ts": "af5b4904572284a1f0a245fbfacd2ffe5d3b5d4704a5ab07a7b38a6abc66e0e9",
+    "ai-workflow/research/reactor-study-2026-11-09/source-manifest.json": "7abfe000228818187814e713e75f5747f3184d5f583c9a6545ec1bf3435506a9",
+    "ai-workflow/research/reactor-study-2026-11-09/scenarios.json": "ce7951d177d9040ca06f8dd825d6bb62f9bae5b2be5e45bf7d4b506e1104ff32",
+    "ai-workflow/research/reactor-study-2026-11-09/model.json": "df7f2545b328b2129b73afa893addb6fe2b7e3531eabff05c431cf2d5dd51584",
+    "ai-workflow/research/reactor-study-2026-11-09/model-assessment.json": "f52bfce2bcf5c5f91c8f72c1997d8d7bff135d31ca98eaca3a00bd5a8d6caab8",
+    "app/lib/reactor-source-reference.ts": "149e4e8d56befda69d881de506e785c8d45e7a80eaa03a85031c96ccde269f1c",
+    "ai-workflow/research/reactor-study-2026-11-09/merged-workbook-data.json": "05648438824524e7ead3cbe04cc1348af7271ee10ceb7628522a9433f61f3580"
+  }
+}

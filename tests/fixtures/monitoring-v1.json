@@ -1,0 +1,4454 @@
+[
+  {
+    "id": "6084dd22-7db2-491e-b989-717325c99c73",
+    "request": {
+      "parentId": null,
+      "command": {
+        "action": "start"
+      }
+    },
+    "snapshot": {
+      "id": "6084dd22-7db2-491e-b989-717325c99c73",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": null,
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:10.544Z",
+      "receivedAt": "2026-11-10T12:37:10.544Z",
+      "sourceIndex": 0,
+      "fixture": null,
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6833,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 2.689,
+        "ch4": 61.029999999999994,
+        "kw": 4.93,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 63.05887441206682
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [],
+      "sequence": 1,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        }
+      ]
+    },
+    "responseHash": "sha256:8cd2ad48521b884e98d8809d055f9f7dabfe2e76524558a43bfb2799cd3e128d",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa",
+    "request": {
+      "parentId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "command": {
+        "action": "fixture",
+        "fixture": "warning"
+      }
+    },
+    "snapshot": {
+      "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:11.409Z",
+      "receivedAt": "2026-11-10T12:37:11.409Z",
+      "sourceIndex": 0,
+      "fixture": "warning",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 180,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "warning",
+          "unit": "ppm",
+          "value": 180,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:11.409Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            }
+          ]
+        }
+      ],
+      "sequence": 2,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        }
+      ]
+    },
+    "responseHash": "sha256:90050ec9be1bc535bc9cf7715474be450a122b65d32661efd386106589ece954",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "d08008d1-438e-492d-bba4-0dbe1294f85e",
+    "request": {
+      "parentId": "f781b7b6-2cac-4532-b9c1-6807290ac6aa",
+      "command": {
+        "action": "fixture",
+        "fixture": "h2s-critical"
+      }
+    },
+    "snapshot": {
+      "id": "d08008d1-438e-492d-bba4-0dbe1294f85e",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "f781b7b6-2cac-4532-b9c1-6807290ac6aa",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:12.115Z",
+      "receivedAt": "2026-11-10T12:37:12.115Z",
+      "sourceIndex": 0,
+      "fixture": "h2s-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 250,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:12.115Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            }
+          ]
+        }
+      ],
+      "sequence": 3,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:cf835496f822d9cb59034eb83b0d89d5b34d2687719d4851a4f73d7b10b45daf",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "654fc470-00c9-4d5c-bd34-3173480de1fd",
+    "request": {
+      "parentId": "d08008d1-438e-492d-bba4-0dbe1294f85e",
+      "command": {
+        "action": "acknowledge",
+        "alarmId": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh"
+      }
+    },
+    "snapshot": {
+      "id": "654fc470-00c9-4d5c-bd34-3173480de1fd",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "d08008d1-438e-492d-bba4-0dbe1294f85e",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:13.246Z",
+      "receivedAt": "2026-11-10T12:37:12.115Z",
+      "sourceIndex": 0,
+      "fixture": "h2s-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 250,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:13.246Z",
+          "resolvedAt": null,
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            }
+          ]
+        }
+      ],
+      "sequence": 4,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:4b788b2b34ec98ae2c01db30b1e585d1bc494593e260e9387689beffe32bc579",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "1633d642-813b-40ae-9473-062c8cbbe162",
+    "request": {
+      "parentId": "654fc470-00c9-4d5c-bd34-3173480de1fd",
+      "command": {
+        "action": "fixture",
+        "fixture": "normal"
+      }
+    },
+    "snapshot": {
+      "id": "1633d642-813b-40ae-9473-062c8cbbe162",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "654fc470-00c9-4d5c-bd34-3173480de1fd",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:14.498Z",
+      "receivedAt": "2026-11-10T12:37:14.498Z",
+      "sourceIndex": 0,
+      "fixture": "normal",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        }
+      ],
+      "sequence": 5,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        }
+      ]
+    },
+    "responseHash": "sha256:047d8394b1cff775bc853f225719682ea779d5043f6bac55e11d142c9766bf64",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "582ea562-529a-4c31-90e9-59df6a5d81a9",
+    "request": {
+      "parentId": "1633d642-813b-40ae-9473-062c8cbbe162",
+      "command": {
+        "action": "fixture",
+        "fixture": "oxygen-critical"
+      }
+    },
+    "snapshot": {
+      "id": "582ea562-529a-4c31-90e9-59df6a5d81a9",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "1633d642-813b-40ae-9473-062c8cbbe162",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:14.997Z",
+      "receivedAt": "2026-11-10T12:37:14.997Z",
+      "sourceIndex": 0,
+      "fixture": "oxygen-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 1,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:14.997Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "sequence": 6,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:6fd8f402eec64f57f6d223d7a439161dbe118b12cd293a14c04adda153e97cfa",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "36a31199-dd55-481e-922e-ca925e29bb46",
+    "request": {
+      "parentId": "582ea562-529a-4c31-90e9-59df6a5d81a9",
+      "command": {
+        "action": "fixture",
+        "fixture": "pressure-critical"
+      }
+    },
+    "snapshot": {
+      "id": "36a31199-dd55-481e-922e-ca925e29bb46",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "582ea562-529a-4c31-90e9-59df6a5d81a9",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:15.478Z",
+      "receivedAt": "2026-11-10T12:37:15.478Z",
+      "sourceIndex": 0,
+      "fixture": "pressure-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 22,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            }
+          ]
+        }
+      ],
+      "sequence": 7,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:cedd25deab737e28022d97399486293daa2eb0a5b5ba78c206c2e3380d11ea8b",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5",
+    "request": {
+      "parentId": "36a31199-dd55-481e-922e-ca925e29bb46",
+      "command": {
+        "action": "fixture",
+        "fixture": "methane-critical"
+      }
+    },
+    "snapshot": {
+      "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "36a31199-dd55-481e-922e-ca925e29bb46",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:16.217Z",
+      "receivedAt": "2026-11-10T12:37:16.217Z",
+      "sourceIndex": 0,
+      "fixture": "methane-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 58,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": "2026-11-10T12:37:16.217Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            },
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "normal",
+              "value": 12.8
+            }
+          ]
+        },
+        {
+          "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5:ch4Low",
+          "ruleId": "ch4Low",
+          "label": "Low methane",
+          "severity": "critical",
+          "unit": "%",
+          "value": 58,
+          "openedAt": "2026-11-10T12:37:16.217Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "critical",
+              "value": 58
+            }
+          ]
+        }
+      ],
+      "sequence": 8,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.217Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 58,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "methane-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:38e94a1e78af78ba8ae05834b6623210c73b9bdc5ee3819aedb98fcbd6eb60b0",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850",
+    "request": {
+      "parentId": "b2840a60-600f-47d9-bc14-3b04f99c09b5",
+      "command": {
+        "action": "fixture",
+        "fixture": "power-critical"
+      }
+    },
+    "snapshot": {
+      "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "b2840a60-600f-47d9-bc14-3b04f99c09b5",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:16.640Z",
+      "receivedAt": "2026-11-10T12:37:16.640Z",
+      "sourceIndex": 0,
+      "fixture": "power-critical",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 4.3,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": "2026-11-10T12:37:16.217Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            },
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "normal",
+              "value": 12.8
+            }
+          ]
+        },
+        {
+          "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5:ch4Low",
+          "ruleId": "ch4Low",
+          "label": "Low methane",
+          "severity": "critical",
+          "unit": "%",
+          "value": 58,
+          "openedAt": "2026-11-10T12:37:16.217Z",
+          "lastAt": "2026-11-10T12:37:16.640Z",
+          "resolvedAt": "2026-11-10T12:37:16.640Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "critical",
+              "value": 58
+            },
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "normal",
+              "value": 63
+            }
+          ]
+        },
+        {
+          "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850:kwLow",
+          "ruleId": "kwLow",
+          "label": "Low electrical power",
+          "severity": "critical",
+          "unit": "kW",
+          "value": 4.3,
+          "openedAt": "2026-11-10T12:37:16.640Z",
+          "lastAt": "2026-11-10T12:37:16.640Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "critical",
+              "value": 4.3
+            }
+          ]
+        }
+      ],
+      "sequence": 9,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.217Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 58,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "methane-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.640Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 4.3,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "power-critical"
+        }
+      ]
+    },
+    "responseHash": "sha256:fba77bad550ae6d8958ff32a873bb0bfb8588e80bc76022a871f65f9e1f75a82",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73",
+    "request": {
+      "parentId": "56d1671b-ca11-4e8f-9081-4c27d79fa850",
+      "command": {
+        "action": "fixture",
+        "fixture": "missing"
+      }
+    },
+    "snapshot": {
+      "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "56d1671b-ca11-4e8f-9081-4c27d79fa850",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:17.128Z",
+      "receivedAt": "2026-11-10T12:37:17.128Z",
+      "sourceIndex": 0,
+      "fixture": "missing",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": null,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": "2026-11-10T12:37:16.217Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            },
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "normal",
+              "value": 12.8
+            }
+          ]
+        },
+        {
+          "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5:ch4Low",
+          "ruleId": "ch4Low",
+          "label": "Low methane",
+          "severity": "critical",
+          "unit": "%",
+          "value": 58,
+          "openedAt": "2026-11-10T12:37:16.217Z",
+          "lastAt": "2026-11-10T12:37:16.640Z",
+          "resolvedAt": "2026-11-10T12:37:16.640Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "critical",
+              "value": 58
+            },
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "normal",
+              "value": 63
+            }
+          ]
+        },
+        {
+          "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850:kwLow",
+          "ruleId": "kwLow",
+          "label": "Low electrical power",
+          "severity": "critical",
+          "unit": "kW",
+          "value": 4.3,
+          "openedAt": "2026-11-10T12:37:16.640Z",
+          "lastAt": "2026-11-10T12:37:17.128Z",
+          "resolvedAt": "2026-11-10T12:37:17.128Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "critical",
+              "value": 4.3
+            },
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "normal",
+              "value": 5.5
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "unknown",
+          "unit": "ppm",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.128Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:missing",
+          "ruleId": "missing",
+          "label": "Missing reading: h2s",
+          "severity": "unknown",
+          "unit": "",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.128Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "sequence": 10,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.217Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 58,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "methane-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.640Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 4.3,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "power-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:17.128Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": null,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "missing"
+        }
+      ]
+    },
+    "responseHash": "sha256:72d4e051b35d3214275b839f76d4453cb8794dc87a0eac91e4e931b4347083fb",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "c3dae241-c3c4-45ee-9795-244f579cd56f",
+    "request": {
+      "parentId": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73",
+      "command": {
+        "action": "fixture",
+        "fixture": "stale"
+      }
+    },
+    "snapshot": {
+      "id": "c3dae241-c3c4-45ee-9795-244f579cd56f",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:17.513Z",
+      "receivedAt": "2026-11-10T12:35:17.513Z",
+      "sourceIndex": 0,
+      "fixture": "stale",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": "2026-11-10T12:37:16.217Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            },
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "normal",
+              "value": 12.8
+            }
+          ]
+        },
+        {
+          "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5:ch4Low",
+          "ruleId": "ch4Low",
+          "label": "Low methane",
+          "severity": "critical",
+          "unit": "%",
+          "value": 58,
+          "openedAt": "2026-11-10T12:37:16.217Z",
+          "lastAt": "2026-11-10T12:37:16.640Z",
+          "resolvedAt": "2026-11-10T12:37:16.640Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "critical",
+              "value": 58
+            },
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "normal",
+              "value": 63
+            }
+          ]
+        },
+        {
+          "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850:kwLow",
+          "ruleId": "kwLow",
+          "label": "Low electrical power",
+          "severity": "critical",
+          "unit": "kW",
+          "value": 4.3,
+          "openedAt": "2026-11-10T12:37:16.640Z",
+          "lastAt": "2026-11-10T12:37:17.128Z",
+          "resolvedAt": "2026-11-10T12:37:17.128Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "critical",
+              "value": 4.3
+            },
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "normal",
+              "value": 5.5
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "unknown",
+          "unit": "ppm",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.513Z",
+          "resolvedAt": "2026-11-10T12:37:17.513Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            },
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:missing",
+          "ruleId": "missing",
+          "label": "Missing reading: h2s",
+          "severity": "unknown",
+          "unit": "",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.513Z",
+          "resolvedAt": "2026-11-10T12:37:17.513Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            },
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "normal",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "c3dae241-c3c4-45ee-9795-244f579cd56f:stale",
+          "ruleId": "stale",
+          "label": "Demo feed is stale (>60 seconds)",
+          "severity": "unknown",
+          "unit": "seconds",
+          "value": 120,
+          "openedAt": "2026-11-10T12:37:17.513Z",
+          "lastAt": "2026-11-10T12:37:17.513Z",
+          "resolvedAt": null,
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "unknown",
+              "value": 120
+            }
+          ]
+        }
+      ],
+      "sequence": 11,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.217Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 58,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "methane-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.640Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 4.3,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "power-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:17.128Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": null,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "missing"
+        },
+        {
+          "at": "2026-11-10T12:37:17.513Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "stale"
+        }
+      ]
+    },
+    "responseHash": "sha256:73d28c8ae03ef2d5e85d0673390f560d5e79e2697ebe8bc65da7fe44cc8384e1",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  },
+  {
+    "id": "cbdbdb1b-4f4e-4573-8247-f0f1d63524bb",
+    "request": {
+      "parentId": "c3dae241-c3c4-45ee-9795-244f579cd56f",
+      "command": {
+        "action": "fixture",
+        "fixture": "normal"
+      }
+    },
+    "snapshot": {
+      "id": "cbdbdb1b-4f4e-4573-8247-f0f1d63524bb",
+      "sessionId": "6084dd22-7db2-491e-b989-717325c99c73",
+      "parentId": "c3dae241-c3c4-45ee-9795-244f579cd56f",
+      "version": "demo-monitoring-1.0.0",
+      "siteId": "ainsaade",
+      "createdAt": "2026-11-10T12:37:18.015Z",
+      "receivedAt": "2026-11-10T12:37:18.015Z",
+      "sourceIndex": 0,
+      "fixture": "normal",
+      "reading": {
+        "t": "2026-11-08 00:00",
+        "feed": 0.424,
+        "codIn": 18497,
+        "codOut": 6000,
+        "ph": 7.1,
+        "temp": 36.59,
+        "pressure": 12.8,
+        "h2s": 142.4,
+        "o2": 0.228,
+        "volts": 399.3,
+        "gas": 3,
+        "ch4": 63,
+        "kw": 5.5,
+        "gasEstimate": 2.0420695920039322,
+        "codRemoval": 67.5623074012002
+      },
+      "rules": [
+        {
+          "id": "gasLow",
+          "metric": "gas",
+          "label": "Low biogas flow",
+          "unit": "Nm³/h",
+          "direction": "low",
+          "warning": 2.6,
+          "critical": 2.2
+        },
+        {
+          "id": "ch4Low",
+          "metric": "ch4",
+          "label": "Low methane",
+          "unit": "%",
+          "direction": "low",
+          "warning": 60,
+          "critical": 58
+        },
+        {
+          "id": "codRemovalLow",
+          "metric": "codRemoval",
+          "label": "Low COD removal",
+          "unit": "%",
+          "direction": "low",
+          "warning": 62,
+          "critical": 58
+        },
+        {
+          "id": "phLow",
+          "metric": "ph",
+          "label": "Low pH",
+          "unit": "pH",
+          "direction": "low",
+          "warning": 6.9,
+          "critical": 6.7
+        },
+        {
+          "id": "phHigh",
+          "metric": "ph",
+          "label": "High pH",
+          "unit": "pH",
+          "direction": "high",
+          "warning": 7.6,
+          "critical": 7.8
+        },
+        {
+          "id": "tempLow",
+          "metric": "temp",
+          "label": "Low temperature",
+          "unit": "°C",
+          "direction": "low",
+          "warning": 35.5,
+          "critical": 35
+        },
+        {
+          "id": "tempHigh",
+          "metric": "temp",
+          "label": "High temperature",
+          "unit": "°C",
+          "direction": "high",
+          "warning": 38,
+          "critical": 39
+        },
+        {
+          "id": "h2sHigh",
+          "metric": "h2s",
+          "label": "High H₂S",
+          "unit": "ppm",
+          "direction": "high",
+          "warning": 180,
+          "critical": 250
+        },
+        {
+          "id": "o2High",
+          "metric": "o2",
+          "label": "High oxygen",
+          "unit": "%",
+          "direction": "high",
+          "warning": 0.7,
+          "critical": 1
+        },
+        {
+          "id": "pressureHigh",
+          "metric": "pressure",
+          "label": "High pressure",
+          "unit": "mbar",
+          "direction": "high",
+          "warning": 18,
+          "critical": 22
+        },
+        {
+          "id": "kwLow",
+          "metric": "kw",
+          "label": "Low electrical power",
+          "unit": "kW",
+          "direction": "low",
+          "warning": 4.7,
+          "critical": 4.3
+        },
+        {
+          "id": "voltsLow",
+          "metric": "volts",
+          "label": "Low voltage",
+          "unit": "V",
+          "direction": "low",
+          "warning": 390,
+          "critical": 380
+        },
+        {
+          "id": "voltsHigh",
+          "metric": "volts",
+          "label": "High voltage",
+          "unit": "V",
+          "direction": "high",
+          "warning": 415,
+          "critical": 425
+        }
+      ],
+      "alarms": [
+        {
+          "id": "f781b7b6-2cac-4532-b9c1-6807290ac6aa:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "critical",
+          "unit": "ppm",
+          "value": 250,
+          "openedAt": "2026-11-10T12:37:11.409Z",
+          "lastAt": "2026-11-10T12:37:14.498Z",
+          "resolvedAt": "2026-11-10T12:37:14.498Z",
+          "acknowledgedAt": "2026-11-10T12:37:13.246Z",
+          "acknowledgedBy": "admin",
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:11.409Z",
+              "severity": "warning",
+              "value": 180
+            },
+            {
+              "at": "2026-11-10T12:37:12.115Z",
+              "severity": "critical",
+              "value": 250
+            },
+            {
+              "at": "2026-11-10T12:37:14.498Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "582ea562-529a-4c31-90e9-59df6a5d81a9:o2High",
+          "ruleId": "o2High",
+          "label": "High oxygen",
+          "severity": "critical",
+          "unit": "%",
+          "value": 1,
+          "openedAt": "2026-11-10T12:37:14.997Z",
+          "lastAt": "2026-11-10T12:37:15.478Z",
+          "resolvedAt": "2026-11-10T12:37:15.478Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:14.997Z",
+              "severity": "critical",
+              "value": 1
+            },
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "normal",
+              "value": 0.228
+            }
+          ]
+        },
+        {
+          "id": "36a31199-dd55-481e-922e-ca925e29bb46:pressureHigh",
+          "ruleId": "pressureHigh",
+          "label": "High pressure",
+          "severity": "critical",
+          "unit": "mbar",
+          "value": 22,
+          "openedAt": "2026-11-10T12:37:15.478Z",
+          "lastAt": "2026-11-10T12:37:16.217Z",
+          "resolvedAt": "2026-11-10T12:37:16.217Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:15.478Z",
+              "severity": "critical",
+              "value": 22
+            },
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "normal",
+              "value": 12.8
+            }
+          ]
+        },
+        {
+          "id": "b2840a60-600f-47d9-bc14-3b04f99c09b5:ch4Low",
+          "ruleId": "ch4Low",
+          "label": "Low methane",
+          "severity": "critical",
+          "unit": "%",
+          "value": 58,
+          "openedAt": "2026-11-10T12:37:16.217Z",
+          "lastAt": "2026-11-10T12:37:16.640Z",
+          "resolvedAt": "2026-11-10T12:37:16.640Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.217Z",
+              "severity": "critical",
+              "value": 58
+            },
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "normal",
+              "value": 63
+            }
+          ]
+        },
+        {
+          "id": "56d1671b-ca11-4e8f-9081-4c27d79fa850:kwLow",
+          "ruleId": "kwLow",
+          "label": "Low electrical power",
+          "severity": "critical",
+          "unit": "kW",
+          "value": 4.3,
+          "openedAt": "2026-11-10T12:37:16.640Z",
+          "lastAt": "2026-11-10T12:37:17.128Z",
+          "resolvedAt": "2026-11-10T12:37:17.128Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:16.640Z",
+              "severity": "critical",
+              "value": 4.3
+            },
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "normal",
+              "value": 5.5
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:h2sHigh",
+          "ruleId": "h2sHigh",
+          "label": "High H₂S",
+          "severity": "unknown",
+          "unit": "ppm",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.513Z",
+          "resolvedAt": "2026-11-10T12:37:17.513Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            },
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "normal",
+              "value": 142.4
+            }
+          ]
+        },
+        {
+          "id": "d5ed60d6-b1cf-4d7f-91b5-19bfa9185e73:missing",
+          "ruleId": "missing",
+          "label": "Missing reading: h2s",
+          "severity": "unknown",
+          "unit": "",
+          "value": null,
+          "openedAt": "2026-11-10T12:37:17.128Z",
+          "lastAt": "2026-11-10T12:37:17.513Z",
+          "resolvedAt": "2026-11-10T12:37:17.513Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.128Z",
+              "severity": "unknown",
+              "value": null
+            },
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "normal",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "c3dae241-c3c4-45ee-9795-244f579cd56f:stale",
+          "ruleId": "stale",
+          "label": "Demo feed is stale (>60 seconds)",
+          "severity": "unknown",
+          "unit": "seconds",
+          "value": 120,
+          "openedAt": "2026-11-10T12:37:17.513Z",
+          "lastAt": "2026-11-10T12:37:18.015Z",
+          "resolvedAt": "2026-11-10T12:37:18.015Z",
+          "acknowledgedAt": null,
+          "acknowledgedBy": null,
+          "transitions": [
+            {
+              "at": "2026-11-10T12:37:17.513Z",
+              "severity": "unknown",
+              "value": 120
+            },
+            {
+              "at": "2026-11-10T12:37:18.015Z",
+              "severity": "normal",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "sequence": 12,
+      "actor": "admin",
+      "sampleHistory": [
+        {
+          "at": "2026-11-10T12:37:10.544Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6833,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 2.689,
+            "ch4": 61.029999999999994,
+            "kw": 4.93,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 63.05887441206682
+          },
+          "fixture": null
+        },
+        {
+          "at": "2026-11-10T12:37:11.409Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 180,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "warning"
+        },
+        {
+          "at": "2026-11-10T12:37:12.115Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 250,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "h2s-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:14.498Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        },
+        {
+          "at": "2026-11-10T12:37:14.997Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 1,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "oxygen-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:15.478Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 22,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "pressure-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.217Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 58,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "methane-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:16.640Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 4.3,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "power-critical"
+        },
+        {
+          "at": "2026-11-10T12:37:17.128Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": null,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "missing"
+        },
+        {
+          "at": "2026-11-10T12:37:17.513Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "stale"
+        },
+        {
+          "at": "2026-11-10T12:37:18.015Z",
+          "reading": {
+            "t": "2026-11-08 00:00",
+            "feed": 0.424,
+            "codIn": 18497,
+            "codOut": 6000,
+            "ph": 7.1,
+            "temp": 36.59,
+            "pressure": 12.8,
+            "h2s": 142.4,
+            "o2": 0.228,
+            "volts": 399.3,
+            "gas": 3,
+            "ch4": 63,
+            "kw": 5.5,
+            "gasEstimate": 2.0420695920039322,
+            "codRemoval": 67.5623074012002
+          },
+          "fixture": "normal"
+        }
+      ]
+    },
+    "responseHash": "sha256:6e4c82dc954b7ad1dc067af9ac222496f6bd5d4848dca6f0231ec9ba641bf263",
+    "manifestHash": "sha256:978ccafb4fbcd72d2e07a2debc6296bc3104571e6ea8f0766bdb578ac9320745"
+  }
+]

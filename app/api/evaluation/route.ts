@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSession } from "../../lib/auth";
+import {getSession,canAudit} from "../../lib/auth";
 import { evaluationEvidence } from "../../lib/evaluation";
 import {manifestHash,manifest} from "../../lib/manifest";
 
@@ -9,7 +9,7 @@ function hex(bytes: ArrayBuffer) {
 
 export async function GET(request: Request) {
   const session = await getSession(request);
-  if (!session || session.role !== "admin") return NextResponse.json({ error: "Admin access required" }, { status: 403 });
+  if (!session || !canAudit(session)) return NextResponse.json({ error: "Reviewer or admin access required" }, { status: 403 });
   const serialized = JSON.stringify(evaluationEvidence);
   const manifestFingerprint = `sha256:${hex(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(serialized)))}`;
   return NextResponse.json(

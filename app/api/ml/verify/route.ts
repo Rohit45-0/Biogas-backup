@@ -1,5 +1,5 @@
 import {NextResponse} from "next/server";
-import {getSession} from "../../../lib/auth";
+import {getSession,canAudit} from "../../../lib/auth";
 import {getEvidence,storeEvidence,verifyEvidence,validRunId} from "../../../lib/audit";
 import {mlManifest,mlManifestHash} from "../../../lib/ml-manifest";
 import {calculateMl,type MlResult} from "../../../lib/ml-execution";
@@ -12,7 +12,7 @@ const headers={"Cache-Control":"no-store"};
 export async function POST(request:Request){
   const session=await getSession(request);
   if(!session)return NextResponse.json({error:"Sign in required"},{status:401,headers});
-  if(session.role!=="admin")return NextResponse.json({error:"Admin access required"},{status:403,headers});
+  if(!canAudit(session))return NextResponse.json({error:"Reviewer or admin access required"},{status:403,headers});
   let body:{runId?:string};
   try{body=await request.json();}catch{return NextResponse.json({error:"Invalid JSON"},{status:400,headers});}
   if(typeof body?.runId!=="string"||!validRunId(body.runId))return NextResponse.json({error:"A valid ML run ID is required"},{status:400,headers});
