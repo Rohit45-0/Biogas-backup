@@ -7,7 +7,7 @@ import {auditPage,type AuditEntry} from "./audit-pagination";
 export type ThresholdSettings = {methaneMinimum:number;h2sWarning:number;oxygenMaximum:number;pressureMinimum:number;pressureMaximum:number;facilityName:string;facilityLocation:string};
 export const defaultThresholds:ThresholdSettings={methaneMinimum:55,h2sWarning:500,oxygenMaximum:2,pressureMinimum:12,pressureMaximum:30,facilityName:"Aquaivolt Demonstration Plant",facilityLocation:"Lebanon"};
 export type EvidenceRecord = {
-  id:string;createdAt:string;username:string;role:string;kind:"optimization"|"verification"|"ml_prediction"|"ml_verification"|"plant_observation"|"plant_evaluation"|"hrt_research"|"hrt_verification"|"hrt_optimization"|"reactor_optimization"|"reactor_search"|"demo_monitoring"|"demo_monitoring_verification"|"demo_model_link"|"early_warning"|"early_warning_review"|"early_warning_evaluation"|"early_warning_verification";
+  id:string;createdAt:string;username:string;role:string;kind:"audit_review"|"optimization"|"verification"|"ml_prediction"|"ml_verification"|"plant_observation"|"plant_evaluation"|"hrt_research"|"hrt_verification"|"hrt_optimization"|"reactor_optimization"|"reactor_search"|"demo_monitoring"|"demo_monitoring_verification"|"demo_model_link"|"early_warning"|"early_warning_review"|"early_warning_evaluation"|"early_warning_verification";
   request:unknown;inputs:unknown;response:unknown;modelVersion:string;manifestHash:string;
   requestHash:string;inputsHash:string;responseHash:string;outputHash:string;
 };

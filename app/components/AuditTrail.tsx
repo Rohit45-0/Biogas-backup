@@ -9,6 +9,7 @@ import type {SignedRecord} from "../lib/audit";
 import type {MlResult} from "../lib/ml-execution";
 import type {ResearchResult} from "../lib/hrt-research-execution";
 import MLPredictions from "./MLPredictions";
+import AuditorReview from "./AuditorReview";
 import HrtOptimizationStudy from "./HrtOptimizationStudy";
 import SameTankAuditCharts from "./SameTankAuditCharts";
 import ReactorAuditEvidence from "./ReactorAuditEvidence";
@@ -24,11 +25,11 @@ type Report=VerificationReport;
 type Row={id:string;createdAt:string;storedAt:string;kind:string;username:string;modelVersion:string;integrity:boolean;readError:boolean};
 type RecordPage={runs:Row[];cursor?:string;hasMore:boolean;total:number;snapshot:string};
 type RecordResult={record:SignedRecord;integrity:boolean;diagnostics?:unknown};
-type Tab="reactor"|"ml"|"execution"|"model"|"comparison"|"records"|"validation";
-const labels:Record<Tab,string>={reactor:"HRT Optimization model - Reactor Technologies",ml:"ML predictions",execution:"1. Scenario execution",model:"2. Scenario verification",comparison:"Scenario comparison",records:"Audit records",validation:"Plant validation"};
+type Tab="review"|"reactor"|"ml"|"execution"|"model"|"comparison"|"records"|"validation";
+const labels:Record<Tab,string>={review:"Auditor review",reactor:"HRT Optimization model - Reactor Technologies",ml:"ML predictions",execution:"1. Scenario execution",model:"2. Scenario verification",comparison:"Scenario comparison",records:"Audit records",validation:"Plant validation"};
 
 export default function AuditTrail({onOverview,initialRunId="",reviewer=false}:{onOverview:()=>void;initialRunId?:string;reviewer?:boolean}){
-  const [tab,setTab]=useState<Tab>(initialRunId?"records":"ml"),[setup,setSetup]=useState<Setup|null>(null);
+  const [tab,setTab]=useState<Tab>(initialRunId?"records":"review"),[setup,setSetup]=useState<Setup|null>(null);
   const [mlRun,setMlRun]=useState<MlResult|null>(null);
   const [validationRunId,setValidationRunId]=useState("");
   const [inputs,setInputs]=useState<ModelInput>({...profiles[0].inputs}),[profileId,setProfileId]=useState(profiles[0].id),[seed,setSeed]=useState("audit-test-001");
@@ -106,13 +107,14 @@ export default function AuditTrail({onOverview,initialRunId="",reviewer=false}:{
   }
   const mismatch=run?Object.keys(inputs).some(k=>inputs[k as keyof ModelInput]!==run.effectiveInputs[k as keyof ModelInput]):false;
   const executionPass=Boolean(run&&run.audit.saved&&!mismatch&&[run.biogas,run.methane,run.electricity].every(Number.isFinite));
-  const trainedView=tab==="ml"||tab==="validation";
+  const trainedView=tab==="ml"||tab==="validation"||tab==="review";
   return <div className="at-workspace">
     <header className="at-header"><div><button className="at-back" onClick={onOverview}><ArrowLeft size={16}/>Overview</button><h1><ClipboardCheck size={25}/>Audit Trail</h1><p>AQUAIVOLT / Execution evidence</p></div><div className="at-actions"><button title="Print audit evidence or save as PDF" onClick={()=>window.print()}><Printer size={17}/>Print evidence</button></div></header>
     <p className="at-notice">The main dashboard and AI recommendations use the hours-scale model. Original day-scale model tests remain here for audit comparison and plant-validation preparation; their inputs and historical records retain their original units.</p>
     <div className="at-meta"><div><span>{tab==="reactor"?"HRT Optimization model - Reactor Technologies":trainedView?"Original audit ML models":"Original day-scale scenario engine"}</span><strong>{tab==="reactor"?"Reactor-specific Ridge regression":trainedView?"Gradient Boosting + Ridge Regression":setup?.manifest.model.name??"Loading model"}</strong><small>{tab==="reactor"?"400 training records / 2,000 generated candidates":trainedView?"Saved fitted pipelines / trained-ml-1.0.0":`Version ${setup?.manifest.model.version??"..."}`}</small></div><div><span>Persistent storage</span><Status value={setup?(setup.storage.available?"AVAILABLE":"UNAVAILABLE"):"CHECKING"}/><small>{setup?.storage.provider??"Checking connection"}</small></div><div><span>Plant validation</span><Status value="NOT VALIDATED"/><small>Advisory prototype; no equipment control</small></div></div>
     <nav className="at-tabs" aria-label="Audit sections">{(Object.keys(labels) as Tab[]).map(key=><button key={key} data-audit-tab={key} aria-current={tab===key?"page":undefined} onClick={()=>{setTab(key);setError("");if(key==="records")void history();}}>{labels[key]}</button>)}</nav>
     {error&&<div className="at-error" role="alert">{error}</div>}
+    {tab==="review"&&<AuditorReview navigate={setTab} openRecord={id=>{setTab("records");void openRecord(id);void history();}}/>}
     {tab==="reactor"&&<HrtOptimizationStudy role="admin" auditMode onAudit={id=>{setTab("records");void openRecord(id);void history();}}/>}
     <div hidden={tab!=="ml"}><MLPredictions key={mlRun?.runId??"new"} selected={mlRun} onRecorded={setValidationRunId}/></div>
     <div hidden={tab!=="validation"}>{reviewer?<p className="at-notice">Reviewer access: inspect saved plant observations and evaluations in Audit records. Only an admin may submit measurements or change operational settings. Plant validation remains pending commissioning.</p>:<PlantValidation selectedRunId={validationRunId||mlRun?.runId||""}/>}</div>

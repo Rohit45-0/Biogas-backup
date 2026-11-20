@@ -66,6 +66,23 @@ test("November remediation: durable logout, least privilege, model artifacts and
   for(const format of ["json","csv"]){const r=await raw("/api/audit?runId="+runId+"&format="+format,undefined,reviewer);assert.equal(r.status,200);assert.equal(r.headers.get("X-Aquaivolt-Integrity"),"FAIL");assert.match(r.headers.get("content-disposition"),/UNVERIFIED-INTEGRITY-FAILED/);const body=await r.text();assert.match(body,/UNVERIFIED_HISTORICAL_RECORD/);assert.doesNotMatch(body,/"type":\\s*"SERVER_AUTHENTICATED"/);}
   assert.equal(await readFile(file,"utf8"),failed);assert.equal((await call("/api/ml/verify",{runId},reviewer)).status,409);assert.equal((await call("/api/ml/predict?runId="+runId+"&format=csv",undefined,reviewer)).status,409);
  });
+ await t.test("auditor review preserves exceptions and persists separately scoped software checks",async()=>{
+  assert.equal((await call("/api/audit/review")).status,401);
+  const user=await login("user");assert.equal((await call("/api/audit/review",undefined,user)).status,403);
+  assert.equal((await call("/api/audit/review",{action:"run_checks"},user)).status,403);
+  const setup=await call("/api/audit/review",undefined,reviewer);assert.equal(setup.status,200);assert.equal(setup.data.historical.length,8);
+  assert.ok(setup.data.reviewers.some(a=>a.username==="auditor.test"));assert.doesNotMatch(JSON.stringify(setup.data),/passwordHash|credentialVersion/);
+  const canonical=v=>Array.isArray(v)?`[${v.map(canonical).join(",")}]`:v&&typeof v==="object"?`{${Object.entries(v).filter(([,v])=>v!==undefined).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>`${JSON.stringify(k)}:${canonical(v)}`).join(",")}}`:JSON.stringify(v);
+  const hash=v=>"sha256:"+createHash("sha256").update(canonical(v)).digest("hex");
+  const {recordHash,signature,...template}=JSON.parse(await readFile(path.join(directory,"audit-v2/records",runId+".json"),"utf8"));
+  const originals=[];
+  for(const row of setup.data.historical){const content={...template,id:row.id};const text=JSON.stringify({...content,recordHash:hash(content),signature:"0".repeat(64)});const file=path.join(directory,"audit-v2/records",row.id+".json");await writeFile(file,text);originals.push({file,text});}
+  const r=await call("/api/audit/review",{action:"run_checks"},reviewer);assert.equal(r.status,200,JSON.stringify(r.data));assert.equal(r.data.saved,true);assert.equal(r.data.status,"PASS");assert.equal(r.data.checks.length,6);assert.equal(r.data.historicalAuthentication,"UNRESOLVED");assert.equal(r.data.plantValidation,"PENDING_COMMISSIONING_AND_INDEPENDENT_DATA");assert.match(r.data.securityLogoutTest,/Separate/);
+  assert.equal(r.data.runIds.length,3);assert.ok((await call("/api/audit?runId="+r.data.reportId,undefined,reviewer)).data.integrity);
+  for(const {file,text} of originals)assert.equal(await readFile(file,"utf8"),text);
+  for(const id of ["bundle","protocol","checklist","investigation","methodology"]){const download=await raw("/api/ml/artifacts?file="+id,undefined,reviewer);assert.equal(download.status,200,id);const bytes=Buffer.from(await download.arrayBuffer());assert.equal(download.headers.get("X-Artifact-SHA256"),"sha256:"+createHash("sha256").update(bytes).digest("hex"));if(id==="bundle")assert.equal(bytes.subarray(0,2).toString(),"PK");}
+  assert.equal((await call("/api/audit/review",{action:"unknown"},reviewer)).status,422);
+ });
  await t.test("admin revokes all reviewer sessions; disable also invalidates fresh sessions",async()=>{
   const second=await login("auditor.test");
   assert.equal((await call("/api/auth/accounts",{action:"revoke_sessions",username:"auditor.test",currentPassword:password},admin)).status,200);
